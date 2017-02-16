@@ -4,20 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iosTest2017.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iosTest2017.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>156FA9C11E557E650065504B</key>
+		<key>8023412BCF35A5EEFA7B454ABC4A4DB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>156FA9DF1E557F780065504B</key>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
