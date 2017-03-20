@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworkingTest-2017.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>CLLocationManagerTest-20170304.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ControllerTest-2017.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>UISearchControllerTest-201703.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>iosTest2017.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,12 +32,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>154F2A9C1E6E9A6E004F2DBE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>156FA9C11E557E650065504B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>156FA9DF1E557F780065504B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>156FA9FA1E5581120065504B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>159680A01E6A694B0068B655</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>15E1F3051E6F89DB0014C731</key>
 		<dict>
 			<key>primary</key>
 			<true/>

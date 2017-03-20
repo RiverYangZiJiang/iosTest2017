@@ -1,4 +1,9 @@
-target 'iosTest2017' do
+target 'iosTest2017’ do
+platform :ios, '8.0'
+pod 'AFNetworking', '~> 3.0'
+end
+
+target ‘AFNetworkingTest-2017’ do
 platform :ios, '8.0'
 pod 'AFNetworking', '~> 3.0'
 end
