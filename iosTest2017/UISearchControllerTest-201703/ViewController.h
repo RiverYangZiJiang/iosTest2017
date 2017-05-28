@@ -10,5 +10,6 @@
 
 @interface ViewController : UITableViewController
 
+- (IBAction)startDownload:(id)sender;
 @end
 

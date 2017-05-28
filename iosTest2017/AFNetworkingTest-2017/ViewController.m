@@ -10,6 +10,13 @@
 #import "AFNetworking/AFNetworking.h"
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+// 下载操作
+@property (strong, nonatomic)NSURLSessionDownloadTask *downloadTask;
+
+
 @end
 
 @implementation ViewController
@@ -19,10 +26,11 @@
     
     
 //    [ViewController downloadFile2];
+    [self downloadFile1];
 //    [ViewController uploadFile];
 //    [ViewController dataTask];
-    [ViewController AFNetworkReachabilityManagerTest];
-    [ViewController postTest];
+//    [ViewController AFNetworkReachabilityManagerTest];
+//    [ViewController postTest];
 }
 
 #pragma mark - Data Task & post
@@ -117,14 +125,22 @@
  
  使用AFURLSessionManager的downloadTaskWithRequest方法下载文件
  */
-+ (void)downloadFile1{
+- (void)downloadFile1{
+    
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    NSURL *remoteUrl = [NSURL URLWithString:@"http://www.marlerblog.com/files/2013/03/orange.jpg"];
+    NSURL *remoteUrl = [NSURL URLWithString:@"http://img05.3dmgame.com/uploads/allimg/140509/153_140509150151_1.jpg"];
     NSURLRequest *request = [NSURLRequest requestWithURL:remoteUrl];
     
-    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+    self.downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+        // 给Progress添加监听 KVO
+        NSLog(@"%f",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
+        // 回到主队列刷新UI
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.progressView.progress = 1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
+        });
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
 //        NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 //        NSString *filePath = [paths[0] stringByAppendingPathComponent:@"orange.jpg"];
 //        NSLog(@"filePath = %@", filePath);
@@ -136,11 +152,16 @@
         
         // 返回文件保存路径，官方样例
         NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+        NSLog(@"documentsDirectoryURL = %@", documentsDirectoryURL);
         return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        NSString *imgFilePath = [filePath path];// 将NSURL转成NSString
+        UIImage *img = [UIImage imageWithContentsOfFile:imgFilePath];
+        self.imageView.image = img;
+        
         NSLog(@"File downloaded to : %@", filePath);
     }];
-    [downloadTask resume];  // 必须要调用才能开始下载
+//    [self.downloadTask resume];  // 必须要调用才能开始下载
 }
 
 
@@ -160,15 +181,26 @@
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         NSLog(@"File downloaded to : %@", filePath);
     }];
+    
     [downloadTask resume];  // 必须要调用才能开始下载
+}
+
+#pragma mark 开始下载
+// http://www.cnblogs.com/qingche/p/5362592.html
+- (IBAction)startDownload:(id)sender{
+   [self.downloadTask resume];
+}
+#pragma mark 暂停下载
+- (IBAction)stopDownload:(id)sender{
+    [self.downloadTask suspend];
 }
 
 
 
-#pragma mark AFNetworkReachabilityManager
+#pragma mark - 网络监听AFNetworkReachabilityManager
 + (void)AFNetworkReachabilityManagerTest{
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        // 应用启动就会进到这里一次，后面网络没变化一次就会调用一次
+        // 应用启动就会进到这里一次，后面网络每变化一次就会调用一次
         NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));  // Reachability: Reachable via WiFi或者Reachability: Not Reachable
         if (status == AFNetworkReachabilityStatusUnknown || status == AFNetworkReachabilityStatusNotReachable) {
             NSLog(@"当前无网络");  // 可在此提示用户当前无网络

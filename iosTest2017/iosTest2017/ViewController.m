@@ -26,4 +26,6 @@
 }
 
 
+- (IBAction)stopDownload:(id)sender {
+}
 @end

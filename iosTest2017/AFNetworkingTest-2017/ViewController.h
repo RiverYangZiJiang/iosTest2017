@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)startDownload:(id)sender;
+- (IBAction)stopDownload:(id)sender;
 
 @end
 

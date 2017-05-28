@@ -32,6 +32,8 @@
 }
 
 
+- (IBAction)startDownload:(id)sender {
+}
 /**
  每隔一秒钟被调用一次
 
