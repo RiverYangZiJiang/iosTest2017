@@ -1,0 +1,297 @@
+﻿<div data-role="body" fullScreen="true">
+			<script type="text/javascript">
+(function(){
+	var window = function() {
+	    console.log("UserDesign JavaScript with window().");
+	}
+	window.open = function() {
+	    console.log("UserDesign JavaScript with open().");
+	}
+	
+	window.alert = function() {
+	    console.log("UserDesign JavaScript with alert().");
+	}
+	
+	window.close = function() {
+	    console.log("UserDesign JavaScript with close().");
+	}
+	
+	window.confirm = function() {
+	    console.log("UserDesign JavaScript with confirm().");
+	}
+	
+	window.prompt = function() {
+	    console.log("UserDesign JavaScript with prompt().");
+	}
+	
+	window.setTimeout = function() {
+	    console.log("UserDesign JavaScript with setTimeout().");
+	}
+	
+	window.clearTimeout = function() {
+	    console.log("UserDesign JavaScript with clearTimeout().");
+	}
+	
+	window.setInterval = function() {
+	    console.log("UserDesign JavaScript with setInterval().");
+	}
+	
+	window.clearInterval = function() {
+	    console.log("UserDesign JavaScript with clearInterval().");
+	}
+	
+	window.moveBy = function() {
+	    console.log("UserDesign JavaScript with moveBy().");
+	}
+	
+	window.moveTo = function() {
+	    console.log("UserDesign JavaScript with moveTo().");
+	}
+	
+	window.resizeBy = function() {
+	    console.log("UserDesign JavaScript with resizeBy().");
+	}
+	
+	window.resizeTo = function() {
+	    console.log("UserDesign JavaScript with resizeTo().");
+	}
+	
+	window.scrollBy = function() {
+	    console.log("UserDesign JavaScript with scrollBy().");
+	}
+	
+	window.find = function() {
+	    console.log("UserDesign JavaScript with find().");
+	}
+	
+	window.back = function() {
+	    console.log("UserDesign JavaScript with back().");
+	}
+	
+	window.forward = function() {
+	    console.log("UserDesign JavaScript with forward().");
+	}
+	
+	window.home = function() {
+	    console.log("UserDesign JavaScript with home().");
+	}
+	
+	window.stop = function() {
+	    console.log("UserDesign JavaScript with stop().");
+	}
+	
+	window.print = function() {
+	    console.log("UserDesign JavaScript with print().");
+	}
+	
+	window.blur = function() {
+	    console.log("UserDesign JavaScript with blur().");
+	}
+	
+	window.focus = function() {
+	    console.log("UserDesign JavaScript with focus().");
+	}
+	
+	window.captureEvent = function() {
+	    console.log("UserDesign JavaScript with captureEvent().");
+	}
+	
+	window.captureEvent = function() {
+	    console.log("UserDesign JavaScript with captureEvent().");
+	}
+	
+	window.enableExternalCapture = function() {
+	    console.log("UserDesign JavaScript with enableExternalCapture().");
+	}
+	
+	window.disableExternalCapture = function() {
+	    console.log("UserDesign JavaScript with disableExternalCapture().");
+	}
+	
+	window.handleEvent = function() {
+	    console.log("UserDesign JavaScript with handleEvent().");
+	}
+	
+	window.releaseEvent = function() {
+	    console.log("UserDesign JavaScript with releaseEvent().");
+	}
+	
+	window.routeEvent = function() {
+	    console.log("UserDesign JavaScript with routeEvent().");
+	}
+	
+	window.scroll = function() {
+	    console.log("UserDesign JavaScript with scroll().");
+	}
+	
+	var document = function() {
+	    console.log("UserDesign JavaScript with document().");
+	}
+	
+	document.write = function() {
+	    console.log("UserDesign JavaScript with document.write().");
+	}
+	
+	document.createElement = function() {
+	    console.log("UserDesign JavaScript with document.createElement().");
+	}
+	
+	document.getElementById = function() {
+	    console.log("UserDesign JavaScript with document.getElementById().");
+	}
+	
+	document.getElementByName = function() {
+	    console.log("UserDesign JavaScript with document.getElementByName().");
+	}
+	
+	function alert() {
+	    console.log("UserDesign JavaScript with alert().");
+    }
+    
+    function confirm() {
+        console.log("UserDesign JavaScript with confirm().");
+    }
+	Nf.PageReady(function() {
+  
+    var taskId = CurrentPage().parameters["task_id"];
+    
+    function updateReadStatus()
+	{
+        var param = {
+            'task_id': taskId,
+            'read_status': "read",
+            'operate_type': "update",
+            'operate_source': "system"
+        };
+        
+        Spl.MessageProcessor.submitData({
+            serviceId: 'task_work_update',
+            data: param,
+            silent: true
+        });
+    }
+    
+    function updateReachStatus()
+	{
+        var param = {
+            'task_id': taskId,
+            'reach_status': "reached",
+            'operate_type': "update",
+            'operate_source': "system"
+        };
+        
+        Spl.MessageProcessor.submitData({
+            serviceId: 'task_work_update',
+            data: param,
+            silent: true
+        });
+    }
+    
+    function doRedirect() {
+        
+        var param = {
+            'task_id': taskId
+        };
+        
+        var pm = Nf.PageManager;
+        
+        Spl.MessageProcessor.loadData({
+            serviceId: 'mobiletask_task_get',
+            data: param,
+          	silent: true,
+            success: function(json) {
+                
+                var reach_status = json["result"]["reach_status"];
+                if (reach_status != "reached")
+				{
+                    updateReachStatus();
+                }
+                
+                var read_status = json["result"]["read_status"];
+                if (read_status != "read")
+				{
+                    updateReadStatus();
+                }
+				
+				var task_type = json["result"]["task_type"];
+                var task_detail_page = "mobiletask_taskdetail.mspl";
+                var task_accept_page="mobiletask_accept.mspl";
+                if (task_type == "PM") {
+                    task_detail_page = "mobiletask_pm_detail.mspl";
+                } else if (task_type == "PLM" || task_type == "Others") {
+                    task_detail_page = "mobiletask_plm_detail.mspl";
+                } else if(task_type == "NPM")
+                {
+                    task_detail_page = "mobiletask_npm_taskdetail.mspl";
+                    task_accept_page = "mobiletask_npm_accept.mspl";
+                } else if(task_type == "NRO")
+                {
+                    task_detail_page = "mobiletask_nro_detail.mspl";
+                }
+              
+			    var task_status = json["result"]["task_status"];
+                var out_in = json["result"]["out_in"];
+              console.log("task_status and out_in is:"+task_status+"and"+out_in);
+                if (task_status == 'dispatched')
+				{
+					var currentOperator = json["result"]["assign_to_fme"];
+					var currentUserName = U.getSysParam("username");
+					if(currentOperator==currentUserName)
+					{
+						pm.open(task_accept_page, param, {
+							history: pm.History.NO_RECORD
+						});
+					}else
+					{
+						Nf.promptError({message:"The task has been reassigned to another engineer.",yes:function(){
+							backto_page();
+						}});
+					}				  
+				} else if (task_status == 'accepted' || task_status == 'inprocess') {
+					pm.open(task_detail_page, param, {
+						history: pm.History.RECORD
+					});
+				}
+              else if (task_status == 'completed'&& out_in == 'entry') {
+					pm.open(task_detail_page, param, {
+						history: pm.History.RECORD
+					});
+				}
+              else if (task_status == 'closed'&& out_in == 'entry') {
+					pm.open(task_detail_page, param, {
+						history: pm.History.RECORD
+					});
+				}
+              else if (task_status == 'canceled'&& out_in == 'entry') {
+					pm.open(task_detail_page, param, {
+						history: pm.History.RECORD
+					});
+				}
+				else 
+				{
+					Nf.prompt({
+						message: "The task status is " + task_status + ". It has not been synchronized to server, please refresh the list later!",
+						handler: function() {
+							backto_page();
+						}
+					});
+				}
+            }
+        });
+        
+    }
+    
+    CurrentPage().on("show", function() {
+        doRedirect();
+    });
+    
+    doRedirect();
+});
+}())
+</script>
+		
+	
+			<ion-content class="content " style="background-color:  #ebebeb ;">
+					</ion-content>
+		
+</div>
