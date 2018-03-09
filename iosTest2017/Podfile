@@ -1,9 +1,22 @@
-target 'iosTest2017’ do
+target 'iosTest2017' do
 platform :ios, '8.0'
 pod 'AFNetworking', '~> 3.0'
 end
 
-target ‘AFNetworkingTest-2017’ do
+target 'AFNetworkingTest-2017' do
 platform :ios, '8.0'
 pod 'AFNetworking', '~> 3.0'
 end
+
+#如果在Podfile中没有指定target，那么只有工程里的第一个target能够使用Podfile中描述的Pods依赖库。http://blog.csdn.net/wzzvictory/article/details/19178709
+target 'MasonryTest' do
+    platform :ios, '8.0'
+    pod 'Masonry'
+end
+
+target 'TingYunTest' do
+    platform :ios, '8.0'
+    pod 'tingyunApp', '~> 2.8.2'
+#    pod 'tingyunApp'
+end
+

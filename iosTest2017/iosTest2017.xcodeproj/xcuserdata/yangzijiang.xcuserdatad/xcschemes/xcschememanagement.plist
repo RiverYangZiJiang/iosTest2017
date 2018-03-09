@@ -12,37 +12,52 @@
 		<key>CLLocationManagerTest-20170304.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>2</integer>
 		</dict>
 		<key>CLanguageTest-2018.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>15</integer>
 		</dict>
 		<key>ControllerTest-2017.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>4</integer>
 		</dict>
 		<key>CopyAndMutableCopy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>12</integer>
 		</dict>
 		<key>CustomUIView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>14</integer>
 		</dict>
 		<key>FileIO.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>13</integer>
+		</dict>
+		<key>MasonryTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>OCTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>TingYunTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>UISearchControllerTest-201703.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>3</integer>
 		</dict>
 		<key>iosTest2017.xcscheme</key>
 		<dict>
@@ -68,6 +83,11 @@
 			<true/>
 		</dict>
 		<key>156FA9FA1E5581120065504B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>158C4E2A2048F8DB00940689</key>
 		<dict>
 			<key>primary</key>
 			<true/>
