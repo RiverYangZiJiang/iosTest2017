@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "OCDevelopmentNorms.h"
+#import "CrashTest.h"
+#import "NSStringTest.h"
+#import "NSTimerTest.h"
 
 @interface ViewController ()
 
@@ -18,9 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    OCDevelopmentNorms *ocdn = [[OCDevelopmentNorms alloc] init];
-    [ocdn setName:@"zs"];
-    NSLog(@"ocdn name = %@", [ocdn name]);
+//    OCDevelopmentNorms *ocdn = [[OCDevelopmentNorms alloc] init];
+//    [ocdn setName:@"zs"];
+//    NSLog(@"ocdn name = %@", [ocdn name]);
+    
+//    [CrashTest arrayCrashTest];
+//    [NSStringTest compareTest];
+    
+    NSTimerTest *timerTest = [NSTimerTest defaultInstance];
+    [timerTest startTimer];
+    [timerTest startTimerFire];
 }
 
 
