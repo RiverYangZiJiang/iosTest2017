@@ -17,10 +17,31 @@
         NSLog(@"item = %@", item);
     }
     
+    // nil调用方法会返回nil
     if (!array.count) {
         NSLog(@"array.count == 0");
     }
     
     NSLog(@"arrayCrashTest end");
+}
+
++ (void)avoidCrashTest{
+    NSString *nilString = nil;
+//    NSArray *array = @[@"array", nilString];
+    
+    NSMutableArray *ma = nil;
+    [ma objectAtIndex:10];  // 因为ma为nil，所以不会崩溃
+    ma[11];  // 因为ma为nil，所以不会崩溃
+//    ma[18446744073709551615];  // 因为ma为nil，所以不会崩溃
+    
+//    ma = [NSMutableArray arrayWithObjects:@"ma", nil];
+//    ma[12];  // -[__NSArrayM objectAtIndexedSubscript:]: index 12 beyond bounds [0 .. 0]
+//    [ma objectAtIndex:13];  // -[__NSArrayM objectAtIndex:]: index 13 beyond bounds [0 .. 0]
+    
+    ma = [NSMutableArray array];
+    ma[18446744073709551615];  // -[__NSArrayM objectAtIndexedSubscript:]: index 18446744073709551615 beyond bounds for empty array
+    
+    
+    NSLog(@"avoidCrashTest end");
 }
 @end

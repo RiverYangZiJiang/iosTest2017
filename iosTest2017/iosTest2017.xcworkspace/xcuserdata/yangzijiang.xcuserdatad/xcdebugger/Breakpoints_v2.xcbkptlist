@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetworkingTest-2017/ViewController.m"
-            timestampString = "541755121.424687"
+            timestampString = "543847851.389076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "-downloadFile1"
             landmarkType = "7">
          </BreakpointContent>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TingYunTest/ViewController.m"
-            timestampString = "542530667.717646"
+            filePath = "AFNetworkingTest-2017/ViewController.m"
+            timestampString = "543847851.389408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "-downloadFile1"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

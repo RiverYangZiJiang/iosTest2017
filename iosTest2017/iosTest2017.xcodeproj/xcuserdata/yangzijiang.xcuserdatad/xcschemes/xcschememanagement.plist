@@ -17,7 +17,7 @@
 		<key>CLanguageTest-2018.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>19</integer>
 		</dict>
 		<key>ControllerTest-2017.xcscheme</key>
 		<dict>
@@ -27,27 +27,37 @@
 		<key>CopyAndMutableCopy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>16</integer>
 		</dict>
 		<key>CustomUIView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>18</integer>
 		</dict>
 		<key>FileIO.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>17</integer>
+		</dict>
+		<key>LogSystem.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
+		<key>MarsTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>MasonryTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>20</integer>
 		</dict>
 		<key>OCTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>21</integer>
 		</dict>
 		<key>TingYunTest.xcscheme</key>
 		<dict>
@@ -98,6 +108,11 @@
 			<true/>
 		</dict>
 		<key>15E1F3051E6F89DB0014C731</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>15FE5B5F205FDC3900198615</key>
 		<dict>
 			<key>primary</key>
 			<true/>

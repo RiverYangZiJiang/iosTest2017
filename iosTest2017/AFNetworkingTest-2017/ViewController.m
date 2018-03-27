@@ -26,15 +26,43 @@
     
     
 //    [ViewController downloadFile2];
-    [self downloadFile1];
+//    [self downloadFile1];
 //    [ViewController uploadFile];
 //    [ViewController dataTask];
-//    [ViewController AFNetworkReachabilityManagerTest];
-//    [ViewController postTest];
+    [ViewController AFNetworkReachabilityManagerTest];
+    [ViewController postTest];
 }
 
 #pragma mark - Data Task & post
-// post, get都是请求，是请求就都会响应；只不过post可以在body携带数据，get只能在URL字符串携带不超过1k的数据；只使用POST就可以达到增删改查的目标
+// post, get都是请求，是请求就都会响应；只不过post可以在body携带数据，get只能在URL字符串携带不超过1k的数据；只使用POST就可以达到增删改查的目标，POST也更安全，现在不再使用get请求
+/**
+ 使用AFHTTPSessionManager发送一个POST请求，一行代码就能搞定，真是方便。如果需要对请求进行配置，如设置超时时间、最大请求数等、SSL安全策略、接受的文件类型。POST, GET都是dataTask
+ */
++ (void)postTest{
+    // 直接请求一个html页面回来，会报"Request failed: unacceptable content-type: text/html"，除非设置manager.responseSerializer.acceptableContentTypes
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    // 设置SSL安全策略为不校验服务器
+    AFSecurityPolicy *policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+    policy.allowInvalidCertificates = YES;
+    policy.validatesDomainName = NO;
+    manager.securityPolicy = policy;
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", @"text/plain",@"application/x-msdownload",@"application/x-www-form-urlencoded", nil];
+    manager.requestSerializer.timeoutInterval = 60;
+    manager.session.configuration.HTTPMaximumConnectionsPerHost = 15;
+    
+    NSString *url = @"https://httpbin.org/post";
+    NSDictionary *param = @{@"key":@"value"};
+//    [[AFHTTPSessionManager manager] POST:url parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manager POST:url parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
+    
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"Success: %@", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
+
 + (void)dataTask{
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
@@ -52,21 +80,8 @@
     [dataTask resume];
 }
 
-/**
- 使用AFHTTPSessionManager发送一个POST请求，一行代码就能搞定，真是方便。POST, GET都是dataTask
- */
-+ (void)postTest{
-    // 直接请求一个html页面回来，会报"Request failed: unacceptable content-type: text/html"
-    [[AFHTTPSessionManager manager] POST:@"http://127.0.0.1" parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"Success: %@", responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"Error: %@", error);
-    }];
-}
 
-#pragma mark - 上传download
+#pragma mark - 上传文件
 + (void)uploadFile{
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
@@ -126,11 +141,11 @@
  使用AFURLSessionManager的downloadTaskWithRequest方法下载文件
  */
 - (void)downloadFile1{
-    
+    NSLog(@"downloadFile1 begin");
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    NSURL *remoteUrl = [NSURL URLWithString:@"http://img05.3dmgame.com/uploads/allimg/140509/153_140509150151_1.jpg"];
+    NSURL *remoteUrl = [NSURL URLWithString:@"https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"];
     NSURLRequest *request = [NSURLRequest requestWithURL:remoteUrl];
     
     self.downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -161,7 +176,8 @@
         
         NSLog(@"File downloaded to : %@", filePath);
     }];
-//    [self.downloadTask resume];  // 必须要调用才能开始下载
+#warning 必须要调用resume才能开始下载
+//    [self.downloadTask resume];
 }
 
 
@@ -200,7 +216,8 @@
 #pragma mark - 网络监听AFNetworkReachabilityManager
 + (void)AFNetworkReachabilityManagerTest{
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        // 应用启动就会进到这里一次，后面网络每变化一次就会调用一次
+        // 应用启动就会进到这里一次，若有网，则判断有网；无网，则判断无网，可以提示用户无网
+        // 后面网络每变化一次就会调用一次，网络一变化就能监听到
         NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));  // Reachability: Reachable via WiFi或者Reachability: Not Reachable
         if (status == AFNetworkReachabilityStatusUnknown || status == AFNetworkReachabilityStatusNotReachable) {
             NSLog(@"当前无网络");  // 可在此提示用户当前无网络
