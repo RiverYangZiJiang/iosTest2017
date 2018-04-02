@@ -18,7 +18,7 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         NSString* logPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:@"/log"];
-        
+        NSLog(@"logPath = %@", logPath);
         // set do not backup for logpath
         const char* attrName = "com.apple.MobileBackup";
         u_int8_t attrValue = 1;

@@ -10,6 +10,9 @@
 
 @implementation NSStringTest
 
++ (void)stringTest{
+    [NSStringTest stringByReplacingOccurrencesOfStringTest];
+}
 + (void)compareTest{
     NSString *arg1 = @"0";
     NSString *arg2 = nil;
@@ -25,5 +28,10 @@
     
     // 官方已经修改完bug，3.1.10大于3.1.5
     NSLog(@"result = %d", [@"3.1.10" compare:@"3.1.5" options:NSNumericSearch] >= NSOrderedSame);  // result = 1
+}
+
++ (void)stringByReplacingOccurrencesOfStringTest{
+    NSString *url = @"https://sgbeta.owsgo.com";
+    NSLog(@"%@", [url stringByReplacingOccurrencesOfString:@"https://" withString:@""]);  // sgbeta.owsgo.com
 }
 @end

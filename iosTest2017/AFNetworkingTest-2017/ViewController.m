@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "AFNetworking/AFNetworking.h"
+#import "NSURLSessionTest.h"
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
@@ -24,16 +26,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    [NSURLSessionTest sessionTest];
 //    [ViewController downloadFile2];
 //    [self downloadFile1];
 //    [ViewController uploadFile];
 //    [ViewController dataTask];
-    [ViewController AFNetworkReachabilityManagerTest];
-    [ViewController postTest];
+//    [ViewController AFNetworkReachabilityManagerTest];
+//    [ViewController postTest];
 }
 
-#pragma mark - Data Task & post
+#pragma mark - Data Task & post-AFHTTPSessionManager
 // post, get都是请求，是请求就都会响应；只不过post可以在body携带数据，get只能在URL字符串携带不超过1k的数据；只使用POST就可以达到增删改查的目标，POST也更安全，现在不再使用get请求
 /**
  使用AFHTTPSessionManager发送一个POST请求，一行代码就能搞定，真是方便。如果需要对请求进行配置，如设置超时时间、最大请求数等、SSL安全策略、接受的文件类型。POST, GET都是dataTask
@@ -52,6 +54,7 @@
     manager.session.configuration.HTTPMaximumConnectionsPerHost = 15;
     
     NSString *url = @"https://httpbin.org/post";
+//    NSString *url = @"http://127.0.0.1";
     NSDictionary *param = @{@"key":@"value"};
 //    [[AFHTTPSessionManager manager] POST:url parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
     [manager POST:url parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -81,21 +84,30 @@
 }
 
 
-#pragma mark - 上传文件
+#pragma mark - 上传文件-AFURLSessionManager
 + (void)uploadFile{
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    // 使用AFURLSessionManager上传文件
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1"];  // 待上传服务器路径
+    NSURL *url = [NSURL URLWithString:@"http://120.25.226.186:32812/upload"];  // 待上传服务器路径
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithRequest:request fromFile:[NSURL fileURLWithPath:@"/Users/sprite/Work/版本信息.rtf"] progress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        if (error) {
-            NSLog(@"Error: %@", error);
-        } else {
-            NSLog(@"Success: %@ %@", response, responseObject);
+//    NSURL *fileUrl = [NSURL fileURLWithPath:@"/Users/sprite/Work/版本信息.rtf"];/Users/sprite/Downloads/jdk-7u71-macosx-x64.dmg
+    NSURL *fileUrl = [NSURL fileURLWithPath:@"/Users/sprite/Downloads/jdk-7u71-macosx-x64.dmg"];
+    NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithRequest:request
+        fromFile:fileUrl
+        progress:^(NSProgress * _Nonnull uploadProgress) {
+            long long totalUnitCount = uploadProgress.totalUnitCount;
+            long long completedUnitCount = uploadProgress.completedUnitCount;
+            NSLog(@"totalUnitCount = %lld, completedUnitCount = %lld", totalUnitCount, completedUnitCount);
         }
-    }];
+        completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"Error: %@", error);
+            } else {
+                NSLog(@"Success: %@ %@", response, responseObject);
+            }
+        }];
     [uploadTask resume];
 }
 
@@ -131,7 +143,7 @@
     [uploadTask resume];
 }
 
-#pragma mark - 下载文件download
+#pragma mark - 下载文件download-AFURLSessionManager
 // 任何互联网上的资源都是文件，都可以上传和下载，如网页、图片、音视频等
 /**
  AFURLSessionManager
@@ -204,16 +216,18 @@
 #pragma mark 开始下载
 // http://www.cnblogs.com/qingche/p/5362592.html
 - (IBAction)startDownload:(id)sender{
-   [self.downloadTask resume];
+//   [self.downloadTask resume];
+    [ViewController uploadFile];
 }
 #pragma mark 暂停下载
 - (IBAction)stopDownload:(id)sender{
     [self.downloadTask suspend];
+    
 }
 
 
 
-#pragma mark - 网络监听AFNetworkReachabilityManager
+#pragma mark - 网络监听-AFNetworkReachabilityManager
 + (void)AFNetworkReachabilityManagerTest{
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         // 应用启动就会进到这里一次，若有网，则判断有网；无网，则判断无网，可以提示用户无网
@@ -230,7 +244,7 @@
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
 }
 
-#pragma mark - 解析XML
+#pragma mark - 解析XML-AFHTTPSessionManager
 -(void)xml{
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     

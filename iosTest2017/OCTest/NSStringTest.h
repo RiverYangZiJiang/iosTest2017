@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSStringTest : NSObject
-+ (void)compareTest;
++ (void)stringTest;
 @end
 
 

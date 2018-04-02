@@ -11,6 +11,8 @@
 #import "CrashTest.h"
 #import "NSStringTest.h"
 #import "NSTimerTest.h"
+#import "MainThread.h"
+#import "NSObjectTest.h"
 
 @interface ViewController ()
 
@@ -21,17 +23,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSObjectTest *nst = [[NSObjectTest alloc] init];
 //    OCDevelopmentNorms *ocdn = [[OCDevelopmentNorms alloc] init];
 //    [ocdn setName:@"zs"];
 //    NSLog(@"ocdn name = %@", [ocdn name]);
     
 //    [CrashTest arrayCrashTest];
 //    [CrashTest avoidCrashTest];
-    [NSStringTest compareTest];
+//    [NSStringTest stringTest];
     
 //    NSTimerTest *timerTest = [NSTimerTest defaultInstance];
 //    [timerTest startTimer];
 //    [timerTest startTimerFire];
+    
+//    [MainThread MainThreadTest];
 }
 
 

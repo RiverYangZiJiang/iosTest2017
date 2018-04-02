@@ -77,6 +77,9 @@
 		15A1992C201C0A9C00C799F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A1992A201C0A9C00C799F2 /* LaunchScreen.storyboard */; };
 		15A1992F201C0A9C00C799F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1992E201C0A9C00C799F2 /* main.m */; };
 		15A19937201C0B1400C799F2 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A19936201C0B1400C799F2 /* BlockTest.m */; };
+		15A1EB76206F2FE1002D5DB1 /* MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB75206F2FE1002D5DB1 /* MainThread.m */; };
+		15A1EB79206F8535002D5DB1 /* NSURLSessionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */; };
+		15A1EB7E2072240B002D5DB1 /* NSObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */; };
 		15CCEBCD2044394300578AE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCEBCC2044394300578AE8 /* AppDelegate.m */; };
 		15CCEBD02044394300578AE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCEBCF2044394300578AE8 /* ViewController.m */; };
 		15CCEBD32044394300578AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CCEBD12044394300578AE8 /* Main.storyboard */; };
@@ -283,6 +286,12 @@
 		15A1992E201C0A9C00C799F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15A19935201C0B1400C799F2 /* BlockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
 		15A19936201C0B1400C799F2 /* BlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
+		15A1EB74206F2FE1002D5DB1 /* MainThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainThread.h; sourceTree = "<group>"; };
+		15A1EB75206F2FE1002D5DB1 /* MainThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainThread.m; sourceTree = "<group>"; };
+		15A1EB77206F8535002D5DB1 /* NSURLSessionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLSessionTest.h; sourceTree = "<group>"; };
+		15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionTest.m; sourceTree = "<group>"; };
+		15A1EB7C2072240A002D5DB1 /* NSObjectTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectTest.h; sourceTree = "<group>"; };
+		15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectTest.m; sourceTree = "<group>"; };
 		15CCEBC92044394300578AE8 /* MasonryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CCEBCB2044394300578AE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15CCEBCC2044394300578AE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -511,6 +520,7 @@
 		151FE8EA204FC2EF00BFAD8E /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
+				15A1EB73206F2FB5002D5DB1 /* MultiThread */,
 				151FE8EB204FC2EF00BFAD8E /* AppDelegate.h */,
 				151FE8EC204FC2EF00BFAD8E /* AppDelegate.m */,
 				151FE8EE204FC2EF00BFAD8E /* ViewController.h */,
@@ -528,6 +538,8 @@
 				151FE90920526A5700BFAD8E /* NSStringTest.m */,
 				151FE90C2053725E00BFAD8E /* NSTimerTest.h */,
 				151FE90D2053725E00BFAD8E /* NSTimerTest.m */,
+				15A1EB7C2072240A002D5DB1 /* NSObjectTest.h */,
+				15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */,
 			);
 			path = OCTest;
 			sourceTree = "<group>";
@@ -711,6 +723,8 @@
 				156FAA0B1E5581120065504B /* LaunchScreen.storyboard */,
 				156FAA0E1E5581120065504B /* Info.plist */,
 				156FA9FD1E5581120065504B /* Supporting Files */,
+				15A1EB77206F8535002D5DB1 /* NSURLSessionTest.h */,
+				15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */,
 			);
 			path = "AFNetworkingTest-2017";
 			sourceTree = "<group>";
@@ -780,6 +794,15 @@
 				15A19936201C0B1400C799F2 /* BlockTest.m */,
 			);
 			path = "CLanguageTest-2018";
+			sourceTree = "<group>";
+		};
+		15A1EB73206F2FB5002D5DB1 /* MultiThread */ = {
+			isa = PBXGroup;
+			children = (
+				15A1EB74206F2FE1002D5DB1 /* MainThread.h */,
+				15A1EB75206F2FE1002D5DB1 /* MainThread.m */,
+			);
+			path = MultiThread;
 			sourceTree = "<group>";
 		};
 		15CCEBCA2044394300578AE8 /* MasonryTest */ = {
@@ -1270,11 +1293,12 @@
 					};
 					156FA9C11E557E650065504B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5X83UD87RT;
 						ProvisioningStyle = Automatic;
 					};
 					156FA9FA1E5581120065504B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = U96PM2V9GH;
+						DevelopmentTeam = 5X83UD87RT;
 						ProvisioningStyle = Automatic;
 					};
 					158C4E2A2048F8DB00940689 = {
@@ -1748,10 +1772,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A1EB7E2072240B002D5DB1 /* NSObjectTest.m in Sources */,
 				151FE8F0204FC2EF00BFAD8E /* ViewController.m in Sources */,
 				151FE90A20526A5800BFAD8E /* NSStringTest.m in Sources */,
 				151FE90E2053725F00BFAD8E /* NSTimerTest.m in Sources */,
 				151FE8FB204FC2EF00BFAD8E /* main.m in Sources */,
+				15A1EB76206F2FE1002D5DB1 /* MainThread.m in Sources */,
 				151FE8ED204FC2EF00BFAD8E /* AppDelegate.m in Sources */,
 				151FE901204FC3AD00BFAD8E /* OCDevelopmentNorms.m in Sources */,
 				151FE90720522D6B00BFAD8E /* CrashTest.m in Sources */,
@@ -1831,6 +1857,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				156FAA051E5581120065504B /* ViewController.m in Sources */,
+				15A1EB79206F8535002D5DB1 /* NSURLSessionTest.m in Sources */,
 				156FAA021E5581120065504B /* AppDelegate.m in Sources */,
 				156FA9FF1E5581120065504B /* main.m in Sources */,
 			);
@@ -2581,6 +2608,7 @@
 			baseConfigurationReference = 4F7A8FBB712B4F17F1C96392 /* Pods-iosTest2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5X83UD87RT;
 				INFOPLIST_FILE = iosTest2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2594,6 +2622,7 @@
 			baseConfigurationReference = 77C570D721D92136F8DF0055 /* Pods-iosTest2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5X83UD87RT;
 				INFOPLIST_FILE = iosTest2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2607,7 +2636,7 @@
 			baseConfigurationReference = 8787337AABE0B21821B0EEFF /* Pods-AFNetworkingTest-2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U96PM2V9GH;
+				DEVELOPMENT_TEAM = 5X83UD87RT;
 				INFOPLIST_FILE = "AFNetworkingTest-2017/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2625,7 +2654,7 @@
 			baseConfigurationReference = ECDD7CB32CA6331744F6D1CB /* Pods-AFNetworkingTest-2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U96PM2V9GH;
+				DEVELOPMENT_TEAM = 5X83UD87RT;
 				INFOPLIST_FILE = "AFNetworkingTest-2017/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
