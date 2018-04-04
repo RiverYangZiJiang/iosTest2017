@@ -27,7 +27,7 @@
     if(!request){
         request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
         // 请求类型
-        request.HTTPMethod = @"GET";
+//        request.HTTPMethod = @"GET";
     }
     
     // 采用苹果提供的共享session
@@ -59,7 +59,7 @@
 #pragma mark - NSURLRequest & NSMutableURLRequest
 + (void)NSURLRequestTest{
     // 可以设置请求和请求头的一些参数，如url、缓存策略、超时时间、HTTPMethod、HTTPBody、HTTPShouldHandleCookies、请求头各参数
-    NSURL *url = [NSURL URLWithString:@"https://example.com"]
+    NSURL *url = [NSURL URLWithString:@"https://example.com"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
     request.HTTPMethod = @"POST";
 //    request.HTTPBody = [[NSData alloc] ini];

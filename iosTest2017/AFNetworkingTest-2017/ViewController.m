@@ -26,10 +26,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [NSURLSessionTest sessionTest];
+//    [NSURLSessionTest sessionTest];
 //    [ViewController downloadFile2];
 //    [self downloadFile1];
-//    [ViewController uploadFile];
+    [ViewController uploadFile];
 //    [ViewController dataTask];
 //    [ViewController AFNetworkReachabilityManagerTest];
 //    [ViewController postTest];
@@ -85,15 +85,19 @@
 
 
 #pragma mark - 上传文件-AFURLSessionManager
+#pragma mark 只上传文件
 + (void)uploadFile{
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
     // 使用AFURLSessionManager上传文件
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    NSURL *url = [NSURL URLWithString:@"http://120.25.226.186:32812/upload"];  // 待上传服务器路径
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    NSString *urlStr = @"http://120.25.226.186:32812/upload";
+    NSString *urlStr = @"http://example.com/upload";
+    NSURL *url = [NSURL URLWithString:urlStr];  // 待上传服务器路径
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
 //    NSURL *fileUrl = [NSURL fileURLWithPath:@"/Users/sprite/Work/版本信息.rtf"];/Users/sprite/Downloads/jdk-7u71-macosx-x64.dmg
-    NSURL *fileUrl = [NSURL fileURLWithPath:@"/Users/sprite/Downloads/jdk-7u71-macosx-x64.dmg"];
+    NSURL *fileUrl = [NSURL fileURLWithPath:@"/Users/sprite/Downloads/Testable/UITests.m"];
     NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithRequest:request
         fromFile:fileUrl
         progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -111,12 +115,13 @@
     [uploadTask resume];
 }
 
-
+#pragma mark 除了上传文件、还可以同时附带其他参数，如文件名、多媒体类型、Header、Body
 /**
- Creating an Upload Task for a Multi-Part Request, with Progress
+ Creating an Upload Task for a Multi-Part Request, with Progress。
  */
 + (void)uploadFileMulitPartRequestWithProgress{
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        //  配置formData
         [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
     } error:nil];
     
