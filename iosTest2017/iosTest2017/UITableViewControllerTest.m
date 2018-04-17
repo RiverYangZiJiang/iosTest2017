@@ -7,6 +7,8 @@
 //
 
 #import "UITableViewControllerTest.h"
+#import "CustomTableViewCell.h"
+
 
 @interface UITableViewControllerTest ()
 @property (strong, nonatomic) NSMutableArray *array;
@@ -19,7 +21,20 @@
     
     [self.array addObjectsFromArray:@[@"a", @"b", @"c", @"d", @"a", @"b", @"c", @"d", @"a", @"b", @"c", @"d", @"a", @"b", @"c", @"d", @"a", @"b", @"c", @"d", @"a", @"b", @"c", @"d", @"a", @"b", @"c", @"d"]];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
+    [self.tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
+    
+    // 解决单元格左滑显示红色删除按钮，然后不动，然后按住单元格水平右滑，不隐藏删除按钮的问题
+    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleGesture:)];
+    recognizer.numberOfTouchesRequired = 1;
+    [recognizer setDirection:(UISwipeGestureRecognizerDirectionRight)];
+    [self.tableView addGestureRecognizer:recognizer];
+}
+
+- (void)handleGesture:(UISwipeGestureRecognizer *)recognizer{
+    NSLog(@"%@ %s", NSStringFromClass([UITableViewControllerTest class]), __func__);
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
+        [self.tableView setEditing:NO animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

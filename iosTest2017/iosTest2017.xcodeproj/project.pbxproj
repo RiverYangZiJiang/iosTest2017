@@ -81,6 +81,7 @@
 		15A1EB76206F2FE1002D5DB1 /* MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB75206F2FE1002D5DB1 /* MainThread.m */; };
 		15A1EB79206F8535002D5DB1 /* NSURLSessionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */; };
 		15A1EB7E2072240B002D5DB1 /* NSObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */; };
+		15C525262085D18E008BA73B /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C525252085D18E008BA73B /* CustomTableViewCell.m */; };
 		15CCEBCD2044394300578AE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCEBCC2044394300578AE8 /* AppDelegate.m */; };
 		15CCEBD02044394300578AE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCEBCF2044394300578AE8 /* ViewController.m */; };
 		15CCEBD32044394300578AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CCEBD12044394300578AE8 /* Main.storyboard */; };
@@ -295,6 +296,8 @@
 		15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionTest.m; sourceTree = "<group>"; };
 		15A1EB7C2072240A002D5DB1 /* NSObjectTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectTest.h; sourceTree = "<group>"; };
 		15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectTest.m; sourceTree = "<group>"; };
+		15C525242085D18E008BA73B /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		15C525252085D18E008BA73B /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		15CCEBC92044394300578AE8 /* MasonryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CCEBCB2044394300578AE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15CCEBCC2044394300578AE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -787,6 +790,8 @@
 			children = (
 				159B9CD6207FB0E700A516A4 /* UITableViewControllerTest.h */,
 				159B9CD7207FB0E700A516A4 /* UITableViewControllerTest.m */,
+				15C525242085D18E008BA73B /* CustomTableViewCell.h */,
+				15C525252085D18E008BA73B /* CustomTableViewCell.m */,
 			);
 			name = UITableViewController;
 			sourceTree = "<group>";
@@ -1862,6 +1867,7 @@
 				156FA9CD1E557E650065504B /* ViewController.m in Sources */,
 				156FA9CA1E557E650065504B /* AppDelegate.m in Sources */,
 				156FA9C71E557E650065504B /* main.m in Sources */,
+				15C525262085D18E008BA73B /* CustomTableViewCell.m in Sources */,
 				159B9CD8207FB0E700A516A4 /* UITableViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
