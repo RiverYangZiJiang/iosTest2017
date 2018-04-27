@@ -13,6 +13,21 @@
 + (void)stringTest{
     [NSStringTest stringByReplacingOccurrencesOfStringTest];
 }
+
+#pragma mark - filePath
++ fileName:(NSString *)filePath
+{
+    //从路径中获得完整的文件名 （带后缀）
+    NSString *fileName = [filePath lastPathComponent];
+    
+    //获得文件名 （不带后缀）
+    NSString *fileName1 = [filePath stringByDeletingPathExtension];
+    
+    //获得文件的后缀名 （不带'.'）
+    NSString *suffix = [filePath pathExtension];
+}
+
+
 + (void)compareTest{
     NSString *arg1 = @"0";
     NSString *arg2 = nil;
