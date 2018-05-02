@@ -13,6 +13,8 @@
 #import "NSTimerTest.h"
 #import "MainThread.h"
 #import "NSObjectTest.h"
+#import "NSRegularExpressionTest.h"
+#import "NSArrayTest.h"
 
 @interface ViewController ()
 
@@ -23,7 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSObjectTest *nst = [[NSObjectTest alloc] init];
+    [[[NSArrayTest alloc] init] arrayTest];
+//    [NSRegularExpressionTest regularExpressionTest];
+//    NSObjectTest *nst = [[NSObjectTest alloc] init];
 //    OCDevelopmentNorms *ocdn = [[OCDevelopmentNorms alloc] init];
 //    [ocdn setName:@"zs"];
 //    NSLog(@"ocdn name = %@", [ocdn name]);

@@ -7,15 +7,19 @@
 //
 
 #import "NSStringTest.h"
+#import "NSString+Category.h"
 
 @implementation NSStringTest
 
 + (void)stringTest{
-    [NSStringTest stringByReplacingOccurrencesOfStringTest];
+    NSString *str = @{@"key":@"value"};
+    NSLog(@"abc.length = %lu", (unsigned long)@"abc".length);
+    NSLog(@"str.length = %lu", (unsigned long)str.length);
+//    [NSStringTest stringByReplacingOccurrencesOfStringTest];
 }
 
 #pragma mark - filePath
-+ fileName:(NSString *)filePath
++ (void)fileName:(NSString *)filePath
 {
     //从路径中获得完整的文件名 （带后缀）
     NSString *fileName = [filePath lastPathComponent];

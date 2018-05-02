@@ -9,6 +9,9 @@
 #import "CrashTest.h"
 
 @implementation CrashTest
++ (void)crashTest{
+
+}
 
 + (void)arrayCrashTest{
     // 对空数组遍历并不会崩溃，所以不需要事先判断数组是否为空

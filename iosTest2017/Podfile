@@ -23,7 +23,7 @@ end
 
 target 'OCTest' do
     platform :ios, '8.0'
-    pod 'AvoidCrash'
+    pod 'AvoidCrash', '~> 2.5.2'
 end
 
 

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UITableViewControllerTest.h"
+#import "UILabelViewController.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,7 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self presentViewController:[[UITableViewControllerTest alloc] init] animated:YES completion:nil];
+    [self presentViewController:[[UILabelViewController alloc] init] animated:YES completion:nil];
 }
 
 @end

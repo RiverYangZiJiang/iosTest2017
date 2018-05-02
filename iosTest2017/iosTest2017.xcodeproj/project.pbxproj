@@ -92,6 +92,12 @@
 		159680B01E6A694B0068B655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159680AF1E6A694B0068B655 /* Assets.xcassets */; };
 		159680B31E6A694B0068B655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 159680B11E6A694B0068B655 /* LaunchScreen.storyboard */; };
 		159B9CD8207FB0E700A516A4 /* UITableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 159B9CD7207FB0E700A516A4 /* UITableViewControllerTest.m */; };
+		159ECE1D2092C60C005A1204 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159ECE1B2092C60C005A1204 /* UILabelViewController.m */; };
+		159ECE1E2092C60C005A1204 /* UILabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159ECE1C2092C60C005A1204 /* UILabelViewController.xib */; };
+		159ECE212092E7B6005A1204 /* YZJScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 159ECE202092E7B6005A1204 /* YZJScrollLabel.m */; };
+		159ECE3C20943730005A1204 /* NSRegularExpressionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 159ECE3B20943730005A1204 /* NSRegularExpressionTest.m */; };
+		159ECE3F209437DA005A1204 /* NSPredicateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 159ECE3E209437DA005A1204 /* NSPredicateTest.m */; };
+		159ECE462095DDCA005A1204 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 159ECE452095DDCA005A1204 /* NSString+Category.m */; };
 		15A19921201C0A9C00C799F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A19920201C0A9C00C799F2 /* AppDelegate.m */; };
 		15A19924201C0A9C00C799F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A19923201C0A9C00C799F2 /* ViewController.m */; };
 		15A19927201C0A9C00C799F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A19925201C0A9C00C799F2 /* Main.storyboard */; };
@@ -110,6 +116,7 @@
 		15CCEBD82044394400578AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CCEBD62044394400578AE8 /* LaunchScreen.storyboard */; };
 		15CCEBDB2044394400578AE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCEBDA2044394400578AE8 /* main.m */; };
 		15CCEBE12044397A00578AE8 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCEBE02044397A00578AE8 /* CustomView.m */; };
+		15D716B22096A37C00B492DD /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D716B12096A37C00B492DD /* NSArrayTest.m */; };
 		15E1F30A1E6F89DB0014C731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E1F3091E6F89DB0014C731 /* main.m */; };
 		15E1F30D1E6F89DB0014C731 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E1F30C1E6F89DB0014C731 /* AppDelegate.m */; };
 		15E1F3101E6F89DB0014C731 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E1F30F1E6F89DB0014C731 /* ViewController.m */; };
@@ -326,6 +333,17 @@
 		159680B41E6A694B0068B655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		159B9CD6207FB0E700A516A4 /* UITableViewControllerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewControllerTest.h; sourceTree = "<group>"; };
 		159B9CD7207FB0E700A516A4 /* UITableViewControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewControllerTest.m; sourceTree = "<group>"; };
+		159ECE1A2092C60C005A1204 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
+		159ECE1B2092C60C005A1204 /* UILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelViewController.m; sourceTree = "<group>"; };
+		159ECE1C2092C60C005A1204 /* UILabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UILabelViewController.xib; sourceTree = "<group>"; };
+		159ECE1F2092E7B6005A1204 /* YZJScrollLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZJScrollLabel.h; sourceTree = "<group>"; };
+		159ECE202092E7B6005A1204 /* YZJScrollLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZJScrollLabel.m; sourceTree = "<group>"; };
+		159ECE3A20943730005A1204 /* NSRegularExpressionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRegularExpressionTest.h; sourceTree = "<group>"; };
+		159ECE3B20943730005A1204 /* NSRegularExpressionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRegularExpressionTest.m; sourceTree = "<group>"; };
+		159ECE3D209437DA005A1204 /* NSPredicateTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSPredicateTest.h; sourceTree = "<group>"; };
+		159ECE3E209437DA005A1204 /* NSPredicateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPredicateTest.m; sourceTree = "<group>"; };
+		159ECE442095DDCA005A1204 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		159ECE452095DDCA005A1204 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		15A1991D201C0A9C00C799F2 /* CLanguageTest-2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CLanguageTest-2018.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A1991F201C0A9C00C799F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15A19920201C0A9C00C799F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -358,6 +376,8 @@
 		15CCEBDA2044394400578AE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15CCEBDF2044397A00578AE8 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		15CCEBE02044397A00578AE8 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		15D716B02096A37C00B492DD /* NSArrayTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayTest.h; sourceTree = "<group>"; };
+		15D716B12096A37C00B492DD /* NSArrayTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
 		15E1F3061E6F89DB0014C731 /* ControllerTest-2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ControllerTest-2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E1F3091E6F89DB0014C731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15E1F30B1E6F89DB0014C731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -574,6 +594,9 @@
 		151FE8EA204FC2EF00BFAD8E /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
+				15D716AE2096A33900B492DD /* NSArrayTest */,
+				159ECE432095DD41005A1204 /* Category */,
+				159ECE422095DD32005A1204 /* NSString */,
 				15A1EB73206F2FB5002D5DB1 /* MultiThread */,
 				151FE8EB204FC2EF00BFAD8E /* AppDelegate.h */,
 				151FE8EC204FC2EF00BFAD8E /* AppDelegate.m */,
@@ -588,12 +611,14 @@
 				151FE900204FC3AD00BFAD8E /* OCDevelopmentNorms.m */,
 				151FE90520522D6A00BFAD8E /* CrashTest.h */,
 				151FE90620522D6A00BFAD8E /* CrashTest.m */,
-				151FE90820526A5700BFAD8E /* NSStringTest.h */,
-				151FE90920526A5700BFAD8E /* NSStringTest.m */,
 				151FE90C2053725E00BFAD8E /* NSTimerTest.h */,
 				151FE90D2053725E00BFAD8E /* NSTimerTest.m */,
 				15A1EB7C2072240A002D5DB1 /* NSObjectTest.h */,
 				15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */,
+				159ECE3A20943730005A1204 /* NSRegularExpressionTest.h */,
+				159ECE3B20943730005A1204 /* NSRegularExpressionTest.m */,
+				159ECE3D209437DA005A1204 /* NSPredicateTest.h */,
+				159ECE3E209437DA005A1204 /* NSPredicateTest.m */,
 			);
 			path = OCTest;
 			sourceTree = "<group>";
@@ -802,6 +827,7 @@
 		156FA9C41E557E650065504B /* iosTest2017 */ = {
 			isa = PBXGroup;
 			children = (
+				159ECE192092C5A0005A1204 /* UILableUITextView */,
 				1553D50E2089DE4F009AC812 /* UIToolbarTest */,
 				159B9CD5207FB02800A516A4 /* UITableViewController */,
 				156FA9C81E557E650065504B /* AppDelegate.h */,
@@ -903,6 +929,36 @@
 			name = UITableViewController;
 			sourceTree = "<group>";
 		};
+		159ECE192092C5A0005A1204 /* UILableUITextView */ = {
+			isa = PBXGroup;
+			children = (
+				159ECE1A2092C60C005A1204 /* UILabelViewController.h */,
+				159ECE1B2092C60C005A1204 /* UILabelViewController.m */,
+				159ECE1C2092C60C005A1204 /* UILabelViewController.xib */,
+				159ECE1F2092E7B6005A1204 /* YZJScrollLabel.h */,
+				159ECE202092E7B6005A1204 /* YZJScrollLabel.m */,
+			);
+			name = UILableUITextView;
+			sourceTree = "<group>";
+		};
+		159ECE422095DD32005A1204 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				151FE90820526A5700BFAD8E /* NSStringTest.h */,
+				151FE90920526A5700BFAD8E /* NSStringTest.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		159ECE432095DD41005A1204 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				159ECE442095DDCA005A1204 /* NSString+Category.h */,
+				159ECE452095DDCA005A1204 /* NSString+Category.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		15A1991E201C0A9C00C799F2 /* CLanguageTest-2018 */ = {
 			isa = PBXGroup;
 			children = (
@@ -946,6 +1002,15 @@
 				15CCEBE02044397A00578AE8 /* CustomView.m */,
 			);
 			path = MasonryTest;
+			sourceTree = "<group>";
+		};
+		15D716AE2096A33900B492DD /* NSArrayTest */ = {
+			isa = PBXGroup;
+			children = (
+				15D716B02096A37C00B492DD /* NSArrayTest.h */,
+				15D716B12096A37C00B492DD /* NSArrayTest.m */,
+			);
+			path = NSArrayTest;
 			sourceTree = "<group>";
 		};
 		15E1F3071E6F89DB0014C731 /* ControllerTest-2017 */ = {
@@ -1095,8 +1160,6 @@
 				151FE8E5204FC2EE00BFAD8E /* Sources */,
 				151FE8E6204FC2EE00BFAD8E /* Frameworks */,
 				151FE8E7204FC2EE00BFAD8E /* Resources */,
-				9E0CE9B962C3B6A7EFA8D7C3 /* [CP] Embed Pods Frameworks */,
-				A02123611455CCE652B78FC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1219,8 +1282,6 @@
 				156FA9BE1E557E650065504B /* Sources */,
 				156FA9BF1E557E650065504B /* Frameworks */,
 				156FA9C01E557E650065504B /* Resources */,
-				DFFC11CB467D9F532591AC8D /* [CP] Embed Pods Frameworks */,
-				A174667280E2179E7F25FB7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1239,8 +1300,6 @@
 				156FA9F71E5581120065504B /* Sources */,
 				156FA9F81E5581120065504B /* Frameworks */,
 				156FA9F91E5581120065504B /* Resources */,
-				2DBC53204D6296C35E6F1F22 /* [CP] Embed Pods Frameworks */,
-				9E17B1D66EE5A57707296A7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1260,8 +1319,6 @@
 				158C4E272048F8DB00940689 /* Sources */,
 				158C4E282048F8DB00940689 /* Frameworks */,
 				158C4E292048F8DB00940689 /* Resources */,
-				570C65A2E056B94A4D491893 /* [CP] Embed Pods Frameworks */,
-				0E59946BA4891A966DA0FEC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1314,8 +1371,6 @@
 				15CCEBC52044394300578AE8 /* Sources */,
 				15CCEBC62044394300578AE8 /* Frameworks */,
 				15CCEBC72044394300578AE8 /* Resources */,
-				7E5245B14A3C4A1BF4300F47 /* [CP] Embed Pods Frameworks */,
-				BC2273A507EA28BB63D4C25B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1406,6 +1461,7 @@
 					};
 					1526355C1FF51EDC00B350F2 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 5X83UD87RT;
 						ProvisioningStyle = Automatic;
 					};
 					152635781FF6316200B350F2 = {
@@ -1575,6 +1631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				156FA9D51E557E650065504B /* LaunchScreen.storyboard in Resources */,
+				159ECE1E2092C60C005A1204 /* UILabelViewController.xib in Resources */,
 				156FA9D21E557E650065504B /* Assets.xcassets in Resources */,
 				156FA9D01E557E650065504B /* Main.storyboard in Resources */,
 				1553D519208ACE32009AC812 /* AVCaptureSessionTest.xib in Resources */,
@@ -1665,126 +1722,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E59946BA4891A966DA0FEC8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TingYunTest/Pods-TingYunTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2DBC53204D6296C35E6F1F22 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFNetworkingTest-2017/Pods-AFNetworkingTest-2017-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		570C65A2E056B94A4D491893 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TingYunTest/Pods-TingYunTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7E5245B14A3C4A1BF4300F47 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E0CE9B962C3B6A7EFA8D7C3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCTest/Pods-OCTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E17B1D66EE5A57707296A7F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFNetworkingTest-2017/Pods-AFNetworkingTest-2017-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A02123611455CCE652B78FC8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCTest/Pods-OCTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A174667280E2179E7F25FB7F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A7CEE2EFEBE0A9A151E07028 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1801,21 +1738,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC2273A507EA28BB63D4C25B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BC87990A8978D1125DD5CD3D /* [CP] Check Pods Manifest.lock */ = {
@@ -1890,21 +1812,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DFFC11CB467D9F532591AC8D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1914,13 +1821,17 @@
 			files = (
 				15A1EB7E2072240B002D5DB1 /* NSObjectTest.m in Sources */,
 				151FE8F0204FC2EF00BFAD8E /* ViewController.m in Sources */,
+				159ECE3F209437DA005A1204 /* NSPredicateTest.m in Sources */,
+				15D716B22096A37C00B492DD /* NSArrayTest.m in Sources */,
 				151FE90A20526A5800BFAD8E /* NSStringTest.m in Sources */,
 				151FE90E2053725F00BFAD8E /* NSTimerTest.m in Sources */,
 				151FE8FB204FC2EF00BFAD8E /* main.m in Sources */,
 				15A1EB76206F2FE1002D5DB1 /* MainThread.m in Sources */,
+				159ECE462095DDCA005A1204 /* NSString+Category.m in Sources */,
 				151FE8ED204FC2EF00BFAD8E /* AppDelegate.m in Sources */,
 				151FE901204FC3AD00BFAD8E /* OCDevelopmentNorms.m in Sources */,
 				151FE90720522D6B00BFAD8E /* CrashTest.m in Sources */,
+				159ECE3C20943730005A1204 /* NSRegularExpressionTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1997,6 +1908,8 @@
 				15C525262085D18E008BA73B /* CustomTableViewCell.m in Sources */,
 				159B9CD8207FB0E700A516A4 /* UITableViewControllerTest.m in Sources */,
 				1553D5122089DEB9009AC812 /* UIToobarTestViewController.m in Sources */,
+				159ECE1D2092C60C005A1204 /* UILabelViewController.m in Sources */,
+				159ECE212092E7B6005A1204 /* YZJScrollLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2556,9 +2469,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5X83UD87RT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = FileIO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yzj.FileIO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2581,9 +2495,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5X83UD87RT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = FileIO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yzj.FileIO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
