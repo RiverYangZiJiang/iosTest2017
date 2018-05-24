@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[[NSArrayTest alloc] init] arrayTest];
+//    [[[NSArrayTest alloc] init] arrayTest];
 //    [NSRegularExpressionTest regularExpressionTest];
 //    NSObjectTest *nst = [[NSObjectTest alloc] init];
 //    OCDevelopmentNorms *ocdn = [[OCDevelopmentNorms alloc] init];
@@ -40,7 +40,7 @@
 //    [timerTest startTimer];
 //    [timerTest startTimerFire];
     
-//    [MainThread MainThreadTest];
+    [MainThread MainThreadTest];
 }
 
 

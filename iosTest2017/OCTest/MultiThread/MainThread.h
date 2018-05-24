@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface MainThread : NSObject
++ (instancetype)defaultInstance;
 + (void)MainThreadTest;
 @end

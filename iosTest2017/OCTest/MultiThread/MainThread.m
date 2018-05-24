@@ -11,8 +11,34 @@
 @implementation MainThread
 
 + (void)MainThreadTest{
-    [MainThread GCDMainThread];
+//    [[MainThread defaultInstance] subThreadNotification];
+    [MainThread dispatch_group_tTest];
 }
+
++ (instancetype)defaultInstance {
+    static MainThread *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self alloc] init];
+        [[NSNotificationCenter defaultCenter] addObserver:sharedInstance selector:@selector(subThreadNotificationHandle) name:@"notificationThread" object:nil];
+    });
+    return sharedInstance;
+}
+
+#pragma mark - 在子线程发送的通知，selector对应方法在子线程中执行
+- (void)subThreadNotification{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationThread" object:self];
+    });
+}
+
+- (void)subThreadNotificationHandle{
+    // 在子线程发送的通知，selector对应方法在子线程中执行
+    NSLog(@"%s currentThread = %@", __func__, [NSThread currentThread]);  // {number = 3, name = (null)}
+}
+
+
+
 + (void)GCDMainThread{
     // 主队列是一个串行队列
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -31,6 +57,27 @@
      */
 }
 
+#pragma mark - dispatch_group_t
++ (void)dispatch_group_tTest{
+    dispatch_group_t dg = dispatch_group_create();
+    for (NSUInteger i = 0; i < 10; i++) {
+        dispatch_group_enter(dg);
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            for (NSUInteger j = 0; j < 10; j++) {
+                NSLog(@"i = %lu, j = %lu, currentThread = %@", (unsigned long)i, (unsigned long)j, [NSThread currentThread]);
+            }
+            dispatch_group_leave(dg);
+        });
+    }
+    
+    dispatch_group_notify(dg, dispatch_get_main_queue(), ^{
+        // 要等所有的都leave之后，才会调用
+        NSLog(@"dispatch_group_notify, currentThread = %@", [NSThread currentThread]);
+    });
+    
+    // 最先打印
+    NSLog(@"end");
+}
 
 /**
  ios 将一个函数在主线程执行的4种方法 http://blog.sina.com.cn/s/blog_a1d242c90102wjda.html
