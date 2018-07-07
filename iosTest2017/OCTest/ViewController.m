@@ -15,6 +15,7 @@
 #import "NSObjectTest.h"
 #import "NSRegularExpressionTest.h"
 #import "NSArrayTest.h"
+#import "CLLocationManagerTest.h"
 
 @interface ViewController ()
 
@@ -40,7 +41,9 @@
 //    [timerTest startTimer];
 //    [timerTest startTimerFire];
     
-    [MainThread MainThreadTest];
+//    [MainThread MainThreadTest];
+    
+    [CLLocationManagerTest defaultInstance];
 }
 
 
