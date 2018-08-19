@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AFNetworking/AFNetworking.h"
 #import "NSURLSessionTest.h"
+#import "MLRequestManager.h"
 
 @interface ViewController ()
 
@@ -29,12 +30,20 @@
 //    [NSURLSessionTest sessionTest];
 //    [ViewController downloadFile2];
 //    [self downloadFile1];
-    [ViewController uploadFile];
+//    [ViewController uploadFile];
 //    [ViewController dataTask];
 //    [ViewController AFNetworkReachabilityManagerTest];
 //    [ViewController postTest];
+    
+    [ViewController testRequestManager];
 }
 
++ (void)testRequestManager{
+    [MLRequestManager sendRequest:^(MLRequest *request) {
+        request.retryCount = 5;
+    } onSuccess:nil onFailure:nil onFinished:nil];
+    
+}
 #pragma mark - Data Task & post-AFHTTPSessionManager
 // post, get都是请求，是请求就都会响应；只不过post可以在body携带数据，get只能在URL字符串携带不超过1k的数据；只使用POST就可以达到增删改查的目标，POST也更安全，现在不再使用get请求
 /**
@@ -50,6 +59,7 @@
     policy.validatesDomainName = NO;
     manager.securityPolicy = policy;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", @"text/plain",@"application/x-msdownload",@"application/x-www-form-urlencoded", nil];
+    // 会话级别的超时时间
     manager.requestSerializer.timeoutInterval = 60;
     manager.session.configuration.HTTPMaximumConnectionsPerHost = 15;
     
@@ -69,9 +79,23 @@
 + (void)dataTask{
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    manager.session.configuration.HTTPMaximumConnectionsPerHost = 15;
+    // AFURLSessionManager无requestSerializer对象
+
     
     NSURL *URL = [NSURL URLWithString:@"http://www.marlerblog.com/files/2013/03/orange.jpg"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    
+    // 超时
+    //    manager.requestSerializer.timeoutInterval
+    // 会话级别请求的超时，只要有数据返回就行。When the request timer reaches the specified interval without receiving any new data, it triggers a timeout.
+    // Any upload or download tasks created by a background session are automatically retried if the original request fails due to a timeout. To configure how long an upload or download task should be allowed to be retried or transferred, use the timeoutIntervalForResource property.
+    manager.session.configuration.timeoutIntervalForRequest = 10;
+    // 整个资源请求完成的时间，默认7天
+    // The resource timeout interval controls how long (in seconds) to wait for an entire resource to transfer before giving up. The resource timer starts when the request is initiated and counts until either the request completes or this timeout interval is reached, whichever comes first.
+    manager.session.configuration.timeoutIntervalForResource = 600;
+    // 请求空闲时间，可以用来设置单个请求超时时间。If during a connection attempt the request remains idle for longer than the timeout interval, the request is considered to have timed out.
+    request.timeoutInterval = 10;
     
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (error) {
@@ -80,6 +104,7 @@
             NSLog(@"%@ %@", response, responseObject);
         }
     }];
+    
     [dataTask resume];
 }
 

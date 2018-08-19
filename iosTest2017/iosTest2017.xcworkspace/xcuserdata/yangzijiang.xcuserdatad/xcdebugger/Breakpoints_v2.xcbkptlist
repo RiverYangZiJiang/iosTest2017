@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetworkingTest-2017/ViewController.m"
-            timestampString = "544432760.599622"
+            timestampString = "556344810.894132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "-downloadFile1"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetworkingTest-2017/ViewController.m"
-            timestampString = "544432760.5999531"
+            timestampString = "556344810.914127"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "-downloadFile1"
             landmarkType = "7">
          </BreakpointContent>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "OCTest/Category/NSString+Category.m"
-            timestampString = "546698489.74061"
+            filePath = "AFNetworkingTest-2017/MLRequestManager.m"
+            timestampString = "556344810.9150749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "-length"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "+sendRequest:onSuccess:onFailure:onFinished:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
