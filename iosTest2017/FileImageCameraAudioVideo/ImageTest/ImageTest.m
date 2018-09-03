@@ -18,17 +18,19 @@
     NSArray *imageNames = @[@"1_4M.jpg", @"1_4M1.JPG", @"1_6M.jpg", @"1_9M.jpg", @"1_9M1.jpg", @"2_1M.jpg", @"2_2M.jpg", @"2.1M.jpg", @"3_9M.jpg", @"4-9M.png", @"5_8M.jpg", @"840K.png"];
     for (NSString *imageName in imageNames) {
 //        [ImageTest compressMidQualityWithLengthLimit:imageName scaleToSize:size];
-        [ImageTest compressWithLengthLimit:imageName scaleToSize:size];
+//        [ImageTest compressWithLengthLimit:imageName scaleToSize:size];
 //        [ImageTest compressQualityWithLengthLimit:imageName scaleToSize:size];
 //        [ImageTest wcSessionCompress:imageName];
 //        [ImageTest CompressToImageWithImage:imageName scaleToSize:200 dir:@"CompressToImageWithImage"];
 //        [ImageTest CompressToDataWithImage:imageName scaleToSize:200 dir:@"CompressToDataWithImage"];
     }
+    
+    [ImageTest jpegToPng];
 }
 
-
+#pragma mark - YQImageCompressTool速度慢，图片不清晰
 /**
- 速度慢，图片不清晰
+ YQImageCompressTool速度慢，图片不清晰
 
  @param imageName <#imageName description#>
  @param size <#size description#>
@@ -55,6 +57,7 @@
     NSLog(@"%s end", __func__);
 }
 
+#pragma mark - WCImageCompress图片大小及清晰度都不如UIImage+WLCompress
 /**
  使用缩放的方式做的，图片大小及清晰度都不如UIImage+WLCompress
  https://github.com/WearFlatShoesToWalkTheWorld/WCImageCompress
@@ -73,6 +76,7 @@
     NSLog(@"%s end", __func__);
 }
 
+#pragma mark - WLCompress.h
 + (void)compressQualityWithLengthLimit:(NSString *)imageName scaleToSize:(CGFloat)size{
     NSLog(@"%s begin", __func__);
     UIImage *i1_4M = [UIImage imageNamed:imageName];
@@ -145,7 +149,30 @@ CGSize CWSizeReduce(CGSize size, CGFloat limit)   // 按比例减少尺寸
     NSLog(@"%s end", __func__);
     return imgSize;
 }
-
+#pragma makr 无损压缩成png图片
+/**
+ UIImagePNGRepresentation压缩png格式图片，多次压缩效果一样，并且图片反而变大了，如从292k变成了373k；处理jpg或jpeg格式图片，即转变成png图片，图片会变大很多，如1.5M变成7.7M，234k变成954k
+ png图片可以压缩成jpg格式图片，但是再转换成png格式，就没压缩效果了，因为这时是无损压缩
+ PNG 图片是无损压缩，并且支持 alpha 通道，而 JPEG 图片则是有损压缩，可以指定 0-100% 的压缩比。
+ http://www.cocoachina.com/ios/20170227/18784.html
+ http://ask.dcloud.net.cn/question/19433
+ */
++ (void)jpegToPng{
+    UIImage *image = [UIImage imageWithContentsOfFile:@"/Users/sprite/Documents/yzj/ios/图片压缩/png292k.png"];
+//    UIImage *image = [UIImage imageWithContentsOfFile:@"/Users/sprite/Pictures/The Coast.jpg"];
+    // 转换出来的是jpeg格式图片，234k
+//    NSData *imageData = [image compressQualityWithLengthLimit:200];
+//    [imageData writeToFile:@"/Users/sprite/Documents/yzj/ios/图片压缩/png292k_1.jpg" atomically:YES];
+//
+//    UIImage *tmpPNGImage = [[UIImage alloc] initWithData:imageData];
+//    NSData *pngData = UIImagePNGRepresentation(tmpPNGImage);
+    NSData *pngData = UIImagePNGRepresentation(image);
+//    UIImage *tmpPNGImage = [[UIImage alloc] initWithData:pngData];
+//    pngData = UIImagePNGRepresentation(tmpPNGImage);
+    
+    // 又转换png格式图片，不过文件比较大，954k
+    [pngData writeToFile:@"/Users/sprite/Documents/yzj/ios/图片压缩/png292k_1.png" atomically:YES];
+}
 #pragma mark - 图片压缩
 /*
  1.使用PHImageManager获取系统相册图片：

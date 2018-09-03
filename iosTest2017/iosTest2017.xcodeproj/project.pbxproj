@@ -169,6 +169,7 @@
 		15FE5BCC20621B0B00198615 /* LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE5BCA20621B0B00198615 /* LogUtil.m */; };
 		15FE5BCD2062329200198615 /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FE5BC020620D7000198615 /* mars.framework */; };
 		5566FA0F637918F904A59B3C /* libPods-iosTest2017.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3078D81D591FDAE11DD35D /* libPods-iosTest2017.a */; };
+		8AF1770321380F8E0092F35E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1526356D1FF51EDC00B350F2 /* Info.plist */; };
 		BB4207F105463D6264738707 /* libPods-OCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 491E3C900002CC7C70539BFC /* libPods-OCTest.a */; };
 		C8DF69F565554CBFBCFBB8D2 /* libPods-AFNetworkingTest-2017.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE25EB4718AC25E6785C40D /* libPods-AFNetworkingTest-2017.a */; };
 		DA75563D711CD329A9B76A2D /* libPods-TingYunTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B24D447127F992F60CCB3A /* libPods-TingYunTest.a */; };
@@ -634,6 +635,7 @@
 		151FE8EA204FC2EF00BFAD8E /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
+				8A0B03E5213A298900B53C90 /* NSTimer */,
 				15C971C920D1F2110028C245 /* CLLocationManager */,
 				15D716AE2096A33900B492DD /* NSArrayTest */,
 				159ECE432095DD41005A1204 /* Category */,
@@ -652,8 +654,6 @@
 				151FE900204FC3AD00BFAD8E /* OCDevelopmentNorms.m */,
 				151FE90520522D6A00BFAD8E /* CrashTest.h */,
 				151FE90620522D6A00BFAD8E /* CrashTest.m */,
-				151FE90C2053725E00BFAD8E /* NSTimerTest.h */,
-				151FE90D2053725E00BFAD8E /* NSTimerTest.m */,
 				15A1EB7C2072240A002D5DB1 /* NSObjectTest.h */,
 				15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */,
 				159ECE3A20943730005A1204 /* NSRegularExpressionTest.h */,
@@ -1207,6 +1207,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A0B03E5213A298900B53C90 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				151FE90C2053725E00BFAD8E /* NSTimerTest.h */,
+				151FE90D2053725E00BFAD8E /* NSTimerTest.m */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
 		CA10024F5B29FBCA3C95F1F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1688,6 +1697,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF1770321380F8E0092F35E /* Info.plist in Resources */,
 				1553D50420898CD5009AC812 /* 4-9M.png in Resources */,
 				1526356C1FF51EDC00B350F2 /* LaunchScreen.storyboard in Resources */,
 				1553D50A20898CD5009AC812 /* 2_2M.jpg in Resources */,
@@ -2649,8 +2659,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X83UD87RT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = FileIO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "$(SRCROOT)/FileImageCameraAudioVideo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yzj.FileIO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2675,8 +2685,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X83UD87RT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = FileIO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "$(SRCROOT)/FileImageCameraAudioVideo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yzj.FileIO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
