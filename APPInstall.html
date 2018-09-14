@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+<title>
+应用名
+</title>
+
+<style type="text/css">
+    .installBody{
+        text-align: center;
+        margin-top: 300px;
+        font-size: 3rem;
+    }
+</style>
+
+<script>
+function load()
+{
+function myBrowser(){
+    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+    var isOpera = userAgent.indexOf("Opera") > -1;
+    if (isOpera) {
+        return "Opera"
+    }; //判断是否Opera浏览器
+    if (userAgent.indexOf("Firefox") > -1) {
+        return "FF";
+    } //判断是否Firefox浏览器
+    if (userAgent.indexOf("Chrome") > -1){
+  return "Chrome";
+ }
+    if (userAgent.indexOf("Safari") > -1) {
+        return "Safari";
+    } //判断是否Safari浏览器
+    if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
+        return "IE";
+    }; //判断是否IE浏览器
+}
+    //以下是调用上面的函数
+var mb = myBrowser();
+if ("Safari" != mb) {
+    alert("请使用Safari打开此页面");
+}
+    window.location.href="itms-services:///?action=download-manifest&url=https://git.oschina.net/waitwait/companytest/blob/master/MDDTest.plist";
+}
+</script>
+</head>
+<body onload="load()">
+<div class="installBody">
+<p >
+    请点击右上角，选择Safari打开此页面。<br/>
+    <br/>
+    点击安装后，回到桌面查看安装进度。
+</p>
+</div>
+</body>
+</html>
