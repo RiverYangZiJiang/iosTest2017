@@ -17,7 +17,7 @@
 		<key>CLanguageTest-2018.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>21</integer>
 		</dict>
 		<key>ControllerTest-2017.xcscheme</key>
 		<dict>
@@ -27,7 +27,7 @@
 		<key>CopyAndMutableCopy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>16</integer>
 		</dict>
 		<key>CustomUIView.xcscheme</key>
 		<dict>
@@ -37,12 +37,17 @@
 		<key>FileIO.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>15</integer>
+		</dict>
+		<key>InstrumentsTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
 		</dict>
 		<key>LogSystem.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>18</integer>
 		</dict>
 		<key>MarsTest.xcscheme</key>
 		<dict>

@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+// 使用CGSize、CGRect要引入UIKit.h，否则会报“Expected a type”错误
 
 @interface NSString (Category)
 /**

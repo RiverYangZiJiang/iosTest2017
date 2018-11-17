@@ -12,9 +12,9 @@
 @implementation NSStringTest
 
 + (void)stringTest{
-    NSString *str = @{@"key":@"value"};
-    NSLog(@"abc.length = %lu", (unsigned long)@"abc".length);
-    NSLog(@"str.length = %lu", (unsigned long)str.length);
+//    NSString *str = @{@"key":@"value"};
+//    NSLog(@"abc.length = %lu", (unsigned long)@"abc".length);
+//    NSLog(@"str.length = %lu", (unsigned long)str.length);
 //    [NSStringTest stringByReplacingOccurrencesOfStringTest];
 }
 

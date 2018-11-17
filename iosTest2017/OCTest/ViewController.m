@@ -16,6 +16,7 @@
 #import "NSRegularExpressionTest.h"
 #import "NSArrayTest.h"
 #import "CLLocationManagerTest.h"
+#import "LoopSortTest.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [LoopSortTest loopSortTest];
 //    [[[NSArrayTest alloc] init] arrayTest];
 //    [NSRegularExpressionTest regularExpressionTest];
 //    NSObjectTest *nst = [[NSObjectTest alloc] init];
@@ -34,7 +36,7 @@
 //    NSLog(@"ocdn name = %@", [ocdn name]);
     
 //    [CrashTest arrayCrashTest];
-//    [CrashTest avoidCrashTest];
+    [CrashTest crashTest];
 //    [NSStringTest stringTest];
     
 //    NSTimerTest *timerTest = [NSTimerTest defaultInstance];
@@ -43,7 +45,7 @@
     
 //    [MainThread MainThreadTest];
     
-    [CLLocationManagerTest defaultInstance];
+//    [CLLocationManagerTest defaultInstance];
 }
 
 

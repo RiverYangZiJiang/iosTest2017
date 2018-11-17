@@ -26,6 +26,9 @@
  ● 根据key给字典某个元素重新赋值时，若key为 nil 会导致崩溃。
  https://github.com/chenfanfang/AvoidCrash
  
+ 调用非空对象不存在的方法会崩溃；nil对象调用任何方法都只是返回nil，不会崩溃
+ -[NSNull isEqualToString:]: unrecognized selector sent to instance 0x1b63ba878
  
+ 调用空的block会崩溃
  
  */

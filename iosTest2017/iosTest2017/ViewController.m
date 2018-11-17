@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "UITableViewControllerTest.h"
 #import "UILabelViewController.h"
+#import "WKWebViewTest.h"
+#import "UINavigationControllerTest.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -19,11 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
+    
+    [self.navigationItem backBarButtonItem];
 }
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self presentViewController:[[UILabelViewController alloc] init] animated:YES completion:nil];
+//    [self presentViewController:[[UILabelViewController alloc] init] animated:YES completion:nil];
+//    [self presentViewController:[[WKWebViewTest alloc] init] animated:YES completion:nil];
+//    [self.navigationController pushViewController:[[WKWebViewTest alloc] init] animated:YES];
+    
+    [self.navigationController pushViewController:[[UINavigationControllerTest alloc] init] animated:YES];
+    
 }
 
 @end

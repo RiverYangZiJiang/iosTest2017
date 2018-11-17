@@ -163,15 +163,20 @@
                       });
                   }
                   completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-                      if (error) {
+                      if (error) {  //请求失败
                           NSLog(@"Error: %@", error);
-                      } else {
+                      } else {  // 请求成功
                           NSLog(@"%@ %@", response, responseObject);
+                          // 反序列化为json字符串，AFURLSessionManager返回的是NSData数据https://www.cnblogs.com/Mr-zyh/p/5853797.html
+                          // https://www.jianshu.com/p/804f51c1fc55
+                          // 通读AFN②--AFN的上传和下载功能分析、SessionTask及相应的session代理方法的使用细节https://www.cnblogs.com/Mike-zh/p/5172389.html
+                          responseObject = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
                       }
                   }];
     
     [uploadTask resume];
 }
+// Mateline如果使用-[AFURLSessionManager uploadTaskWithRequest:fromFile:progress:completionHandler:]，报错description = "Common error, error message is org.apache.commons.fileupload.FileUploadBase$InvalidContentTypeException:the request doesn't contain a multipart/form-data or multipart/mixed stream, content type header is application/x-www-form-urlencoded, at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.<init>(FileUploadBase.java:948).";
 
 #pragma mark - 下载文件download-AFURLSessionManager
 // 任何互联网上的资源都是文件，都可以上传和下载，如网页、图片、音视频等

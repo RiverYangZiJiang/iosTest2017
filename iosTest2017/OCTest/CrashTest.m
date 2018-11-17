@@ -10,7 +10,17 @@
 
 @implementation CrashTest
 + (void)crashTest{
+    [CrashTest unrecognizedSelector:[[NSNull alloc] init]];
+}
+// 调用空的block会崩溃
 
+/**
+  调用非空对象不存在的方法会崩溃；nil对象调用任何方法都只是返回nil，不会崩溃
+
+ @param obj <#obj description#>
+ */
++ (void)unrecognizedSelector:(id)obj{
+    [(NSString *)obj isEqualToString:@"abc"];  // -[NSNull isEqualToString:]: unrecognized selector sent to instance
 }
 
 + (void)arrayCrashTest{
