@@ -36,8 +36,8 @@
 //    NSLog(@"ocdn name = %@", [ocdn name]);
     
 //    [CrashTest arrayCrashTest];
-    [CrashTest crashTest];
-//    [NSStringTest stringTest];
+//    [CrashTest crashTest];
+    [NSStringTest stringTest];
     
 //    NSTimerTest *timerTest = [NSTimerTest defaultInstance];
 //    [timerTest startTimer];

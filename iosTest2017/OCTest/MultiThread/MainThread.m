@@ -7,6 +7,7 @@
 //
 
 #import "MainThread.h"
+#import "YZJDownloadImageOperation.h"
 
 @implementation MainThread
 

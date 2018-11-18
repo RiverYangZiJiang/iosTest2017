@@ -36,4 +36,9 @@ target 'ThirdLibs-2018' do
     pod 'AMapSearch' #搜索功能
 end
 
+target 'SQLiteTest-201603' do
+    platform :ios, '8.0'
+    pod 'AvoidCrash', '~> 2.5.2'
+end
+
 

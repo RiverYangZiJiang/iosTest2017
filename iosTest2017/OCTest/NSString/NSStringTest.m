@@ -16,8 +16,17 @@
 //    NSLog(@"abc.length = %lu", (unsigned long)@"abc".length);
 //    NSLog(@"str.length = %lu", (unsigned long)str.length);
 //    [NSStringTest stringByReplacingOccurrencesOfStringTest];
+    [NSStringTest changeLine];
 }
 
+/**
+ 
+ */
++ (void)changeLine{
+    NSLog(@"%@", [NSString stringWithFormat:@" name\
+yzj"]);  // 不换行 nameyzj
+    NSLog(@"%@", [NSString stringWithFormat:@" name\nyzj"]);  // 换行
+}
 #pragma mark - filePath
 + (void)fileName:(NSString *)filePath
 {

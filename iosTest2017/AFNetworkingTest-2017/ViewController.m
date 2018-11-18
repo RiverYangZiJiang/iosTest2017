@@ -302,4 +302,256 @@
         NSLog(@"请求失败---%@", error);
     }];
 }
+
+#pragma mark - NSURLSession
+- (void)simpleNSURLSessionTest{
+    /* 创建配置对象Create configuration object. */
+    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    /* 创建sessionCreate a session for configuration. */
+    NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: nil delegateQueue: [NSOperationQueue mainQueue]];
+    
+    /* 请求资源Requesting a resource using system-provided delegates. */
+    [[delegateFreeSession dataTaskWithURL: [NSURL URLWithString: @"http://news.sohu.com/20160521/n450744752.shtml"]
+                        completionHandler:^(NSData *data, NSURLResponse *response,
+                                            NSError *error) {
+                            
+                            NSLog(@"Got response %@ with error %@.\n", response, error);
+                            NSLog(@"DATA:\n%@\nEND DATA\n",[[NSString alloc] initWithData: data
+                                                                                 encoding: NSUTF8StringEncoding]);
+                        }] resume];
+}
+
+#pragma mark - AFNetworking
+#pragma mark get请求
+- (void)getHTMLPage{
+    
+    // 初始化Manager
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    // 不加上这句话，会报"Request failed: unacceptable content-type: text/html" 错误，因为我们要获取text/html类型数据
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    NSString *url = @"http://dict.youdao.com/w/HTML/#keyfrom=dict.top";
+    // 如果是Get请求，相比Post请求，少了请求参数，然后只需将post方法改为get方法（也可以直接将请求参数拼接在URL后面）
+    [manager GET:url parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        // 请求成功，解析数据
+        NSLog(@"%@", responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        // 请求失败
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
+#pragma mark post请求
+- (void)postData{
+    // 请求的参数
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"20131129", @"date", @"1", @"startRecord", @"5", @"len", @"1234567890", @"udid", @"Iphone", @"terminalType", @"213", @"cid", nil];
+    // 初始化Manager
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    // 不加上这句话，会报“Request failed: unacceptable content-type: text/plain”错误，因为我们要获取text/plain类型数据
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    // post请求
+    NSString *url = @"http://ipad-bjwb.bjd.com.cn/DigitalPublication/publish/Handler/APINewsList.ashx?";
+    [manager POST:url parameters:dic constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        // 拼接data到请求体，这个block的参数是遵守AFMultipartFormData协议的。
+    } success:^(NSURLSessionDataTask *task, id responseObject) {
+        // 请求成功，解析数据
+        NSLog(@"%@", responseObject);
+        
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:nil];
+        
+        NSLog(@"%@", dic);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        // 请求失败
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
+
+/**
+ *  AFN3.0 下载
+ */
+- (void)downLoad{
+    // 官网代码
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    
+    NSURL *URL = [NSURL URLWithString:@"http://example.com/download.zip"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
+        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+        return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
+    } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
+        NSLog(@"File downloaded to: %@", filePath);
+    }];
+    [downloadTask resume];
+    
+    // http://www.jianshu.com/p/11bb0d4dc649 代码
+    //    //1.创建管理者对象
+    //    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //    //2.确定请求的URL地址
+    //    NSURL *url = [NSURL URLWithString:@""];
+    //
+    //    //3.创建请求对象
+    //    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    //
+    //    //下载任务
+    //    NSURLSessionDownloadTask *task = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+    //        //打印下下载进度
+    //        WKNSLog(@"%lf",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
+    //
+    //    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+    //        //下载地址
+    //        WKNSLog(@"默认下载地址:%@",targetPath);
+    //
+    //        //设置下载路径，通过沙盒获取缓存地址，最后返回NSURL对象
+    //        NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)lastObject];
+    //        return [NSURL URLWithString:filePath];
+    //
+    //
+    //    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+    //
+    //        //下载完成调用的方法
+    //        WKNSLog(@"下载完成：");
+    //        WKNSLog(@"%@--%@",response,filePath);
+    //
+    //    }];
+    //
+    //    //开始启动任务
+    //    [task resume];
+    
+}
+
+/**
+ *  AFN 3.0 上传
+ *      有两种方式
+ *          upLoad1 和 upLoad2
+ */
+
+//第一种方法是通过工程中的文件进行上传
+- (void)upLoad1{
+    
+    // 官网代码
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    
+    NSURL *URL = [NSURL URLWithString:@"http://example.com/upload"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
+    NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithRequest:request fromFile:filePath progress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        } else {
+            NSLog(@"Success: %@ %@", response, responseObject);
+        }
+    }];
+    [uploadTask resume];
+    
+    // http://www.jianshu.com/p/11bb0d4dc649 代码
+    //    //1。创建管理者对象
+    //    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //
+    //    //2.上传文件
+    //    NSDictionary *dict = @{@"username":@"1234"};
+    //
+    //    NSString *urlString = @"22222";
+    //    [manager POST:urlString parameters:dict constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    //        //上传文件参数
+    //        UIImage *iamge = [UIImage imageNamed:@"123.png"];
+    //        NSData *data = UIImagePNGRepresentation(iamge);
+    //        //这个就是参数
+    //        [formData appendPartWithFileData:data name:@"file" fileName:@"123.png" mimeType:@"image/png"];
+    //
+    //    } progress:^(NSProgress * _Nonnull uploadProgress) {
+    //
+    //        //打印下上传进度
+    //        WKNSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+    //    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    //
+    //        //请求成功
+    //        WKNSLog(@"请求成功：%@",responseObject);
+    //
+    //    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    //
+    //        //请求失败
+    //        WKNSLog(@"请求失败：%@",error);
+    //    }];
+    
+}
+
+//第二种是通过URL来获取路径，进入沙盒或者系统相册等等
+- (void)upLoda2{
+    // http://www.jianshu.com/p/11bb0d4dc649 代码
+    //    //1.创建管理者对象
+    //    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //    //2.上传文件
+    //    NSDictionary *dict = @{@"username":@"1234"};
+    //
+    //    NSString *urlString = @"22222";
+    //    [manager POST:urlString parameters:dict constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    //
+    //        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"文件地址"] name:@"file" fileName:@"1234.png" mimeType:@"application/octet-stream" error:nil];
+    //    } progress:^(NSProgress * _Nonnull uploadProgress) {
+    //
+    //        //打印下上传进度
+    //        WKNSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+    //    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    //
+    //        //请求成功
+    //        WKNSLog(@"请求成功：%@",responseObject);
+    //
+    //    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    //
+    //        //请求失败
+    //        WKNSLog(@"请求失败：%@",error);
+    //    }];
+}
+
+#pragma mark 监测当前网络状态（网络监听）
+// http://www.jianshu.com/p/11bb0d4dc649 代码
+- (void)AFNetworkStatus{
+    
+    //1.创建网络监测者
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    
+    /*枚举里面四个状态  分别对应 未知 无网络 数据 WiFi
+     typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
+     AFNetworkReachabilityStatusUnknown          = -1,      未知
+     AFNetworkReachabilityStatusNotReachable     = 0,       无网络
+     AFNetworkReachabilityStatusReachableViaWWAN = 1,       蜂窝数据网络
+     AFNetworkReachabilityStatusReachableViaWiFi = 2,       WiFi
+     };
+     */
+    
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        //这里是监测到网络改变的block  可以写成switch方便
+        //在里面可以随便写事件
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知网络状态");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"无网络");
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"蜂窝数据网");
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"WiFi网络");
+                
+                break;
+                
+            default:
+                break;
+        }
+        
+    }] ;
+}
 @end
