@@ -17,6 +17,11 @@
 		<key>CLanguageTest-2018.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
+		<key>CLanguageTest-2018.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
 		<key>ControllerTest-2017.xcscheme</key>
@@ -27,14 +32,29 @@
 		<key>CopyAndMutableCopy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>16</integer>
 		</dict>
-		<key>CustomUIView.xcscheme</key>
+		<key>CopyAndMutableCopy.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
+		<key>CustomUIView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>CustomUIView.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>FileIO.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>FileIO.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>16</integer>
@@ -42,9 +62,19 @@
 		<key>InstrumentsTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
+		<key>InstrumentsTest.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>22</integer>
 		</dict>
 		<key>LogSystem.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>LogSystem.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>19</integer>
@@ -57,9 +87,19 @@
 		<key>MasonryTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>MasonryTest.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
 		<key>OCTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>OCTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>21</integer>
@@ -69,12 +109,27 @@
 			<key>orderHint</key>
 			<integer>25</integer>
 		</dict>
+		<key>ProjectTest.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
 		<key>SQLiteTest-201603.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>24</integer>
 		</dict>
+		<key>SQLiteTest-201603.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
 		<key>ThirdLibs-2018.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>ThirdLibs-2018.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>23</integer>

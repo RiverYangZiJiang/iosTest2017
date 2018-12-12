@@ -17,6 +17,7 @@
 #import "NSArrayTest.h"
 #import "CLLocationManagerTest.h"
 #import "LoopSortTest.h"
+#import "NSURLTest.h"
 
 @interface ViewController ()
 
@@ -27,7 +28,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [LoopSortTest loopSortTest];
+    NSString *domain = @"com.MyCompany.MyApplication.ErrorDomain";
+    NSString *desc = @"123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+    NSDictionary *userInfo = @{ NSLocalizedDescriptionKey : desc };
+    
+    NSError *error = [NSError errorWithDomain:domain
+                                         code:-101
+                                     userInfo:userInfo];
+    
+    NSLog(@"error.description = %@", error.description);
+    NSLog(@"[error description] = %@", [error description]);
+//    [NSURLTest NSURLTest];
+//    [LoopSortTest loopSortTest];
 //    [[[NSArrayTest alloc] init] arrayTest];
 //    [NSRegularExpressionTest regularExpressionTest];
 //    NSObjectTest *nst = [[NSObjectTest alloc] init];
@@ -37,7 +49,7 @@
     
 //    [CrashTest arrayCrashTest];
 //    [CrashTest crashTest];
-    [NSStringTest stringTest];
+//    [NSStringTest stringTest];
     
 //    NSTimerTest *timerTest = [NSTimerTest defaultInstance];
 //    [timerTest startTimer];

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FMDB.h"
 #import "FMTokenizers.h"
+#import "ProductDB.h"
 
 @interface ViewController ()
 
@@ -23,10 +24,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self ProductDBTest];
+}
+
+#pragma mark - NSDictionary
+/**
+ 存储字典、图片到数据库，再查找、复原字典、图片 https://www.jianshu.com/p/661f7443538f
+ */
+- (void)ProductDBTest{
+    //第一步建表
+    [[[ProductDB alloc] init] createtable];
+    
+    //第二步添加数据 因为设定title一定不能为空  (要在数据加载完全后再添加  如果提前添加 会有两种情况 title 为空 崩溃  除title以外为空 在数据库里会显示nill （可以在加载完后使用更新 进行更改 --> 直接在加载完的地方添加不就好了 MDZZ =- = 所以说收藏里更新没啥用）)
+    NSString *title = @"title";
+    NSDictionary *responseObject = @{@"key1" : @"key1", @"key2" : @"key2"};
+    UIImage *image = [UIImage imageNamed:@"1"];
+    [[[ProductDB alloc] init] insertIntoTable:title responseObject:responseObject image:image];
+    
+    //一般收藏用不到更新··
+//    [[[ProductDB alloc] init] updateTable:title responseObject:responseObject image:image];
+    //取出数据 （查找）
+    NSArray *array = [[[ProductDB alloc] init] selectFromTable:title];
+    NSLog(@"array = %@", array);
+    
+}
+
+- (void)testNSDictionary{
+    NSString *appDocumentsFolder = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *storePath = [NSString stringWithFormat:@"%@/yzj.db", appDocumentsFolder];
+    FMDatabase *db = [FMDatabase databaseWithPath:storePath];
+    
+    [db open];
+    
+    [db executeUpdate:@"CREATE TABLE IF NOT EXISTS RequestTable (url TEXT, time TEXT, param BLOB)"];
+    
+    [db executeUpdate:@"insert into RequestTable values(\"http\", \"2018\", %@)"];
+    [db executeStatements:@""];
+}
+
+#pragma mark - VirtualTable
+- (void)testVirtualTable{
     [self.view addSubview:self.createVirtualTableButton];
     [self.view addSubview:self.insertDataButton];
     [self.view addSubview:self.selectDataButton];
 }
+
 - (UIButton *)createVirtualTableButton{
     if (!_createVirtualTableButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
