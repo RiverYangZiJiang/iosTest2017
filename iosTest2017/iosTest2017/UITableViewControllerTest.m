@@ -61,7 +61,7 @@
     NSLog(@"cell %p", cell);
     
     cell.textLabel.text = self.array[indexPath.row];
-    
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
     return cell;
 }
 

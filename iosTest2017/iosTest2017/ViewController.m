@@ -12,6 +12,8 @@
 #import "WKWebViewTest.h"
 #import "UINavigationControllerTest.h"
 #import <objc/runtime.h>
+#import "UICollectionViewTestViewController.h"
+#import "MKMapViewTestVC.h"
 
 @interface ViewController ()
 
@@ -27,14 +29,21 @@
     [self.navigationItem backBarButtonItem];
 }
 
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    [self presentViewController:[[UILabelViewController alloc] init] animated:YES completion:nil];
-//    [self presentViewController:[[WKWebViewTest alloc] init] animated:YES completion:nil];
-//    [self.navigationController pushViewController:[[WKWebViewTest alloc] init] animated:YES];
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    //    [self presentViewController:[[UILabelViewController alloc] init] animated:YES completion:nil];
+    //    [self presentViewController:[[WKWebViewTest alloc] init] animated:YES completion:nil];
+    //    [self.navigationController pushViewController:[[WKWebViewTest alloc] init] animated:YES];
     
-    [self.navigationController pushViewController:[[UINavigationControllerTest alloc] init] animated:YES];
+    //    [self.navigationController pushViewController:[[UINavigationControllerTest alloc] init] animated:YES];
     
+//    [self.navigationController pushViewController:[[UICollectionViewTestViewController alloc] init] animated:YES];
+    
+    
+    //    [self.navigationController pushViewController:[[UITableViewControllerTest alloc] init] animated:YES];
+    
+    [self.navigationController pushViewController:[[MKMapViewTestVC alloc] init] animated:YES];
 }
+
 
 @end

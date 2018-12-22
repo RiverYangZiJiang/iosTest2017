@@ -231,9 +231,16 @@
     self.mkMapView.showsBuildings = YES;
     self.mkMapView.userTrackingMode = MKUserTrackingModeFollowWithHeading;
     self.mkMapView.showsScale = YES;  // 用户缩放地图到一定比例时才显示
-    self.mkMapView.showsCompass = YES;  // 用户选择地图时才显示
-    self.mkMapView.showsUserLocation = YES;
+    self.mkMapView.showsCompass = YES;  // 是否显示右上角的指南针
+    self.mkMapView.showsUserLocation = YES;  // 显示用户当前位置
     self.mkMapView.showsPointsOfInterest = YES;
+    self.mkMapView.mapType = MKMapTypeStandard;  // 地图类型，普通地图
+    //设置地图可缩放
+    self.mkMapView.zoomEnabled = YES;
+    //设置地图可滚动
+    self.mkMapView.scrollEnabled = YES;
+    NSLog(@"用户当前是否位于地图中：%d", self.mkMapView.userLocationVisible);
+    
     [self.view addSubview:self.mkMapView];
     
     [self.mkMapView mas_makeConstraints:^(MASConstraintMaker *make) {
