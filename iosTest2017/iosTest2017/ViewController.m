@@ -14,6 +14,7 @@
 #import <objc/runtime.h>
 #import "UICollectionViewTestViewController.h"
 #import "MKMapViewTestVC.h"
+#import "UIAppearanceTest.h"
 
 @interface ViewController ()
 
@@ -26,7 +27,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor redColor];
     
-    [self.navigationItem backBarButtonItem];
+//    [self.navigationItem backBarButtonItem];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -35,7 +36,7 @@
     //    [self presentViewController:[[WKWebViewTest alloc] init] animated:YES completion:nil];
     //    [self.navigationController pushViewController:[[WKWebViewTest alloc] init] animated:YES];
     
-    //    [self.navigationController pushViewController:[[UINavigationControllerTest alloc] init] animated:YES];
+//        [self.navigationController pushViewController:[[UINavigationControllerTest alloc] init] animated:YES];
     
 //    [self.navigationController pushViewController:[[UICollectionViewTestViewController alloc] init] animated:YES];
     

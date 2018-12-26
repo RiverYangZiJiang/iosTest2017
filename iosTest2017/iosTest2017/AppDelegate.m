@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "UIAppearanceTest.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,8 @@
     
     // didFinishLaunchingWithOptions 设置启动View https://www.cnblogs.com/zhangleixy/p/4933526.html
 //    [self singleView];
+    [UIAppearanceTest setupNNavigationBarAppearance];
+    
     [self navigationControllerTest];
 //    [self tabBarControllerTest];
     
