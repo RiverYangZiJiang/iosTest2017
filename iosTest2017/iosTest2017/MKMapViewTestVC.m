@@ -46,6 +46,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self computeDistanceOfStartPoint:CLLocationCoordinate2DMake(22.652734, 114.066915) endPoint:CLLocationCoordinate2DMake(22.653051, 114.06846)];
     
     [self.view addSubview:self.mapView];
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -79,25 +81,10 @@
     [self.gotoUserLocationView addGestureRecognizer:tapGestureRecognizer];
 }
 
+#pragma mark - Selectors
 - (void)gotoUserLocationViewClicked{
     NSLog(@"%s", __func__);
-     [self.mapView setCenterCoordinate:self.userLocation.location.coordinate animated:YES];
-}
-- (MKMapRect)makeMapRectWithAnnotations:(NSArray *)annotations {
-    
-    MKMapRect flyTo = MKMapRectNull;
-    for (id <MKAnnotation> annotation in annotations) {
-        MKMapPoint annotationPoint = MKMapPointForCoordinate(annotation.coordinate);
-        MKMapRect pointRect = MKMapRectMake(annotationPoint.x, annotationPoint.y, 0, 0);
-        if (MKMapRectIsNull(flyTo)) {
-            flyTo = pointRect;
-        } else {
-            flyTo = MKMapRectUnion(flyTo, pointRect);
-        }
-    }
-    
-    return flyTo;
-    
+    [self.mapView setCenterCoordinate:self.userLocation.location.coordinate animated:YES];
 }
 
 -(void)longPress:(UILongPressGestureRecognizer *)sender
@@ -233,6 +220,29 @@
     // Center map
 //    self.mapView.visibleMapRect = [self makeMapRectWithAnnotations:@[annoation]];
 }
+
+- (MKMapRect)makeMapRectWithAnnotations:(NSArray *)annotations {
+    
+    MKMapRect flyTo = MKMapRectNull;
+    for (id <MKAnnotation> annotation in annotations) {
+        MKMapPoint annotationPoint = MKMapPointForCoordinate(annotation.coordinate);
+        MKMapRect pointRect = MKMapRectMake(annotationPoint.x, annotationPoint.y, 0, 0);
+        if (MKMapRectIsNull(flyTo)) {
+            flyTo = pointRect;
+        } else {
+            flyTo = MKMapRectUnion(flyTo, pointRect);
+        }
+    }
+    
+    return flyTo;
+}
+#pragma mark -- 计算距离
+- (void)computeDistanceOfStartPoint:(CLLocationCoordinate2D )startPoint endPoint:(CLLocationCoordinate2D )endPoint{
+    CLLocation *startLocation = [[CLLocation alloc] initWithLatitude:startPoint.latitude longitude:startPoint.longitude];
+    CLLocation *endLocation = [[CLLocation alloc] initWithLatitude:endPoint.latitude longitude:endPoint.longitude];
+    NSLog(@"距离 = %f meters", [endLocation distanceFromLocation:startLocation]);  // 距离 = 162.633244 meters
+}
+
 #pragma mark -MKMapViewDelegate
 /**
  *  当地图获取到用户位置时调用

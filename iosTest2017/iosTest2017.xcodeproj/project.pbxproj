@@ -115,6 +115,7 @@
 		158C4E3A2048F8DB00940689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E382048F8DB00940689 /* LaunchScreen.storyboard */; };
 		158C4E3D2048F8DB00940689 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E3C2048F8DB00940689 /* main.m */; };
 		158D3F2621B8D261005F1E89 /* NSURLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D3F2521B8D261005F1E89 /* NSURLTest.m */; };
+		158EA7EE21DCAF7C00A27CE7 /* AMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 158EA7ED21DCAF7C00A27CE7 /* AMapVC.m */; };
 		1590134221A15E84002EB47E /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1590134121A15E84002EB47E /* BlockTestViewController.m */; };
 		1590134B21A164E2002EB47E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1590134A21A164E2002EB47E /* AppDelegate.m */; };
 		1590134E21A164E2002EB47E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1590134D21A164E2002EB47E /* ViewController.m */; };
@@ -210,6 +211,11 @@
 		15E21360219FBADB00409495 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2135F219FBADA00409495 /* main.m */; };
 		15E21366219FC13200409495 /* TestNSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21365219FC13200409495 /* TestNSTimer.m */; };
 		15E21369219FC61300409495 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21368219FC61300409495 /* ViewController1.m */; };
+		15EE82DA21E61EDE00D6AD35 /* DCURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE82D221E61EDD00D6AD35 /* DCURLRouter.m */; };
+		15EE82DB21E61EDE00D6AD35 /* DCURLNavgation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE82D521E61EDD00D6AD35 /* DCURLNavgation.m */; };
+		15EE82DC21E61EDE00D6AD35 /* UIViewController+DCURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE82D621E61EDD00D6AD35 /* UIViewController+DCURLRouter.m */; };
+		15EE82DD21E61EDE00D6AD35 /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15EE82D921E61EDE00D6AD35 /* DCURLRouter.plist */; };
+		15EE82E121E61F1000D6AD35 /* DCURLRouterVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE82E021E61F1000D6AD35 /* DCURLRouterVCViewController.m */; };
 		15F2CBFB21BFD36300438A20 /* NSError+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2CBFA21BFD36300438A20 /* NSError+Hook.m */; };
 		15F2CC1521C2371500438A20 /* MantleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2CC1421C2371400438A20 /* MantleTest.m */; };
 		15F99D0C21ABB43400A91E55 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F99D0B21ABB43400A91E55 /* DBManager.m */; };
@@ -466,6 +472,8 @@
 		158C4E412048F99400940689 /* TingYunTest-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TingYunTest-PrefixHeader.pch"; sourceTree = "<group>"; };
 		158D3F2421B8D261005F1E89 /* NSURLTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLTest.h; sourceTree = "<group>"; };
 		158D3F2521B8D261005F1E89 /* NSURLTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLTest.m; sourceTree = "<group>"; };
+		158EA7EC21DCAF7C00A27CE7 /* AMapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMapVC.h; sourceTree = "<group>"; };
+		158EA7ED21DCAF7C00A27CE7 /* AMapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapVC.m; sourceTree = "<group>"; };
 		1590134021A15E84002EB47E /* BlockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
 		1590134121A15E84002EB47E /* BlockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTestViewController.m; sourceTree = "<group>"; };
 		1590134721A164E2002EB47E /* SQLiteTest-201603.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SQLiteTest-201603.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -649,6 +657,16 @@
 		15E21365219FC13200409495 /* TestNSTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNSTimer.m; sourceTree = "<group>"; };
 		15E21367219FC61300409495 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		15E21368219FC61300409495 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		15EE82D221E61EDD00D6AD35 /* DCURLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCURLRouter.m; sourceTree = "<group>"; };
+		15EE82D321E61EDD00D6AD35 /* DCURLNavgation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCURLNavgation.h; sourceTree = "<group>"; };
+		15EE82D421E61EDD00D6AD35 /* DCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSingleton.h; sourceTree = "<group>"; };
+		15EE82D521E61EDD00D6AD35 /* DCURLNavgation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCURLNavgation.m; sourceTree = "<group>"; };
+		15EE82D621E61EDD00D6AD35 /* UIViewController+DCURLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DCURLRouter.m"; sourceTree = "<group>"; };
+		15EE82D721E61EDD00D6AD35 /* DCURLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCURLRouter.h; sourceTree = "<group>"; };
+		15EE82D821E61EDE00D6AD35 /* UIViewController+DCURLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DCURLRouter.h"; sourceTree = "<group>"; };
+		15EE82D921E61EDE00D6AD35 /* DCURLRouter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DCURLRouter.plist; sourceTree = "<group>"; };
+		15EE82DF21E61F1000D6AD35 /* DCURLRouterVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCURLRouterVCViewController.h; sourceTree = "<group>"; };
+		15EE82E021E61F1000D6AD35 /* DCURLRouterVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCURLRouterVCViewController.m; sourceTree = "<group>"; };
 		15F2CBF921BFD36300438A20 /* NSError+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSError+Hook.h"; path = "OCTest/HookTest/NSError+Hook.h"; sourceTree = SOURCE_ROOT; };
 		15F2CBFA21BFD36300438A20 /* NSError+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSError+Hook.m"; path = "OCTest/HookTest/NSError+Hook.m"; sourceTree = SOURCE_ROOT; };
 		15F2CC1321C2371400438A20 /* MantleTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MantleTest.h; sourceTree = "<group>"; };
@@ -1015,6 +1033,8 @@
 		152B2D6120B8E9B800145A8D /* ThirdLibs-2018 */ = {
 			isa = PBXGroup;
 			children = (
+				15EE82D121E61EBD00D6AD35 /* DCURLRouter */,
+				158EA7EB21DCAF4C00A27CE7 /* AMap */,
 				15F2CC1221C236F800438A20 /* MantleTest */,
 				152B2D6220B8E9B800145A8D /* AppDelegate.h */,
 				152B2D6320B8E9B800145A8D /* AppDelegate.m */,
@@ -1333,6 +1353,15 @@
 				158D3F2521B8D261005F1E89 /* NSURLTest.m */,
 			);
 			path = NSURLTest;
+			sourceTree = "<group>";
+		};
+		158EA7EB21DCAF4C00A27CE7 /* AMap */ = {
+			isa = PBXGroup;
+			children = (
+				158EA7EC21DCAF7C00A27CE7 /* AMapVC.h */,
+				158EA7ED21DCAF7C00A27CE7 /* AMapVC.m */,
+			);
+			path = AMap;
 			sourceTree = "<group>";
 		};
 		1590133C21A15CE5002EB47E /* BlockTest */ = {
@@ -1717,6 +1746,31 @@
 				15E21368219FC61300409495 /* ViewController1.m */,
 			);
 			path = InstrumentsTest;
+			sourceTree = "<group>";
+		};
+		15EE82D121E61EBD00D6AD35 /* DCURLRouter */ = {
+			isa = PBXGroup;
+			children = (
+				15EE82DF21E61F1000D6AD35 /* DCURLRouterVCViewController.h */,
+				15EE82E021E61F1000D6AD35 /* DCURLRouterVCViewController.m */,
+				15EE82DE21E61EE700D6AD35 /* DCURLRouter */,
+			);
+			path = DCURLRouter;
+			sourceTree = "<group>";
+		};
+		15EE82DE21E61EE700D6AD35 /* DCURLRouter */ = {
+			isa = PBXGroup;
+			children = (
+				15EE82D421E61EDD00D6AD35 /* DCSingleton.h */,
+				15EE82D321E61EDD00D6AD35 /* DCURLNavgation.h */,
+				15EE82D521E61EDD00D6AD35 /* DCURLNavgation.m */,
+				15EE82D721E61EDD00D6AD35 /* DCURLRouter.h */,
+				15EE82D221E61EDD00D6AD35 /* DCURLRouter.m */,
+				15EE82D921E61EDE00D6AD35 /* DCURLRouter.plist */,
+				15EE82D821E61EDE00D6AD35 /* UIViewController+DCURLRouter.h */,
+				15EE82D621E61EDD00D6AD35 /* UIViewController+DCURLRouter.m */,
+			);
+			path = DCURLRouter;
 			sourceTree = "<group>";
 		};
 		15F2CBF821BFD31B00438A20 /* HookTest */ = {
@@ -2430,6 +2484,7 @@
 			files = (
 				152B2D6F20B8E9BB00145A8D /* LaunchScreen.storyboard in Resources */,
 				152B2D6C20B8E9BB00145A8D /* Assets.xcassets in Resources */,
+				15EE82DD21E61EDE00D6AD35 /* DCURLRouter.plist in Resources */,
 				152B2D6A20B8E9B800145A8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2814,8 +2869,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				15F2CC1521C2371500438A20 /* MantleTest.m in Sources */,
+				15EE82DB21E61EDE00D6AD35 /* DCURLNavgation.m in Sources */,
+				15EE82E121E61F1000D6AD35 /* DCURLRouterVCViewController.m in Sources */,
 				152B2D6720B8E9B800145A8D /* ViewController.m in Sources */,
 				152B2D7220B8E9BB00145A8D /* main.m in Sources */,
+				15EE82DC21E61EDE00D6AD35 /* UIViewController+DCURLRouter.m in Sources */,
+				15EE82DA21E61EDE00D6AD35 /* DCURLRouter.m in Sources */,
+				158EA7EE21DCAF7C00A27CE7 /* AMapVC.m in Sources */,
 				152B2D6420B8E9B800145A8D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
