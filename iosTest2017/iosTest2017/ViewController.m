@@ -15,6 +15,8 @@
 #import "UICollectionViewTestViewController.h"
 #import "MKMapViewTestVC.h"
 #import "UIAppearanceTest.h"
+#import "UISegmentedControlVC.h"
+#import "UISearchControllerTestVC.h"
 
 @interface ViewController ()
 
@@ -43,7 +45,10 @@
     
     //    [self.navigationController pushViewController:[[UITableViewControllerTest alloc] init] animated:YES];
     
-    [self.navigationController pushViewController:[[MKMapViewTestVC alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[MKMapViewTestVC alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[UISegmentedControlVC alloc] init] animated:YES];
+    
+    [self.navigationController pushViewController:[[UISearchControllerTestVC alloc] init] animated:YES];
 }
 
 

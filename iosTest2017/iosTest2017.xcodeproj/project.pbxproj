@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15123EC021E9DB9A0037BB0C /* UISearchControllerTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15123EBF21E9DB990037BB0C /* UISearchControllerTestVC.m */; };
+		1515C64821E9DDCC00426E87 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C64721E9DDCC00426E87 /* SearchResultsViewController.m */; };
 		151FE8ED204FC2EF00BFAD8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE8EC204FC2EF00BFAD8E /* AppDelegate.m */; };
 		151FE8F0204FC2EF00BFAD8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE8EF204FC2EF00BFAD8E /* ViewController.m */; };
 		151FE8F3204FC2EF00BFAD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151FE8F1204FC2EF00BFAD8E /* Main.storyboard */; };
@@ -107,6 +109,9 @@
 		156FAA0D1E5581120065504B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156FAA0B1E5581120065504B /* LaunchScreen.storyboard */; };
 		156FAA151E5584C30065504B /* libPods-iosTest2017.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 156FAA141E5584C30065504B /* libPods-iosTest2017.a */; };
 		157696C221930EAC0086BF70 /* LoopSortTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 157696C121930EAC0086BF70 /* LoopSortTest.m */; };
+		1579ED9E21E71F250080BE17 /* UISegmentedControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579ED9D21E71F250080BE17 /* UISegmentedControlVC.m */; };
+		1579EDA121E733E70080BE17 /* MLCustomSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579EDA021E733E70080BE17 /* MLCustomSegmentedControl.m */; };
+		1579EDA421E734E50080BE17 /* MLCustomSegmentedControlItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579EDA321E734E50080BE17 /* MLCustomSegmentedControlItemView.m */; };
 		157EB19120F0B1EA00CEF457 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 157EB19020F0B1EA00CEF457 /* NSString+Category.m */; };
 		158C4E2F2048F8DB00940689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E2E2048F8DB00940689 /* AppDelegate.m */; };
 		158C4E322048F8DB00940689 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E312048F8DB00940689 /* ViewController.m */; };
@@ -291,6 +296,10 @@
 /* Begin PBXFileReference section */
 		05B24D447127F992F60CCB3A /* libPods-TingYunTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TingYunTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE25EB4718AC25E6785C40D /* libPods-AFNetworkingTest-2017.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworkingTest-2017.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15123EBE21E9DB990037BB0C /* UISearchControllerTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISearchControllerTestVC.h; sourceTree = "<group>"; };
+		15123EBF21E9DB990037BB0C /* UISearchControllerTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISearchControllerTestVC.m; sourceTree = "<group>"; };
+		1515C64621E9DDCC00426E87 /* SearchResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
+		1515C64721E9DDCC00426E87 /* SearchResultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
 		151FE8E9204FC2EE00BFAD8E /* OCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151FE8EB204FC2EF00BFAD8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		151FE8EC204FC2EF00BFAD8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -457,6 +466,12 @@
 		156FAA141E5584C30065504B /* libPods-iosTest2017.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-iosTest2017.a"; path = "Pods/../build/Debug-iphoneos/libPods-iosTest2017.a"; sourceTree = "<group>"; };
 		157696C021930EAC0086BF70 /* LoopSortTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopSortTest.h; sourceTree = "<group>"; };
 		157696C121930EAC0086BF70 /* LoopSortTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopSortTest.m; sourceTree = "<group>"; };
+		1579ED9C21E71F250080BE17 /* UISegmentedControlVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlVC.h; sourceTree = "<group>"; };
+		1579ED9D21E71F250080BE17 /* UISegmentedControlVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlVC.m; sourceTree = "<group>"; };
+		1579ED9F21E733E70080BE17 /* MLCustomSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCustomSegmentedControl.h; sourceTree = "<group>"; };
+		1579EDA021E733E70080BE17 /* MLCustomSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCustomSegmentedControl.m; sourceTree = "<group>"; };
+		1579EDA221E734E50080BE17 /* MLCustomSegmentedControlItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCustomSegmentedControlItemView.h; sourceTree = "<group>"; };
+		1579EDA321E734E50080BE17 /* MLCustomSegmentedControlItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCustomSegmentedControlItemView.m; sourceTree = "<group>"; };
 		157EB18F20F0B1EA00CEF457 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
 		157EB19020F0B1EA00CEF457 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		158C4E2B2048F8DB00940689 /* TingYunTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TingYunTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -906,6 +921,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15123EBD21E9DB6B0037BB0C /* UISearchController */ = {
+			isa = PBXGroup;
+			children = (
+				15123EBE21E9DB990037BB0C /* UISearchControllerTestVC.h */,
+				15123EBF21E9DB990037BB0C /* UISearchControllerTestVC.m */,
+				1515C64621E9DDCC00426E87 /* SearchResultsViewController.h */,
+				1515C64721E9DDCC00426E87 /* SearchResultsViewController.m */,
+			);
+			name = UISearchController;
+			sourceTree = "<group>";
+		};
 		151FE8EA204FC2EF00BFAD8E /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -1259,6 +1285,8 @@
 		156FA9C41E557E650065504B /* iosTest2017 */ = {
 			isa = PBXGroup;
 			children = (
+				15123EBD21E9DB6B0037BB0C /* UISearchController */,
+				1579ED9B21E71F010080BE17 /* UISegmentedControl */,
 				15BE589621D2649F0028626B /* UIAppearanceTest */,
 				1546B4C021CE336C0072B89F /* MKMapView */,
 				1553EC4121B3C2A800C51706 /* UICollectionView */,
@@ -1327,6 +1355,19 @@
 				157696C121930EAC0086BF70 /* LoopSortTest.m */,
 			);
 			path = "循环排序Test";
+			sourceTree = "<group>";
+		};
+		1579ED9B21E71F010080BE17 /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				1579ED9C21E71F250080BE17 /* UISegmentedControlVC.h */,
+				1579ED9D21E71F250080BE17 /* UISegmentedControlVC.m */,
+				1579ED9F21E733E70080BE17 /* MLCustomSegmentedControl.h */,
+				1579EDA021E733E70080BE17 /* MLCustomSegmentedControl.m */,
+				1579EDA221E734E50080BE17 /* MLCustomSegmentedControlItemView.h */,
+				1579EDA321E734E50080BE17 /* MLCustomSegmentedControlItemView.m */,
+			);
+			name = UISegmentedControl;
 			sourceTree = "<group>";
 		};
 		158C4E2C2048F8DB00940689 /* TingYunTest */ = {
@@ -2909,8 +2950,13 @@
 				1553D5122089DEB9009AC812 /* UIToobarTestViewController.m in Sources */,
 				15268316217FFF7C000276F4 /* UINavigationControllerTest.m in Sources */,
 				15E21347219E9FCD00409495 /* UINavigationItem+BackItem.m in Sources */,
+				1515C64821E9DDCC00426E87 /* SearchResultsViewController.m in Sources */,
 				15BE589921D264D00028626B /* UIAppearanceTest.m in Sources */,
+				1579EDA421E734E50080BE17 /* MLCustomSegmentedControlItemView.m in Sources */,
+				15123EC021E9DB9A0037BB0C /* UISearchControllerTestVC.m in Sources */,
+				1579EDA121E733E70080BE17 /* MLCustomSegmentedControl.m in Sources */,
 				1546B4CF21D0B3D10072B89F /* MLAnnotationView.m in Sources */,
+				1579ED9E21E71F250080BE17 /* UISegmentedControlVC.m in Sources */,
 				159ECE1D2092C60C005A1204 /* UILabelViewController.m in Sources */,
 				159ECE212092E7B6005A1204 /* YZJScrollLabel.m in Sources */,
 			);
