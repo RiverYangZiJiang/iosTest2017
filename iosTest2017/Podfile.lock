@@ -30,6 +30,9 @@ PODS:
   - XMNetworking/Lib (1.0.2):
     - XMNetworking/Lib/AFNetworking-3.1.0 (= 1.0.2)
   - XMNetworking/Lib/AFNetworking-3.1.0 (1.0.2)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -39,6 +42,7 @@ DEPENDENCIES:
   - Masonry
   - tingyunApp (~> 2.8.2)
   - XMNetworking
+  - YYCategories
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -50,6 +54,7 @@ SPEC REPOS:
     - Masonry
     - tingyunApp
     - XMNetworking
+    - YYCategories
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
@@ -60,7 +65,8 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   tingyunApp: 2d9a7367a2c3f37df8657b1df457d2d2b01aba88
   XMNetworking: bcc1d167c4386fb6bfefb0d6c7087f09333c2e09
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 3761ca34cc701f41e1331f68cbfb3f766c927d75
+PODFILE CHECKSUM: 777eee1ddd4fae8e905d2fd1dd2097b7baafc2c4
 
 COCOAPODS: 1.5.0

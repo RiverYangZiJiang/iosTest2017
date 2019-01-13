@@ -17,6 +17,7 @@
 #import "UIAppearanceTest.h"
 #import "UISegmentedControlVC.h"
 #import "UISearchControllerTestVC.h"
+#import "UIScrollViewTestVC.h"
 
 @interface ViewController ()
 
@@ -48,7 +49,9 @@
 //    [self.navigationController pushViewController:[[MKMapViewTestVC alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[UISegmentedControlVC alloc] init] animated:YES];
     
-    [self.navigationController pushViewController:[[UISearchControllerTestVC alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[UISearchControllerTestVC alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[UIScrollViewTestVC alloc] init] animated:YES];
+    
 }
 
 
