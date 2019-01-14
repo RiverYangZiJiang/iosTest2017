@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		15123EC021E9DB9A0037BB0C /* UISearchControllerTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15123EBF21E9DB990037BB0C /* UISearchControllerTestVC.m */; };
 		1515C64821E9DDCC00426E87 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C64721E9DDCC00426E87 /* SearchResultsViewController.m */; };
+		1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C65F21EC7EC700426E87 /* UIScrollViewTestVC.m */; };
+		1515C66421EC7EDF00426E87 /* CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66321EC7EDF00426E87 /* CommentModel.m */; };
+		1515C66921EC7EEB00426E87 /* MLRatingStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66621EC7EEB00426E87 /* MLRatingStarView.m */; };
+		1515C66A21EC7EEB00426E87 /* MLCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66721EC7EEB00426E87 /* MLCommentCell.m */; };
+		1515C67321EC7FF500426E87 /* MLAppDetailDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66B21EC7FF400426E87 /* MLAppDetailDescriptionCell.m */; };
+		1515C67421EC7FF500426E87 /* MLAppDetailUpgradeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66F21EC7FF500426E87 /* MLAppDetailUpgradeCell.m */; };
+		1515C67521EC7FF500426E87 /* MLAppDetailIntroductionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C67021EC7FF500426E87 /* MLAppDetailIntroductionCell.m */; };
+		1515C67621EC7FF500426E87 /* MLAppDetailPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C67221EC7FF500426E87 /* MLAppDetailPreviewCell.m */; };
+		1515C67921ECA2FD00426E87 /* MLAppDetailActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C67821ECA2FD00426E87 /* MLAppDetailActionButton.m */; };
+		1515C67C21ECB14100426E87 /* MLMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C67B21ECB14100426E87 /* MLMoreView.m */; };
 		151FE8ED204FC2EF00BFAD8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE8EC204FC2EF00BFAD8E /* AppDelegate.m */; };
 		151FE8F0204FC2EF00BFAD8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE8EF204FC2EF00BFAD8E /* ViewController.m */; };
 		151FE8F3204FC2EF00BFAD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151FE8F1204FC2EF00BFAD8E /* Main.storyboard */; };
@@ -48,7 +58,6 @@
 		152B2D6C20B8E9BB00145A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152B2D6B20B8E9BB00145A8D /* Assets.xcassets */; };
 		152B2D6F20B8E9BB00145A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152B2D6D20B8E9BB00145A8D /* LaunchScreen.storyboard */; };
 		152B2D7220B8E9BB00145A8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B2D7120B8E9BB00145A8D /* main.m */; };
-		152D9E4A21EACE8800905DE1 /* UIScrollViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 152D9E4921EACE8800905DE1 /* UIScrollViewTestVC.m */; };
 		152D9E4F21EAD2F600905DE1 /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 152D9E4E21EAD2F600905DE1 /* NSObject+Addition.m */; };
 		1535943421CB7502003DCF56 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535943321CB7502003DCF56 /* CustomCollectionViewCell.m */; };
 		1546B4C321CE33930072B89F /* MKMapViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546B4C221CE33920072B89F /* MKMapViewTestVC.m */; };
@@ -301,6 +310,30 @@
 		15123EBF21E9DB990037BB0C /* UISearchControllerTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISearchControllerTestVC.m; sourceTree = "<group>"; };
 		1515C64621E9DDCC00426E87 /* SearchResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
 		1515C64721E9DDCC00426E87 /* SearchResultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
+		1515C65821EC443F00426E87 /* MLMacroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMacroView.h; sourceTree = "<group>"; };
+		1515C65921EC444000426E87 /* MLMarcoFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMarcoFont.h; sourceTree = "<group>"; };
+		1515C65A21EC444000426E87 /* MLMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMacro.h; sourceTree = "<group>"; };
+		1515C65B21EC444000426E87 /* MLMacroColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMacroColor.h; sourceTree = "<group>"; };
+		1515C65F21EC7EC700426E87 /* UIScrollViewTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewTestVC.m; sourceTree = "<group>"; };
+		1515C66021EC7EC700426E87 /* UIScrollViewTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollViewTestVC.h; sourceTree = "<group>"; };
+		1515C66221EC7EDF00426E87 /* CommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentModel.h; sourceTree = "<group>"; };
+		1515C66321EC7EDF00426E87 /* CommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentModel.m; sourceTree = "<group>"; };
+		1515C66521EC7EEB00426E87 /* MLRatingStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLRatingStarView.h; sourceTree = "<group>"; };
+		1515C66621EC7EEB00426E87 /* MLRatingStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLRatingStarView.m; sourceTree = "<group>"; };
+		1515C66721EC7EEB00426E87 /* MLCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCommentCell.m; sourceTree = "<group>"; };
+		1515C66821EC7EEB00426E87 /* MLCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCommentCell.h; sourceTree = "<group>"; };
+		1515C66B21EC7FF400426E87 /* MLAppDetailDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailDescriptionCell.m; sourceTree = "<group>"; };
+		1515C66C21EC7FF400426E87 /* MLAppDetailUpgradeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLAppDetailUpgradeCell.h; sourceTree = "<group>"; };
+		1515C66D21EC7FF400426E87 /* MLAppDetailPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLAppDetailPreviewCell.h; sourceTree = "<group>"; };
+		1515C66E21EC7FF500426E87 /* MLAppDetailIntroductionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLAppDetailIntroductionCell.h; sourceTree = "<group>"; };
+		1515C66F21EC7FF500426E87 /* MLAppDetailUpgradeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailUpgradeCell.m; sourceTree = "<group>"; };
+		1515C67021EC7FF500426E87 /* MLAppDetailIntroductionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailIntroductionCell.m; sourceTree = "<group>"; };
+		1515C67121EC7FF500426E87 /* MLAppDetailDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLAppDetailDescriptionCell.h; sourceTree = "<group>"; };
+		1515C67221EC7FF500426E87 /* MLAppDetailPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailPreviewCell.m; sourceTree = "<group>"; };
+		1515C67721ECA2FD00426E87 /* MLAppDetailActionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDetailActionButton.h; sourceTree = "<group>"; };
+		1515C67821ECA2FD00426E87 /* MLAppDetailActionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailActionButton.m; sourceTree = "<group>"; };
+		1515C67A21ECB14100426E87 /* MLMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLMoreView.h; sourceTree = "<group>"; };
+		1515C67B21ECB14100426E87 /* MLMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLMoreView.m; sourceTree = "<group>"; };
 		151FE8E9204FC2EE00BFAD8E /* OCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151FE8EB204FC2EF00BFAD8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		151FE8EC204FC2EF00BFAD8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -372,8 +405,6 @@
 		152B2D6E20B8E9BB00145A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		152B2D7020B8E9BB00145A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		152B2D7120B8E9BB00145A8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		152D9E4821EACE8800905DE1 /* UIScrollViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIScrollViewTestVC.h; sourceTree = "<group>"; };
-		152D9E4921EACE8800905DE1 /* UIScrollViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewTestVC.m; sourceTree = "<group>"; };
 		152D9E4B21EAD2C000905DE1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		152D9E4D21EAD2F600905DE1 /* NSObject+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Addition.h"; sourceTree = "<group>"; };
 		152D9E4E21EAD2F600905DE1 /* NSObject+Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Addition.m"; sourceTree = "<group>"; };
@@ -938,6 +969,66 @@
 			name = UISearchController;
 			sourceTree = "<group>";
 		};
+		1515C65621EC439600426E87 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				1515C65721EC43A100426E87 /* Macros */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		1515C65721EC43A100426E87 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				1515C65A21EC444000426E87 /* MLMacro.h */,
+				1515C65B21EC444000426E87 /* MLMacroColor.h */,
+				1515C65821EC443F00426E87 /* MLMacroView.h */,
+				1515C65921EC444000426E87 /* MLMarcoFont.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		1515C65C21EC7E2300426E87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1515C67121EC7FF500426E87 /* MLAppDetailDescriptionCell.h */,
+				1515C66B21EC7FF400426E87 /* MLAppDetailDescriptionCell.m */,
+				1515C66E21EC7FF500426E87 /* MLAppDetailIntroductionCell.h */,
+				1515C67021EC7FF500426E87 /* MLAppDetailIntroductionCell.m */,
+				1515C66D21EC7FF400426E87 /* MLAppDetailPreviewCell.h */,
+				1515C67221EC7FF500426E87 /* MLAppDetailPreviewCell.m */,
+				1515C66C21EC7FF400426E87 /* MLAppDetailUpgradeCell.h */,
+				1515C66F21EC7FF500426E87 /* MLAppDetailUpgradeCell.m */,
+				1515C66821EC7EEB00426E87 /* MLCommentCell.h */,
+				1515C66721EC7EEB00426E87 /* MLCommentCell.m */,
+				1515C66521EC7EEB00426E87 /* MLRatingStarView.h */,
+				1515C66621EC7EEB00426E87 /* MLRatingStarView.m */,
+				1515C67721ECA2FD00426E87 /* MLAppDetailActionButton.h */,
+				1515C67821ECA2FD00426E87 /* MLAppDetailActionButton.m */,
+				1515C67A21ECB14100426E87 /* MLMoreView.h */,
+				1515C67B21ECB14100426E87 /* MLMoreView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1515C65D21EC7E2900426E87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1515C66221EC7EDF00426E87 /* CommentModel.h */,
+				1515C66321EC7EDF00426E87 /* CommentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1515C65E21EC7E2D00426E87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1515C66021EC7EC700426E87 /* UIScrollViewTestVC.h */,
+				1515C65F21EC7EC700426E87 /* UIScrollViewTestVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		151FE8EA204FC2EF00BFAD8E /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -1084,10 +1175,11 @@
 		152D9E4721EACE6200905DE1 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				152D9E4821EACE8800905DE1 /* UIScrollViewTestVC.h */,
-				152D9E4921EACE8800905DE1 /* UIScrollViewTestVC.m */,
+				1515C65E21EC7E2D00426E87 /* Controller */,
+				1515C65D21EC7E2900426E87 /* Model */,
+				1515C65C21EC7E2300426E87 /* View */,
 			);
-			name = UIScrollView;
+			path = UIScrollView;
 			sourceTree = "<group>";
 		};
 		152D9E4C21EAD2D600905DE1 /* Category */ = {
@@ -1309,6 +1401,7 @@
 		156FA9C41E557E650065504B /* iosTest2017 */ = {
 			isa = PBXGroup;
 			children = (
+				1515C65621EC439600426E87 /* Expand */,
 				152D9E4C21EAD2D600905DE1 /* Category */,
 				152D9E4721EACE6200905DE1 /* UIScrollView */,
 				15123EBD21E9DB6B0037BB0C /* UISearchController */,
@@ -2961,27 +3054,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1515C66A21EC7EEB00426E87 /* MLCommentCell.m in Sources */,
 				156FA9CD1E557E650065504B /* ViewController.m in Sources */,
 				155DB18A2181E87600C95E3D /* UIWebViewTest.m in Sources */,
+				1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */,
 				156FA9CA1E557E650065504B /* AppDelegate.m in Sources */,
+				1515C67421EC7FF500426E87 /* MLAppDetailUpgradeCell.m in Sources */,
 				1553EC4421B3C2E400C51706 /* UICollectionViewTestViewController.m in Sources */,
+				1515C67521EC7FF500426E87 /* MLAppDetailIntroductionCell.m in Sources */,
+				1515C67621EC7FF500426E87 /* MLAppDetailPreviewCell.m in Sources */,
 				156FA9C71E557E650065504B /* main.m in Sources */,
 				152D9E4F21EAD2F600905DE1 /* NSObject+Addition.m in Sources */,
 				1553D518208ACE32009AC812 /* AVCaptureSessionTest.m in Sources */,
 				1546B4C321CE33930072B89F /* MKMapViewTestVC.m in Sources */,
+				1515C67321EC7FF500426E87 /* MLAppDetailDescriptionCell.m in Sources */,
 				15C525262085D18E008BA73B /* CustomTableViewCell.m in Sources */,
-				152D9E4A21EACE8800905DE1 /* UIScrollViewTestVC.m in Sources */,
 				159B9CD8207FB0E700A516A4 /* UITableViewControllerTest.m in Sources */,
 				155DB1862181E7F300C95E3D /* WKWebViewTest.m in Sources */,
 				1546B4CA21D07FFA0072B89F /* MLAnnotation.m in Sources */,
 				1535943421CB7502003DCF56 /* CustomCollectionViewCell.m in Sources */,
 				1553D5122089DEB9009AC812 /* UIToobarTestViewController.m in Sources */,
 				15268316217FFF7C000276F4 /* UINavigationControllerTest.m in Sources */,
+				1515C66921EC7EEB00426E87 /* MLRatingStarView.m in Sources */,
 				15E21347219E9FCD00409495 /* UINavigationItem+BackItem.m in Sources */,
 				1515C64821E9DDCC00426E87 /* SearchResultsViewController.m in Sources */,
 				15BE589921D264D00028626B /* UIAppearanceTest.m in Sources */,
+				1515C67921ECA2FD00426E87 /* MLAppDetailActionButton.m in Sources */,
 				1579EDA421E734E50080BE17 /* MLCustomSegmentedControlItemView.m in Sources */,
+				1515C67C21ECB14100426E87 /* MLMoreView.m in Sources */,
 				15123EC021E9DB9A0037BB0C /* UISearchControllerTestVC.m in Sources */,
+				1515C66421EC7EDF00426E87 /* CommentModel.m in Sources */,
 				1579EDA121E733E70080BE17 /* MLCustomSegmentedControl.m in Sources */,
 				1546B4CF21D0B3D10072B89F /* MLAnnotationView.m in Sources */,
 				1579ED9E21E71F250080BE17 /* UISegmentedControlVC.m in Sources */,
