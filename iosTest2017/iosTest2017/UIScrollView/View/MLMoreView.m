@@ -43,19 +43,29 @@
     NSLog(@"%s", __func__);
     button.selected = !button.selected;
     
-    CGSize size = [self.moreButton.titleLabel.text sizeForFont:self.moreButton.titleLabel.font size:CGSizeMake(MAXFLOAT, MAXFLOAT) mode:NSLineBreakByCharWrapping];
-    
+    // 获取最新宽度
+    CGSize buttonSize;
     if (button.selected) {
+        NSString *title = @"COLLAPSE";
+        buttonSize = [title sizeForFont:self.moreButton.titleLabel.font size:CGSizeMake(MAXFLOAT, MAXFLOAT) mode:NSLineBreakByCharWrapping];
         self.leftView.hidden = YES;
-        self.moreViewWidth = size.width + 1;
+        self.moreViewWidth = buttonSize.width + 1;
     }else{
+        NSString *title = @"MORE";
+        buttonSize = [title sizeForFont:self.moreButton.titleLabel.font size:CGSizeMake(MAXFLOAT, MAXFLOAT) mode:NSLineBreakByCharWrapping];
         self.leftView.hidden = NO;
-        self.moreViewWidth = 19 + size.width + 1;
+        self.moreViewWidth = 19 + buttonSize.width + 1;
     }
     
+    NSLog(@"moreViewWidth = %f", self.moreViewWidth);
+    // 更新宽度
     [button mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(@(size.width + 1));
+        make.width.equalTo(@(buttonSize.width + 1));
     }];
+    
+//    [self mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.width.equalTo(@(self.moreViewWidth));
+//    }];
     
     if ([self.delegate respondsToSelector:@selector(moreViewMoreButtonClicked:)]) {
         [self.delegate moreViewMoreButtonClicked:button];
@@ -66,7 +76,7 @@
     if (!_leftView) {
         _leftView = UIView.new;
         _leftView.backgroundColor = color_neutral_white;
-        _leftView.alpha = 0.8;
+        _leftView.alpha = 0.7;
     }
     return _leftView;
 }

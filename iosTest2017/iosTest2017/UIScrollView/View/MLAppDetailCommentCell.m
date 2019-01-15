@@ -1,15 +1,15 @@
 //
-//  MLCommentCell.m
+//  MLAppDetailCommentCell.m
 //  iosTest2017
 //
 //  Created by yangzijiang on 2019/1/14.
 //  Copyright © 2019 yangzijiang. All rights reserved.
 //
 
-#import "MLCommentCell.h"
+#import "MLAppDetailCommentCell.h"
 #import "MLRatingStarView.h"
 
-@interface MLCommentCell ()
+@interface MLAppDetailCommentCell ()
 @property (strong, nonatomic) UILabel *userLabel;
 
 @property (strong, nonatomic) UILabel *feedback_descLabel;
@@ -23,12 +23,12 @@
 
 @end
 
-@implementation MLCommentCell
+@implementation MLAppDetailCommentCell
 
-+ (MLCommentCell *)cellWithTableView:(UITableView *)tableView{
-    MLCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MLCommentCell"];
++ (MLAppDetailCommentCell *)cellWithTableView:(UITableView *)tableView{
+    MLAppDetailCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MLAppDetailCommentCell"];
     if (!cell) {
-        cell = [[MLCommentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MLCommentCell"];
+        cell = [[MLAppDetailCommentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MLAppDetailCommentCell"];
     }
     return cell;
 }
@@ -82,6 +82,7 @@
 #pragma mark - Public
 + (CGFloat)cellHeightByCommentModel:(CommentModel *)commentModel{
     CGSize size = [commentModel.feedback_desc sizeForFont:font_size_body size:CGSizeMake((ScreenWidth - (8 + 18) * 2 ), MAXFLOAT) mode:NSLineBreakByWordWrapping];
+    NSLog(@"%s feedback_desc = %@, height = %f", __func__, commentModel.feedback_desc, size.height);
     return 62.5 + size.height + 1;
 }
 
@@ -123,7 +124,6 @@
         _feedback_descLabel.textColor = color_neutral_charcoal_medium;
         _feedback_descLabel.font = font_size_body;
         _feedback_descLabel.textAlignment = NSTextAlignmentLeft;
-        _feedback_descLabel.text = @"You can use it for daily attendance You can use it for daily attendance.";
         _feedback_descLabel.lineBreakMode = NSLineBreakByWordWrapping;
         _feedback_descLabel.numberOfLines = 0;
     }

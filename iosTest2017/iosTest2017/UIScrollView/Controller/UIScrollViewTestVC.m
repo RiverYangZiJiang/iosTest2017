@@ -9,7 +9,7 @@
 #import "UIScrollViewTestVC.h"
 #import <Masonry/Masonry.h>
 #import "MLRatingStarView.h"
-#import "MLCommentCell.h"
+#import "MLAppDetailCommentCell.h"
 #import "CommentModel.h"
 #import "MLAppDetailUpgradeCell.h"
 #import "MLAppDetailPreviewCell.h"
@@ -285,16 +285,17 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CommentModel *model = self.commentsData[indexPath.row];
     if (self.introductionTableView.hidden) {  // 评论表格
-        if (model.cellHeight == 0) {
-            model.cellHeight = [MLCommentCell cellHeightByCommentModel:model];
-        }
+//        if (model.cellHeight == 0) {
+            model.cellHeight = [MLAppDetailCommentCell cellHeightByCommentModel:model];
+//        }
         
         return model.cellHeight;
     }else{  // 介绍表格
         if (indexPath.row == 0) {  // 介绍
             return 119.5;
         }else if(indexPath.row == 1) {  // 描述
-            return 112;
+//            return 112;
+            return [MLAppDetailDescriptionCell cellHeightByCommentModel:model];
         }else if(indexPath.row == 2) {  // Preview
             return 342;
         }else if(indexPath.row == 3) {  // Upgrade
@@ -306,7 +307,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (self.introductionTableView.hidden) {  // 评论表格
-        MLCommentCell *cell = [MLCommentCell cellWithTableView:tableView];
+        MLAppDetailCommentCell *cell = [MLAppDetailCommentCell cellWithTableView:tableView];
         cell.commentModel = self.commentsData[indexPath.row];
         return cell;
     }else{  // 介绍表格

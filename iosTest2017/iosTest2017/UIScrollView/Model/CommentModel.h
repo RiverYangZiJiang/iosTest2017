@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 该Model对应的Cell高度。注：缓存高度，这样大数据量场景下也不会卡顿
 @property (nonatomic, assign) CGFloat cellHeight;
+/// 更多按钮是否已经选中
+@property (assign, nonatomic) BOOL moreButtonIsSelected;
 
 - (instancetype)initWithDeviceModel:(NSString *)device_model feedback_desc:(NSString *)feedback_desc feedback_time:(NSString *)feedback_time rating:(NSString *)rating user:(NSString *)user;
 

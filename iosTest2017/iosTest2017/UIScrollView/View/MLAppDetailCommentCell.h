@@ -1,5 +1,5 @@
 //
-//  MLCommentCell.h
+//  MLAppDetailCommentCell.h
 //  iosTest2017
 //
 //  Created by yangzijiang on 2019/1/14.
@@ -11,10 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MLCommentCell : UITableViewCell
+@interface MLAppDetailCommentCell : UITableViewCell
 @property (strong, nonatomic) CommentModel *commentModel;
 
-+ (MLCommentCell *)cellWithTableView:(UITableView *)tableView;
++ (MLAppDetailCommentCell *)cellWithTableView:(UITableView *)tableView;
 
 + (CGFloat)cellHeightByCommentModel:(CommentModel *)commentModel;
 @end

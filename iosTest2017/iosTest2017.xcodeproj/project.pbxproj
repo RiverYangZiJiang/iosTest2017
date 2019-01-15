@@ -12,7 +12,7 @@
 		1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C65F21EC7EC700426E87 /* UIScrollViewTestVC.m */; };
 		1515C66421EC7EDF00426E87 /* CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66321EC7EDF00426E87 /* CommentModel.m */; };
 		1515C66921EC7EEB00426E87 /* MLRatingStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66621EC7EEB00426E87 /* MLRatingStarView.m */; };
-		1515C66A21EC7EEB00426E87 /* MLCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66721EC7EEB00426E87 /* MLCommentCell.m */; };
+		1515C66A21EC7EEB00426E87 /* MLAppDetailCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66721EC7EEB00426E87 /* MLAppDetailCommentCell.m */; };
 		1515C67321EC7FF500426E87 /* MLAppDetailDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66B21EC7FF400426E87 /* MLAppDetailDescriptionCell.m */; };
 		1515C67421EC7FF500426E87 /* MLAppDetailUpgradeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C66F21EC7FF500426E87 /* MLAppDetailUpgradeCell.m */; };
 		1515C67521EC7FF500426E87 /* MLAppDetailIntroductionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C67021EC7FF500426E87 /* MLAppDetailIntroductionCell.m */; };
@@ -320,8 +320,8 @@
 		1515C66321EC7EDF00426E87 /* CommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentModel.m; sourceTree = "<group>"; };
 		1515C66521EC7EEB00426E87 /* MLRatingStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLRatingStarView.h; sourceTree = "<group>"; };
 		1515C66621EC7EEB00426E87 /* MLRatingStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLRatingStarView.m; sourceTree = "<group>"; };
-		1515C66721EC7EEB00426E87 /* MLCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCommentCell.m; sourceTree = "<group>"; };
-		1515C66821EC7EEB00426E87 /* MLCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCommentCell.h; sourceTree = "<group>"; };
+		1515C66721EC7EEB00426E87 /* MLAppDetailCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailCommentCell.m; sourceTree = "<group>"; };
+		1515C66821EC7EEB00426E87 /* MLAppDetailCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLAppDetailCommentCell.h; sourceTree = "<group>"; };
 		1515C66B21EC7FF400426E87 /* MLAppDetailDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailDescriptionCell.m; sourceTree = "<group>"; };
 		1515C66C21EC7FF400426E87 /* MLAppDetailUpgradeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLAppDetailUpgradeCell.h; sourceTree = "<group>"; };
 		1515C66D21EC7FF400426E87 /* MLAppDetailPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLAppDetailPreviewCell.h; sourceTree = "<group>"; };
@@ -999,8 +999,8 @@
 				1515C67221EC7FF500426E87 /* MLAppDetailPreviewCell.m */,
 				1515C66C21EC7FF400426E87 /* MLAppDetailUpgradeCell.h */,
 				1515C66F21EC7FF500426E87 /* MLAppDetailUpgradeCell.m */,
-				1515C66821EC7EEB00426E87 /* MLCommentCell.h */,
-				1515C66721EC7EEB00426E87 /* MLCommentCell.m */,
+				1515C66821EC7EEB00426E87 /* MLAppDetailCommentCell.h */,
+				1515C66721EC7EEB00426E87 /* MLAppDetailCommentCell.m */,
 				1515C66521EC7EEB00426E87 /* MLRatingStarView.h */,
 				1515C66621EC7EEB00426E87 /* MLRatingStarView.m */,
 				1515C67721ECA2FD00426E87 /* MLAppDetailActionButton.h */,
@@ -3054,7 +3054,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1515C66A21EC7EEB00426E87 /* MLCommentCell.m in Sources */,
+				1515C66A21EC7EEB00426E87 /* MLAppDetailCommentCell.m in Sources */,
 				156FA9CD1E557E650065504B /* ViewController.m in Sources */,
 				155DB18A2181E87600C95E3D /* UIWebViewTest.m in Sources */,
 				1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */,
