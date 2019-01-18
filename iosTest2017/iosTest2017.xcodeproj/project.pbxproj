@@ -269,6 +269,7 @@
 		15FE5BCB20621B0B00198615 /* LogHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15FE5BC820621B0B00198615 /* LogHelper.mm */; };
 		15FE5BCC20621B0B00198615 /* LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE5BCA20621B0B00198615 /* LogUtil.m */; };
 		15FE5BCD2062329200198615 /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FE5BC020620D7000198615 /* mars.framework */; };
+		15FF404E21F1D1290060DB78 /* UIImageViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FF404D21F1D1290060DB78 /* UIImageViewTestVC.m */; };
 		5566FA0F637918F904A59B3C /* libPods-iosTest2017.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3078D81D591FDAE11DD35D /* libPods-iosTest2017.a */; };
 		8AF1770321380F8E0092F35E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1526356D1FF51EDC00B350F2 /* Info.plist */; };
 		BB4207F105463D6264738707 /* libPods-OCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 491E3C900002CC7C70539BFC /* libPods-OCTest.a */; };
@@ -778,6 +779,8 @@
 		15FE5BC820621B0B00198615 /* LogHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LogHelper.mm; sourceTree = "<group>"; };
 		15FE5BC920621B0B00198615 /* LogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
 		15FE5BCA20621B0B00198615 /* LogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUtil.m; sourceTree = "<group>"; };
+		15FF404C21F1D1290060DB78 /* UIImageViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewTestVC.h; sourceTree = "<group>"; };
+		15FF404D21F1D1290060DB78 /* UIImageViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewTestVC.m; sourceTree = "<group>"; };
 		2E14ED1B9C8E151FEF9E8E09 /* libPods-MasonryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A3F9C242BCC2EA0A7332B7 /* Pods-OCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		491E3C900002CC7C70539BFC /* libPods-OCTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1401,6 +1404,7 @@
 		156FA9C41E557E650065504B /* iosTest2017 */ = {
 			isa = PBXGroup;
 			children = (
+				15FF404B21F1D0FC0060DB78 /* UIImageView */,
 				1515C65621EC439600426E87 /* Expand */,
 				152D9E4C21EAD2D600905DE1 /* Category */,
 				152D9E4721EACE6200905DE1 /* UIScrollView */,
@@ -2039,6 +2043,15 @@
 				15FE5BCA20621B0B00198615 /* LogUtil.m */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		15FF404B21F1D0FC0060DB78 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				15FF404C21F1D1290060DB78 /* UIImageViewTestVC.h */,
+				15FF404D21F1D1290060DB78 /* UIImageViewTestVC.m */,
+			);
+			name = UIImageView;
 			sourceTree = "<group>";
 		};
 		2F3909B50E6778A63C5AE757 /* Frameworks */ = {
@@ -3085,6 +3098,7 @@
 				15123EC021E9DB9A0037BB0C /* UISearchControllerTestVC.m in Sources */,
 				1515C66421EC7EDF00426E87 /* CommentModel.m in Sources */,
 				1579EDA121E733E70080BE17 /* MLCustomSegmentedControl.m in Sources */,
+				15FF404E21F1D1290060DB78 /* UIImageViewTestVC.m in Sources */,
 				1546B4CF21D0B3D10072B89F /* MLAnnotationView.m in Sources */,
 				1579ED9E21E71F250080BE17 /* UISegmentedControlVC.m in Sources */,
 				159ECE1D2092C60C005A1204 /* UILabelViewController.m in Sources */,
