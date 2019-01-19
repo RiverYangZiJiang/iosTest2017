@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MLRatingStarView : UIView
 @property (nonatomic, copy) NSString *rating;
 
-- (instancetype)initWithRating:(NSString *)rating;
+- (instancetype)initWithRating:(NSString *)rating width:(CGFloat)width;
 @end
 
 NS_ASSUME_NONNULL_END

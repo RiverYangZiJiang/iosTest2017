@@ -7,16 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CommentModel.h"
+#import "MLAppDetailUpgradeInfo.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+/**
+ App详情界面Upgrade单元格
+ */
 @interface MLAppDetailUpgradeCell : UITableViewCell
-@property (strong, nonatomic) CommentModel *commentModel;
+@property (strong, nonatomic) NSArray<MLAppDetailUpgradeInfo *> *upgradeInfoArray;
 
 + (MLAppDetailUpgradeCell *)cellWithTableView:(UITableView *)tableView;
 
-+ (CGFloat)cellHeightByCommentModel:(CommentModel *)commentModel;
++ (CGFloat)cellHeightByUpgradeInfoArray:(NSArray<MLAppDetailUpgradeInfo *> *)upgradeInfoArray;
 @end
 
 NS_ASSUME_NONNULL_END

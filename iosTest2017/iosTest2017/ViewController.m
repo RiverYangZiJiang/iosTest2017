@@ -51,9 +51,9 @@
 //    [self.navigationController pushViewController:[[UISegmentedControlVC alloc] init] animated:YES];
     
 //    [self.navigationController pushViewController:[[UISearchControllerTestVC alloc] init] animated:YES];
-//    [self.navigationController pushViewController:[[UIScrollViewTestVC alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[UIScrollViewTestVC alloc] init] animated:YES];
     
-    [self.navigationController pushViewController:[[UIImageViewTestVC alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[UIImageViewTestVC alloc] init] animated:YES];
     
     
     

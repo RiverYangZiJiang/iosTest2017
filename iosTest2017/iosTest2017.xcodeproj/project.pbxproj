@@ -106,6 +106,10 @@
 		155DB1862181E7F300C95E3D /* WKWebViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 155DB1852181E7F300C95E3D /* WKWebViewTest.m */; };
 		155DB18A2181E87600C95E3D /* UIWebViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 155DB1892181E87600C95E3D /* UIWebViewTest.m */; };
 		155DB1912184519200C95E3D /* JSONTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 155DB1902184519200C95E3D /* JSONTest.m */; };
+		1565DE0321F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1565DE0221F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.m */; };
+		1565DE0621F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1565DE0521F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.m */; };
+		1565DE0921F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1565DE0821F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m */; };
+		1565DE0C21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1565DE0B21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.m */; };
 		156FA9C71E557E650065504B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 156FA9C61E557E650065504B /* main.m */; };
 		156FA9CA1E557E650065504B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 156FA9C91E557E650065504B /* AppDelegate.m */; };
 		156FA9CD1E557E650065504B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 156FA9CC1E557E650065504B /* ViewController.m */; };
@@ -481,6 +485,14 @@
 		155DB1892181E87600C95E3D /* UIWebViewTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewTest.m; sourceTree = "<group>"; };
 		155DB18F2184519200C95E3D /* JSONTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONTest.h; sourceTree = "<group>"; };
 		155DB1902184519200C95E3D /* JSONTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONTest.m; sourceTree = "<group>"; };
+		1565DE0121F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDetailPostACommentsTopView.h; sourceTree = "<group>"; };
+		1565DE0221F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailPostACommentsTopView.m; sourceTree = "<group>"; };
+		1565DE0421F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDetailPostACommentsView.h; sourceTree = "<group>"; };
+		1565DE0521F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailPostACommentsView.m; sourceTree = "<group>"; };
+		1565DE0721F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDetailUpgradeInfoCell.h; sourceTree = "<group>"; };
+		1565DE0821F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailUpgradeInfoCell.m; sourceTree = "<group>"; };
+		1565DE0A21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDetailUpgradeInfo.h; sourceTree = "<group>"; };
+		1565DE0B21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailUpgradeInfo.m; sourceTree = "<group>"; };
 		156FA9C21E557E650065504B /* iosTest2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTest2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156FA9C61E557E650065504B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		156FA9C81E557E650065504B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1010,6 +1022,12 @@
 				1515C67821ECA2FD00426E87 /* MLAppDetailActionButton.m */,
 				1515C67A21ECB14100426E87 /* MLMoreView.h */,
 				1515C67B21ECB14100426E87 /* MLMoreView.m */,
+				1565DE0121F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.h */,
+				1565DE0221F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.m */,
+				1565DE0421F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.h */,
+				1565DE0521F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.m */,
+				1565DE0721F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.h */,
+				1565DE0821F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1019,6 +1037,8 @@
 			children = (
 				1515C66221EC7EDF00426E87 /* CommentModel.h */,
 				1515C66321EC7EDF00426E87 /* CommentModel.m */,
+				1565DE0A21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.h */,
+				1565DE0B21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2262,6 +2282,7 @@
 				156FA9BE1E557E650065504B /* Sources */,
 				156FA9BF1E557E650065504B /* Frameworks */,
 				156FA9C01E557E650065504B /* Resources */,
+				94ECB844904C6FF0A05A6F2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2842,6 +2863,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		94ECB844904C6FF0A05A6F2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A7CEE2EFEBE0A9A151E07028 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3069,6 +3108,7 @@
 			files = (
 				1515C66A21EC7EEB00426E87 /* MLAppDetailCommentCell.m in Sources */,
 				156FA9CD1E557E650065504B /* ViewController.m in Sources */,
+				1565DE0321F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.m in Sources */,
 				155DB18A2181E87600C95E3D /* UIWebViewTest.m in Sources */,
 				1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */,
 				156FA9CA1E557E650065504B /* AppDelegate.m in Sources */,
@@ -3078,6 +3118,7 @@
 				1515C67621EC7FF500426E87 /* MLAppDetailPreviewCell.m in Sources */,
 				156FA9C71E557E650065504B /* main.m in Sources */,
 				152D9E4F21EAD2F600905DE1 /* NSObject+Addition.m in Sources */,
+				1565DE0C21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.m in Sources */,
 				1553D518208ACE32009AC812 /* AVCaptureSessionTest.m in Sources */,
 				1546B4C321CE33930072B89F /* MKMapViewTestVC.m in Sources */,
 				1515C67321EC7FF500426E87 /* MLAppDetailDescriptionCell.m in Sources */,
@@ -3086,8 +3127,10 @@
 				155DB1862181E7F300C95E3D /* WKWebViewTest.m in Sources */,
 				1546B4CA21D07FFA0072B89F /* MLAnnotation.m in Sources */,
 				1535943421CB7502003DCF56 /* CustomCollectionViewCell.m in Sources */,
+				1565DE0921F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m in Sources */,
 				1553D5122089DEB9009AC812 /* UIToobarTestViewController.m in Sources */,
 				15268316217FFF7C000276F4 /* UINavigationControllerTest.m in Sources */,
+				1565DE0621F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.m in Sources */,
 				1515C66921EC7EEB00426E87 /* MLRatingStarView.m in Sources */,
 				15E21347219E9FCD00409495 /* UINavigationItem+BackItem.m in Sources */,
 				1515C64821E9DDCC00426E87 /* SearchResultsViewController.m in Sources */,

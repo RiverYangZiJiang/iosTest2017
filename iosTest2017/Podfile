@@ -6,6 +6,8 @@ pod 'YYCategories'
 pod 'CocoaLumberjack'
 pod 'SDWebImage'
 #pod 'BAWKWebView'
+pod 'IQKeyboardManager'
+pod 'UITextView+Placeholder'
 end
 
 target 'AFNetworkingTest-2017' do

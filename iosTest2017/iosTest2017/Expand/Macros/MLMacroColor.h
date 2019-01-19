@@ -107,6 +107,19 @@ bar.backIndicatorTransitionMaskImage = indicatorImage; \
 #define color_functional_8794ff HEX_COLOR(0x8794ff)
 #define color_functional_ac7acd HEX_COLOR(0xac7acd)
 #define color_functional_37c0cd HEX_COLOR(0x37c0cd)
+#define color_functional_53627c HEX_COLOR(0x53627c)
+#define color_functional_bdc3cd HEX_COLOR(0xbdc3cd)
+#define color_functional_242a34 HEX_COLOR(0x242a34)
+#define color_functional_a6aebc HEX_COLOR(0xa6aebc)
+#define color_functional_78849c HEX_COLOR(0x78849c)
+#define color_functional_e70f08 HEX_COLOR(0xe70f08)
+#define color_functional_1c2b4d HEX_COLOR(0x1c2b4d)
+#define color_functional_78849c HEX_COLOR(0x78849c)
+#define color_functional_53627c HEX_COLOR(0x53627c)
+
+
+
+
 
 
 // 表格单元格Line的颜色

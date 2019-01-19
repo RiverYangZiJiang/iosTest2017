@@ -132,7 +132,7 @@
 
 - (MLRatingStarView *)ratingStarView{
     if (!_ratingStarView) {
-        _ratingStarView = [[MLRatingStarView alloc] initWithRating:self.commentModel.rating];
+        _ratingStarView = [[MLRatingStarView alloc] initWithRating:self.commentModel.rating width:12];
     }
     return _ratingStarView;
 }

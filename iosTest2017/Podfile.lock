@@ -26,11 +26,13 @@ PODS:
   - CocoaLumberjack/Default (3.4.2)
   - CocoaLumberjack/Extensions (3.4.2):
     - CocoaLumberjack/Default
+  - IQKeyboardManager (6.2.0)
   - Masonry (1.1.0)
   - SDWebImage (4.4.3):
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
   - tingyunApp (2.8.2)
+  - "UITextView+Placeholder (1.2.1)"
   - XMNetworking (1.0.2):
     - XMNetworking/Core (= 1.0.2)
     - XMNetworking/Lib (= 1.0.2)
@@ -49,9 +51,11 @@ DEPENDENCIES:
   - AMapSearch
   - AvoidCrash (~> 2.5.2)
   - CocoaLumberjack
+  - IQKeyboardManager
   - Masonry
   - SDWebImage
   - tingyunApp (~> 2.8.2)
+  - "UITextView+Placeholder"
   - XMNetworking
   - YYCategories
 
@@ -63,9 +67,11 @@ SPEC REPOS:
     - AMapSearch
     - AvoidCrash
     - CocoaLumberjack
+    - IQKeyboardManager
     - Masonry
     - SDWebImage
     - tingyunApp
+    - "UITextView+Placeholder"
     - XMNetworking
     - YYCategories
 
@@ -76,12 +82,14 @@ SPEC CHECKSUMS:
   AMapSearch: e3f96bd0681abe70abba303709a1a05625a8f76c
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   tingyunApp: 2d9a7367a2c3f37df8657b1df457d2d2b01aba88
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
   XMNetworking: bcc1d167c4386fb6bfefb0d6c7087f09333c2e09
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: c038c201fc09691010db38314b43928635860c7f
+PODFILE CHECKSUM: 80bcbbff35c5b15ef735a5fc47bee4c98ead31e2
 
 COCOAPODS: 1.5.0

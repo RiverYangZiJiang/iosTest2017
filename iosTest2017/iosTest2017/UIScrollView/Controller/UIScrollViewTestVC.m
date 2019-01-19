@@ -16,6 +16,10 @@
 #import "MLAppDetailIntroductionCell.h"
 #import "MLAppDetailDescriptionCell.h"
 #import "MLAppDetailActionButton.h"
+#import "MLAppDetailPostACommentsTopView.h"
+#import "MLAppDetailPostACommentsView.h"
+#import "MLAppDetailUpgradeInfo.h"
+
 
 @interface UIScrollViewTestVC ()<UITableViewDelegate, UITableViewDataSource>
 /// introduction栏用来容纳其他视图
@@ -50,9 +54,14 @@
 @property (strong, nonatomic) UITableView *introductionTableView;
 
 /// 评论表格视图
+@property (strong, nonatomic) UIView *commentsView;
 @property (strong, nonatomic) UITableView *commentsTableView;
+@property (strong, nonatomic) MLAppDetailPostACommentsTopView *postACommentsTopView;
 /// 评论数据
 @property (strong, nonatomic) NSMutableArray *commentsData;
+@property (strong, nonatomic) NSArray<MLAppDetailUpgradeInfo *> *upgradeInfoArray;
+
+@property (strong, nonatomic) MLAppDetailPostACommentsView *postACommentsView;
 @end
 
 @implementation UIScrollViewTestVC
@@ -94,16 +103,31 @@
     }];
     
     // 评论表格视图
-    [self.blankView addSubview:self.commentsTableView];
-    [self.commentsTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.blankView addSubview:self.commentsView];
+    [self.commentsView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.middleView.mas_bottom);
         make.left.right.equalTo(self.blankView);
         make.bottom.equalTo(self.blankView);
     }];
     
+    [self.commentsTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.equalTo(_commentsView);
+        make.bottom.equalTo(self.postACommentsTopView.mas_top);
+    }];
+    
     // 必须加上以下代码，否则commentsTableView没法滚动上去
     [self.blankView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.commentsTableView.mas_bottom);
+        make.bottom.equalTo(self.commentsView.mas_bottom);
+    }];
+    
+    [self.postACommentsTopView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(_commentsView);
+        make.height.equalTo(@48);
+    }];
+    
+    [self.view addSubview:self.postACommentsView];
+    [self.postACommentsView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
     }];
 }
 
@@ -228,7 +252,7 @@
     self.commentsButton.selected = NO;
     self.commentsButtonLine.hidden = YES;
     
-    self.commentsTableView.hidden = YES;
+    self.commentsView.hidden = YES;
     self.introductionTableView.hidden = NO;
 }
 
@@ -245,7 +269,7 @@
     self.introductionButton.selected = NO;
     self.introductionButtonLine.hidden = YES;
     
-    self.commentsTableView.hidden = NO;
+    self.commentsView.hidden = NO;
     self.introductionTableView.hidden = YES;
     
     // 第一次点击评论按钮时，才刷新表格
@@ -267,6 +291,11 @@
     NSLog(@"%s", __func__);
 }
 
+- (void)postACommentsViewClicked:(UIGestureRecognizer *)gr{
+    NSLog(@"%s", __func__);
+    self.postACommentsView.hidden = NO;
+    [self.postACommentsView.comentTextView becomeFirstResponder];
+}
 #pragma mark - UITableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 //    MLDDLogDebug(@"");
@@ -299,7 +328,7 @@
         }else if(indexPath.row == 2) {  // Preview
             return 342;
         }else if(indexPath.row == 3) {  // Upgrade
-            return 309;
+            return [MLAppDetailUpgradeCell cellHeightByUpgradeInfoArray:self.upgradeInfoArray];
         }
     }
     return 44;
@@ -325,7 +354,7 @@
             return cell;
         }else if(indexPath.row == 3) {  // Upgrade
             MLAppDetailUpgradeCell *cell = [MLAppDetailUpgradeCell cellWithTableView:tableView];
-            cell.commentModel = self.commentsData[indexPath.row];
+            cell.upgradeInfoArray = self.upgradeInfoArray;
             return cell;
         }
     }
@@ -376,7 +405,7 @@
 
 - (MLRatingStarView *)starView{
     if (!_starView) {
-        _starView = [[MLRatingStarView alloc] initWithRating:@"3"];
+        _starView = [[MLRatingStarView alloc] initWithRating:@"3" width:12];
     }
     return _starView;
 }
@@ -495,6 +524,26 @@
 
 
 #pragma mark --- Comments
+- (UIView *)commentsView{
+    if (!_commentsView) {
+        _commentsView = UIView.new;
+        [_commentsView addSubview:self.commentsTableView];
+
+
+        [_commentsView addSubview:self.postACommentsTopView];
+    }
+    return _commentsView;
+}
+
+- (MLAppDetailPostACommentsTopView *)postACommentsTopView{
+    if (!_postACommentsTopView) {
+        _postACommentsTopView = MLAppDetailPostACommentsTopView.new;
+        UIGestureRecognizer *gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(postACommentsViewClicked:)];
+        [_postACommentsTopView addGestureRecognizer:gr];
+    }
+    return _postACommentsTopView;
+}
+
 - (UITableView *)commentsTableView{
     if (!_commentsTableView) {
         _commentsTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
@@ -503,9 +552,16 @@
         _commentsTableView.delegate = self;
         _commentsTableView.dataSource = self;
         _commentsTableView.showsVerticalScrollIndicator = NO;
-        _commentsTableView.hidden = YES;
     }
     return _commentsTableView;
+}
+
+- (MLAppDetailPostACommentsView *)postACommentsView{
+    if (!_postACommentsView) {
+        _postACommentsView = MLAppDetailPostACommentsView.new;
+        _postACommentsView.hidden = YES;
+    }
+    return _postACommentsView;
 }
 
 - (NSMutableArray *)commentsData{
@@ -513,5 +569,15 @@
         _commentsData = [CommentModel testData];
     }
     return _commentsData;
+}
+
+- (NSArray<MLAppDetailUpgradeInfo *> *)upgradeInfoArray{
+    if (!_upgradeInfoArray) {
+        MLAppDetailUpgradeInfo *upgradeInfo1 = [[MLAppDetailUpgradeInfo alloc] initWithTitle:@"V2.03.01" time:@"2018-01-01" descriptionInfo:@"— Experience optimization and bug fixes"];
+        MLAppDetailUpgradeInfo *upgradeInfo2 = [[MLAppDetailUpgradeInfo alloc] initWithTitle:@"V2.03.01" time:@"2018-01-01" descriptionInfo:@"— Experience optimization and bug fixes"];
+        MLAppDetailUpgradeInfo *upgradeInfo3 = [[MLAppDetailUpgradeInfo alloc] initWithTitle:@"V2.03.01" time:@"2018-01-01" descriptionInfo:@"— Experience optimization and bug fixes\n— Find out who stared following you\n— Respond to replies or be alerted to Tweets you were\nmentioned in"];
+        _upgradeInfoArray = @[upgradeInfo1, upgradeInfo2, upgradeInfo3];
+    }
+    return _upgradeInfoArray;
 }
 @end
