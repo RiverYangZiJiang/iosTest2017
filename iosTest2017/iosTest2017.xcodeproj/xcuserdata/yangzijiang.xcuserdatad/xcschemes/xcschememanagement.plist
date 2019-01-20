@@ -22,7 +22,7 @@
 		<key>CLanguageTest-2018.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>24</integer>
 		</dict>
 		<key>ControllerTest-2017.xcscheme</key>
 		<dict>
@@ -37,7 +37,7 @@
 		<key>CopyAndMutableCopy.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>22</integer>
 		</dict>
 		<key>CustomUIView.xcscheme</key>
 		<dict>
@@ -47,7 +47,7 @@
 		<key>CustomUIView.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>21</integer>
 		</dict>
 		<key>FileIO.xcscheme</key>
 		<dict>
@@ -57,7 +57,7 @@
 		<key>FileIO.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>23</integer>
 		</dict>
 		<key>InstrumentsTest.xcscheme</key>
 		<dict>
@@ -67,7 +67,7 @@
 		<key>InstrumentsTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>28</integer>
 		</dict>
 		<key>LogSystem.xcscheme</key>
 		<dict>
@@ -77,7 +77,7 @@
 		<key>LogSystem.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>27</integer>
 		</dict>
 		<key>MarsTest.xcscheme</key>
 		<dict>
@@ -92,7 +92,7 @@
 		<key>MasonryTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>26</integer>
+			<integer>25</integer>
 		</dict>
 		<key>OCTest.xcscheme</key>
 		<dict>
@@ -102,7 +102,7 @@
 		<key>OCTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>27</integer>
+			<integer>26</integer>
 		</dict>
 		<key>ProjectTest.xcscheme</key>
 		<dict>
@@ -132,7 +132,7 @@
 		<key>ThirdLibs-2018.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>28</integer>
+			<integer>29</integer>
 		</dict>
 		<key>TingYunTest.xcscheme</key>
 		<dict>
