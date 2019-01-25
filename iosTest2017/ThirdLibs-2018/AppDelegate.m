@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
 #import <AMapSearchKit/AMapSearchKit.h>
@@ -22,35 +23,62 @@
     
     [AMapServices sharedServices].apiKey = @"e969bec6d5737f443e6dda94449dc2a4";
     
+    [self navigationControllerTest];
+    //    [self tabBarControllerTest];
+    
     return YES;
 }
 
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+/**
+ 单View，不带导航条
+ */
+- (void)singleView{
+    self.window= [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor=[UIColor grayColor];
+    
+    ViewController *vc=[[ViewController alloc]init];
+    
+    self.window.rootViewController=vc;
+    
+    [self.window makeKeyAndVisible];
+    
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+/**
+ 单view，带导航条
+ */
+- (void)navigationControllerTest{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    ViewController *c = [[ViewController alloc] init];
+    c.title = @"title";
+    
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:c];
+    
+    self.window.rootViewController = nc;
+    
+    [self.window makeKeyAndVisible];
 }
 
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+- (void)tabBarControllerTest{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    // 导航控制器
+    ViewController *c = [[ViewController alloc] init];
+    c.title = @"title";
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:c];
+    
+    // 导航控制器1
+    ViewController *c1 = [[ViewController alloc] init];
+    c1.title = @"title1";
+    UINavigationController *nc1 = [[UINavigationController alloc] initWithRootViewController:c1];
+    
+    UITabBarController *tbc = [[UITabBarController alloc]init];
+    tbc.viewControllers = @[nc, nc1];  // 设置UITabBarController需要展示的控制器数组
+    
+    self.window.rootViewController = tbc;
+    [self.window makeKeyAndVisible];
 }
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
 
 @end

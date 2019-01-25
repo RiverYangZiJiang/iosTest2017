@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AMapVC.h"
+#import "LBXScanTestVC.h"
 
 
 @implementation ViewController
@@ -18,9 +19,10 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    UIViewController *vc = [[AMapVC alloc] init];
+//    UIViewController *vc = [[AMapVC alloc] init];
+    UIViewController *vc = [[LBXScanTestVC alloc] init];
     
-    [self presentViewController:vc animated:YES completion:nil];
+    [DCURLRouter pushViewController:vc animated:YES];
 }
 
 @end

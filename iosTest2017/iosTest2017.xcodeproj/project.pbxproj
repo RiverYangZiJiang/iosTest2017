@@ -12,6 +12,11 @@
 		150C6E7F21F488380077DA2D /* UIButton+MLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E7B21F488380077DA2D /* UIButton+MLCategory.m */; };
 		150C6E8221F4B2A50077DA2D /* UIImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E8121F4B2A50077DA2D /* UIImageTestVC.m */; };
 		150C6E8521F4B40A0077DA2D /* 封装.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 150C6E8421F4B40A0077DA2D /* 封装.rtf */; };
+		150C6E8C21FB51970077DA2D /* LBXScanTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E8B21FB51970077DA2D /* LBXScanTestVC.m */; };
+		150C6E8F21FB53F50077DA2D /* DIYScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E8E21FB53F50077DA2D /* DIYScanViewController.m */; };
+		150C6E9321FB56A80077DA2D /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E9121FB56A80077DA2D /* ScanResultViewController.m */; };
+		150C6E9421FB56A80077DA2D /* ScanResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150C6E9221FB56A80077DA2D /* ScanResultViewController.xib */; };
+		150C6E9921FB5FD00077DA2D /* StyleDIY.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E9821FB5FD00077DA2D /* StyleDIY.m */; };
 		15123EC021E9DB9A0037BB0C /* UISearchControllerTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15123EBF21E9DB990037BB0C /* UISearchControllerTestVC.m */; };
 		1515C64821E9DDCC00426E87 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C64721E9DDCC00426E87 /* SearchResultsViewController.m */; };
 		1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C65F21EC7EC700426E87 /* UIScrollViewTestVC.m */; };
@@ -325,6 +330,16 @@
 		150C6E8121F4B2A50077DA2D /* UIImageTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UIImageTestVC.m; path = UIImageView/UIImage/UIImageTestVC.m; sourceTree = "<group>"; };
 		150C6E8421F4B40A0077DA2D /* 封装.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "封装.rtf"; path = "封装/封装.rtf"; sourceTree = "<group>"; };
 		150C6E8721F4C84A0077DA2D /* 布局.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "布局.md"; path = "布局/布局.md"; sourceTree = "<group>"; };
+		150C6E8921FB4E8D0077DA2D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		150C6E8A21FB51970077DA2D /* LBXScanTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBXScanTestVC.h; sourceTree = "<group>"; };
+		150C6E8B21FB51970077DA2D /* LBXScanTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBXScanTestVC.m; sourceTree = "<group>"; };
+		150C6E8D21FB53F50077DA2D /* DIYScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYScanViewController.h; sourceTree = "<group>"; };
+		150C6E8E21FB53F50077DA2D /* DIYScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYScanViewController.m; sourceTree = "<group>"; };
+		150C6E9021FB56A70077DA2D /* ScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
+		150C6E9121FB56A80077DA2D /* ScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
+		150C6E9221FB56A80077DA2D /* ScanResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanResultViewController.xib; sourceTree = "<group>"; };
+		150C6E9721FB5FD00077DA2D /* StyleDIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleDIY.h; sourceTree = "<group>"; };
+		150C6E9821FB5FD00077DA2D /* StyleDIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleDIY.m; sourceTree = "<group>"; };
 		15123EBE21E9DB990037BB0C /* UISearchControllerTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISearchControllerTestVC.h; sourceTree = "<group>"; };
 		15123EBF21E9DB990037BB0C /* UISearchControllerTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISearchControllerTestVC.m; sourceTree = "<group>"; };
 		1515C64621E9DDCC00426E87 /* SearchResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
@@ -1001,6 +1016,22 @@
 			name = "布局";
 			sourceTree = "<group>";
 		};
+		150C6E8821FB4CF90077DA2D /* LBXScanTest */ = {
+			isa = PBXGroup;
+			children = (
+				150C6E9721FB5FD00077DA2D /* StyleDIY.h */,
+				150C6E9821FB5FD00077DA2D /* StyleDIY.m */,
+				150C6E9021FB56A70077DA2D /* ScanResultViewController.h */,
+				150C6E9121FB56A80077DA2D /* ScanResultViewController.m */,
+				150C6E9221FB56A80077DA2D /* ScanResultViewController.xib */,
+				150C6E8D21FB53F50077DA2D /* DIYScanViewController.h */,
+				150C6E8E21FB53F50077DA2D /* DIYScanViewController.m */,
+				150C6E8A21FB51970077DA2D /* LBXScanTestVC.h */,
+				150C6E8B21FB51970077DA2D /* LBXScanTestVC.m */,
+			);
+			path = LBXScanTest;
+			sourceTree = "<group>";
+		};
 		15123EBD21E9DB6B0037BB0C /* UISearchController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1207,6 +1238,7 @@
 		152B2D6120B8E9B800145A8D /* ThirdLibs-2018 */ = {
 			isa = PBXGroup;
 			children = (
+				150C6E8821FB4CF90077DA2D /* LBXScanTest */,
 				15EE82D121E61EBD00D6AD35 /* DCURLRouter */,
 				158EA7EB21DCAF4C00A27CE7 /* AMap */,
 				15F2CC1221C236F800438A20 /* MantleTest */,
@@ -1219,6 +1251,7 @@
 				152B2D6D20B8E9BB00145A8D /* LaunchScreen.storyboard */,
 				152B2D7020B8E9BB00145A8D /* Info.plist */,
 				152B2D7120B8E9BB00145A8D /* main.m */,
+				150C6E8921FB4E8D0077DA2D /* PrefixHeader.pch */,
 			);
 			path = "ThirdLibs-2018";
 			sourceTree = "<group>";
@@ -2714,6 +2747,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				152B2D6F20B8E9BB00145A8D /* LaunchScreen.storyboard in Resources */,
+				150C6E9421FB56A80077DA2D /* ScanResultViewController.xib in Resources */,
 				152B2D6C20B8E9BB00145A8D /* Assets.xcassets in Resources */,
 				15EE82DD21E61EDE00D6AD35 /* DCURLRouter.plist in Resources */,
 				152B2D6A20B8E9B800145A8D /* Main.storyboard in Resources */,
@@ -2890,10 +2924,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3118,14 +3154,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				15F2CC1521C2371500438A20 /* MantleTest.m in Sources */,
+				150C6E9921FB5FD00077DA2D /* StyleDIY.m in Sources */,
 				15EE82DB21E61EDE00D6AD35 /* DCURLNavgation.m in Sources */,
 				15EE82E121E61F1000D6AD35 /* DCURLRouterVCViewController.m in Sources */,
 				152B2D6720B8E9B800145A8D /* ViewController.m in Sources */,
+				150C6E9321FB56A80077DA2D /* ScanResultViewController.m in Sources */,
 				152B2D7220B8E9BB00145A8D /* main.m in Sources */,
 				15EE82DC21E61EDE00D6AD35 /* UIViewController+DCURLRouter.m in Sources */,
 				15EE82DA21E61EDE00D6AD35 /* DCURLRouter.m in Sources */,
 				158EA7EE21DCAF7C00A27CE7 /* AMapVC.m in Sources */,
+				150C6E8C21FB51970077DA2D /* LBXScanTestVC.m in Sources */,
 				152B2D6420B8E9B800145A8D /* AppDelegate.m in Sources */,
+				150C6E8F21FB53F50077DA2D /* DIYScanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3951,6 +3991,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X83UD87RT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "ThirdLibs-2018/PrefixHeader.pch";
 				INFOPLIST_FILE = "ThirdLibs-2018/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3981,6 +4022,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X83UD87RT;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = "ThirdLibs-2018/PrefixHeader.pch";
 				INFOPLIST_FILE = "ThirdLibs-2018/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
