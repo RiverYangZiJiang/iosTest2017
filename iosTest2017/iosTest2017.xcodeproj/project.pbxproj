@@ -218,6 +218,7 @@
 		15A1EB76206F2FE1002D5DB1 /* MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB75206F2FE1002D5DB1 /* MainThread.m */; };
 		15A1EB79206F8535002D5DB1 /* NSURLSessionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */; };
 		15A1EB7E2072240B002D5DB1 /* NSObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */; };
+		15AC1FDF22119F15005A0DB9 /* UIViewControllerTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AC1FDE22119F15005A0DB9 /* UIViewControllerTestVC.m */; };
 		15BE589921D264D00028626B /* UIAppearanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE589821D264D00028626B /* UIAppearanceTest.m */; };
 		15BE589B21D265D70028626B /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15BE589A21D265D70028626B /* back@3x.png */; };
 		15BE589E21D3037A0028626B /* arror.png in Resources */ = {isa = PBXBuildFile; fileRef = 15BE589D21D3037A0028626B /* arror.png */; };
@@ -701,6 +702,8 @@
 		15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionTest.m; sourceTree = "<group>"; };
 		15A1EB7C2072240A002D5DB1 /* NSObjectTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectTest.h; sourceTree = "<group>"; };
 		15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectTest.m; sourceTree = "<group>"; };
+		15AC1FDD22119F15005A0DB9 /* UIViewControllerTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewControllerTestVC.h; sourceTree = "<group>"; };
+		15AC1FDE22119F15005A0DB9 /* UIViewControllerTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerTestVC.m; sourceTree = "<group>"; };
 		15BE589721D264D00028626B /* UIAppearanceTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAppearanceTest.h; sourceTree = "<group>"; };
 		15BE589821D264D00028626B /* UIAppearanceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAppearanceTest.m; sourceTree = "<group>"; };
 		15BE589A21D265D70028626B /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
@@ -1489,6 +1492,7 @@
 		156FA9C41E557E650065504B /* iosTest2017 */ = {
 			isa = PBXGroup;
 			children = (
+				15AC1FDC22119EF0005A0DB9 /* UIViewController */,
 				150C6E8621F4C81F0077DA2D /* 布局 */,
 				150C6E8321F4B3CC0077DA2D /* 封装 */,
 				15FF404B21F1D0FC0060DB78 /* UIImageView */,
@@ -1906,6 +1910,15 @@
 				15A1EB75206F2FE1002D5DB1 /* MainThread.m */,
 			);
 			path = MultiThread;
+			sourceTree = "<group>";
+		};
+		15AC1FDC22119EF0005A0DB9 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15AC1FDD22119F15005A0DB9 /* UIViewControllerTestVC.h */,
+				15AC1FDE22119F15005A0DB9 /* UIViewControllerTestVC.m */,
+			);
+			name = UIViewController;
 			sourceTree = "<group>";
 		};
 		15BE589621D2649F0028626B /* UIAppearanceTest */ = {
@@ -3200,6 +3213,7 @@
 				1546B4C321CE33930072B89F /* MKMapViewTestVC.m in Sources */,
 				1515C67321EC7FF500426E87 /* MLAppDetailDescriptionCell.m in Sources */,
 				15C525262085D18E008BA73B /* CustomTableViewCell.m in Sources */,
+				15AC1FDF22119F15005A0DB9 /* UIViewControllerTestVC.m in Sources */,
 				159B9CD8207FB0E700A516A4 /* UITableViewControllerTest.m in Sources */,
 				155DB1862181E7F300C95E3D /* WKWebViewTest.m in Sources */,
 				1546B4CA21D07FFA0072B89F /* MLAnnotation.m in Sources */,

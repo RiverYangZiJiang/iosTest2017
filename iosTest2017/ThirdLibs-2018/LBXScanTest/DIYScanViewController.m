@@ -11,7 +11,10 @@
 
 
 @interface DIYScanViewController ()
-
+/**
+ @brief  扫码区域上方提示文字
+ */
+@property (nonatomic, strong) UILabel *topTitle;
 @end
 
 @implementation DIYScanViewController
@@ -20,7 +23,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.cameraInvokeMsg = @"相机启动中";
+//    self.cameraInvokeMsg = @"相机启动中";
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.view addSubview:self.topTitle];
+    [self.view bringSubviewToFront:self.topTitle];
 }
 
 #pragma mark -实现类继承该方法，作出对应处理
@@ -85,6 +94,17 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (UILabel *)topTitle{
+    if (!_topTitle) {
+        _topTitle = [[UILabel alloc]initWithFrame:CGRectMake(0, 50, self.view.bounds.size.width, 40)];
+        [_topTitle setText:@"请将条码置于取景框内扫描。"];
+        _topTitle.font = [UIFont systemFontOfSize:15];
+        _topTitle.numberOfLines = 0;
+        [_topTitle setTextColor:[UIColor whiteColor]];
+        _topTitle.textAlignment = NSTextAlignmentCenter;
+    }
+    return _topTitle;
+}
 @end
 
 

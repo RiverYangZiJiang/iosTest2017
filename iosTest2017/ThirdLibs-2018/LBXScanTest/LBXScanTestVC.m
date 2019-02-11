@@ -46,8 +46,9 @@
     LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
     
     style.centerUpOffset = 44;
-    style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle_On;
-    style.photoframeLineW = 6;
+    style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle_Inner;
+    style.colorAngle = [UIColor whiteColor];
+    style.photoframeLineW = 2;
     style.photoframeAngleW = 24;
     style.photoframeAngleH = 24;
     style.isNeedShowRetangle = YES;
@@ -55,7 +56,8 @@
     //矩形框离左边缘及右边缘的距离
     style.xScanRetangleOffset = 80;
     
-    style.animationImage = [StyleDIY createImageWithColor:[UIColor redColor]];
+//    style.animationImage = [StyleDIY createImageWithColor:[UIColor redColor]];
+    style.animationImage = [UIImage imageNamed:@"CodeScan.bundle/qrcode_scan_light_green"];
     
     style.notRecoginitonArea = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     

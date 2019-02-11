@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <LBXScanViewStyle.h>
+#import "LBXScanViewStyle.h"
 #import <ZXBarcodeFormat.h>
 
 

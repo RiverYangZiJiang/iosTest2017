@@ -7,7 +7,7 @@
 //
 
 
-#import <LBXScanViewController.h>
+#import "LBXScanViewController.h"
 
 @interface DIYScanViewController : LBXScanViewController
 
