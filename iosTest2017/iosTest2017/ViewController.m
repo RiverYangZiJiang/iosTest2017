@@ -35,6 +35,11 @@
 //    [self.navigationItem backBarButtonItem];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"%s", __func__);
+}
+
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     //    [self presentViewController:[[UILabelViewController alloc] init] animated:YES completion:nil];

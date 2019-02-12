@@ -13,9 +13,9 @@
 @end
 
 @implementation UIViewControllerTestVC
-- (void)loadView{
-    NSLog(@"%s", __func__);
-}
+//- (void)loadView{
+//    NSLog(@"%s", __func__);
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,5 +40,17 @@
     NSLog(@"%s", __func__);
 }
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    NSLog(@"%s", __func__);
+}
 
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    NSLog(@"%s", __func__);
+}
+
+- (void)dealloc{
+    NSLog(@"%s", __func__);
+}
 @end
