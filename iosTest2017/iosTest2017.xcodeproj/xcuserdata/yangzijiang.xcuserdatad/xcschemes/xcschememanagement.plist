@@ -37,7 +37,7 @@
 		<key>CopyAndMutableCopy.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>23</integer>
 		</dict>
 		<key>CustomUIView.xcscheme</key>
 		<dict>
@@ -57,7 +57,7 @@
 		<key>FileIO.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>22</integer>
 		</dict>
 		<key>InstrumentsTest.xcscheme</key>
 		<dict>

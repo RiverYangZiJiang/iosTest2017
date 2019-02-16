@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		150773CE2214032A0095FA41 /* NSErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 150773CD2214032A0095FA41 /* NSErrorTest.m */; };
+		150773D222142D5C0095FA41 /* iPhoneXAdaptivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 150773D122142D5C0095FA41 /* iPhoneXAdaptivityVC.m */; };
+		150773D5221518630095FA41 /* i18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 150773D4221518630095FA41 /* i18n.m */; };
+		150773DD221694E40095FA41 /* UIViewControllerTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 150773DC221694E40095FA41 /* UIViewControllerTemplate.m */; };
 		150C6E7D21F488380077DA2D /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E7721F488370077DA2D /* NSObject+Addition.m */; };
 		150C6E7E21F488380077DA2D /* UILabel+MLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E7921F488370077DA2D /* UILabel+MLCategory.m */; };
 		150C6E7F21F488380077DA2D /* UIButton+MLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E7B21F488380077DA2D /* UIButton+MLCategory.m */; };
@@ -318,6 +321,12 @@
 		0BE25EB4718AC25E6785C40D /* libPods-AFNetworkingTest-2017.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworkingTest-2017.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		150773CC2214032A0095FA41 /* NSErrorTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSErrorTest.h; sourceTree = "<group>"; };
 		150773CD2214032A0095FA41 /* NSErrorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSErrorTest.m; sourceTree = "<group>"; };
+		150773D022142D5C0095FA41 /* iPhoneXAdaptivityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneXAdaptivityVC.h; sourceTree = "<group>"; };
+		150773D122142D5C0095FA41 /* iPhoneXAdaptivityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneXAdaptivityVC.m; sourceTree = "<group>"; };
+		150773D3221518630095FA41 /* i18n.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = i18n.h; sourceTree = "<group>"; };
+		150773D4221518630095FA41 /* i18n.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = i18n.m; sourceTree = "<group>"; };
+		150773DB221694E30095FA41 /* UIViewControllerTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewControllerTemplate.h; sourceTree = "<group>"; };
+		150773DC221694E40095FA41 /* UIViewControllerTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerTemplate.m; sourceTree = "<group>"; };
 		150C6E7721F488370077DA2D /* NSObject+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Addition.m"; sourceTree = "<group>"; };
 		150C6E7821F488370077DA2D /* UILabel+MLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MLCategory.h"; sourceTree = "<group>"; };
 		150C6E7921F488370077DA2D /* UILabel+MLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MLCategory.m"; sourceTree = "<group>"; };
@@ -1050,6 +1059,24 @@
 			path = NSErrorTest;
 			sourceTree = "<group>";
 		};
+		150773CF22142CDD0095FA41 /* 适配 */ = {
+			isa = PBXGroup;
+			children = (
+				150773D022142D5C0095FA41 /* iPhoneXAdaptivityVC.h */,
+				150773D122142D5C0095FA41 /* iPhoneXAdaptivityVC.m */,
+			);
+			name = "适配";
+			sourceTree = "<group>";
+		};
+		150773D62215186F0095FA41 /* i18n */ = {
+			isa = PBXGroup;
+			children = (
+				150773D3221518630095FA41 /* i18n.h */,
+				150773D4221518630095FA41 /* i18n.m */,
+			);
+			path = i18n;
+			sourceTree = "<group>";
+		};
 		150C6E8321F4B3CC0077DA2D /* 封装 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1164,6 +1191,7 @@
 		151FE8EA204FC2EF00BFAD8E /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
+				150773D62215186F0095FA41 /* i18n */,
 				150773CB221402FC0095FA41 /* NSErrorTest */,
 				151FE8F9204FC2EF00BFAD8E /* Info.plist */,
 				150773CA2213FDAD0095FA41 /* NSPredicateTest */,
@@ -1528,6 +1556,7 @@
 		156FA9C41E557E650065504B /* iosTest2017 */ = {
 			isa = PBXGroup;
 			children = (
+				150773CF22142CDD0095FA41 /* 适配 */,
 				15AC1FDC22119EF0005A0DB9 /* UIViewController */,
 				150C6E8621F4C81F0077DA2D /* 布局 */,
 				150C6E8321F4B3CC0077DA2D /* 封装 */,
@@ -1929,6 +1958,8 @@
 			children = (
 				15AC1FDD22119F15005A0DB9 /* UIViewControllerTestVC.h */,
 				15AC1FDE22119F15005A0DB9 /* UIViewControllerTestVC.m */,
+				150773DB221694E30095FA41 /* UIViewControllerTemplate.h */,
+				150773DC221694E40095FA41 /* UIViewControllerTemplate.m */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -3065,6 +3096,7 @@
 			files = (
 				15A1EB7E2072240B002D5DB1 /* NSObjectTest.m in Sources */,
 				1590138E21A16CC6002EB47E /* YZJDownloadImageOperation.m in Sources */,
+				150773D5221518630095FA41 /* i18n.m in Sources */,
 				151FE8F0204FC2EF00BFAD8E /* ViewController.m in Sources */,
 				1590138B21A16C60002EB47E /* ARC-MRCTest.m in Sources */,
 				159ECE3F209437DA005A1204 /* NSPredicateTest.m in Sources */,
@@ -3180,6 +3212,7 @@
 			files = (
 				1515C66A21EC7EEB00426E87 /* MLAppDetailCommentCell.m in Sources */,
 				156FA9CD1E557E650065504B /* ViewController.m in Sources */,
+				150773DD221694E40095FA41 /* UIViewControllerTemplate.m in Sources */,
 				1565DE0321F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.m in Sources */,
 				155DB18A2181E87600C95E3D /* UIWebViewTest.m in Sources */,
 				1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */,
@@ -3212,6 +3245,7 @@
 				1515C67921ECA2FD00426E87 /* MLAppDetailActionButton.m in Sources */,
 				1579EDA421E734E50080BE17 /* MLCustomSegmentedControlItemView.m in Sources */,
 				1515C67C21ECB14100426E87 /* MLMoreView.m in Sources */,
+				150773D222142D5C0095FA41 /* iPhoneXAdaptivityVC.m in Sources */,
 				15123EC021E9DB9A0037BB0C /* UISearchControllerTestVC.m in Sources */,
 				1515C66421EC7EDF00426E87 /* CommentModel.m in Sources */,
 				1579EDA121E733E70080BE17 /* MLCustomSegmentedControl.m in Sources */,
