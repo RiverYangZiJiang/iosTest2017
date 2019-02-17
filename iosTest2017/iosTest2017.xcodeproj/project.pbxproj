@@ -146,6 +146,7 @@
 		1579EDA421E734E50080BE17 /* MLCustomSegmentedControlItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579EDA321E734E50080BE17 /* MLCustomSegmentedControlItemView.m */; };
 		157EB19120F0B1EA00CEF457 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 157EB19020F0B1EA00CEF457 /* NSString+Category.m */; };
 		158611D32219598300D9B44D /* MLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158611D22219598300D9B44D /* MLSettingViewController.m */; };
+		158611D622196DCB00D9B44D /* ___FILEBASENAME___.m in Sources */ = {isa = PBXBuildFile; fileRef = 158611D522196DCB00D9B44D /* ___FILEBASENAME___.m */; };
 		158C4E2F2048F8DB00940689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E2E2048F8DB00940689 /* AppDelegate.m */; };
 		158C4E322048F8DB00940689 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E312048F8DB00940689 /* ViewController.m */; };
 		158C4E352048F8DB00940689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E332048F8DB00940689 /* Main.storyboard */; };
@@ -579,6 +580,8 @@
 		157EB19020F0B1EA00CEF457 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		158611D12219598300D9B44D /* MLSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSettingViewController.h; sourceTree = "<group>"; };
 		158611D22219598300D9B44D /* MLSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSettingViewController.m; sourceTree = "<group>"; };
+		158611D422196DCB00D9B44D /* ___FILEBASENAME___.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___FILEBASENAME___.h"; sourceTree = "<group>"; };
+		158611D522196DCB00D9B44D /* ___FILEBASENAME___.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___FILEBASENAME___.m"; sourceTree = "<group>"; };
 		158C4E2B2048F8DB00940689 /* TingYunTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TingYunTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C4E2D2048F8DB00940689 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		158C4E2E2048F8DB00940689 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -2001,6 +2004,8 @@
 		15AC1FDC22119EF0005A0DB9 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				158611D422196DCB00D9B44D /* ___FILEBASENAME___.h */,
+				158611D522196DCB00D9B44D /* ___FILEBASENAME___.m */,
 				15AC1FDD22119F15005A0DB9 /* UIViewControllerTestVC.h */,
 				15AC1FDE22119F15005A0DB9 /* UIViewControllerTestVC.m */,
 				150773DB221694E30095FA41 /* UIViewControllerTemplate.h */,
@@ -3284,6 +3289,7 @@
 				1535943421CB7502003DCF56 /* CustomCollectionViewCell.m in Sources */,
 				1565DE0921F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m in Sources */,
 				1553D5122089DEB9009AC812 /* UIToobarTestViewController.m in Sources */,
+				158611D622196DCB00D9B44D /* ___FILEBASENAME___.m in Sources */,
 				15268316217FFF7C000276F4 /* UINavigationControllerTest.m in Sources */,
 				1565DE0621F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.m in Sources */,
 				150C6E7F21F488380077DA2D /* UIButton+MLCategory.m in Sources */,
