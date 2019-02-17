@@ -36,4 +36,6 @@
 #define font_size_bold_14 ML_BOLD_FONT_SIZE(14)
 #define font_size_bold_12 ML_BOLD_FONT_SIZE(12)
 #define font_size_bold_16 ML_BOLD_FONT_SIZE(16)
+
+#define font_size_15 ML_FONT_SIZE(15)
 #endif /* MLMarcoFont_h */

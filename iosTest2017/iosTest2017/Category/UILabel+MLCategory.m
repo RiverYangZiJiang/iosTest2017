@@ -10,16 +10,17 @@
 #import "NSString+YYAdd.h"
 
 @implementation UILabel (MLCategory)
-- (instancetype)initWithText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment
++ (UILabel *)labelWithText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSUInteger)numberOfLines
 {
-    self = [super init];
-    if (self) {
-        self.text = text;
-        self.font = font;
-        self.textColor = textColor;
-        self.textAlignment = textAlignment;
+    UILabel *label = [[UILabel alloc] init];
+    if (label) {
+        label.text = text;
+        label.font = font;
+        label.textColor = textColor;
+        label.textAlignment = textAlignment;
+        label.numberOfLines = numberOfLines;
     }
-    return self;
+    return label;
 }
 
 - (CGFloat)widthForSingleLine{

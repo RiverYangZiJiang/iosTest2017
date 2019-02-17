@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param textAlignment <#textAlignment description#>
  @return <#return value description#>
  */
-- (instancetype)initWithText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment;
++ (UILabel *)labelWithText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSUInteger)numberOfLines;
 
 /**
  单行UILabel的宽度，UILabel的mode默认为NSLineBreakByCharWrapping

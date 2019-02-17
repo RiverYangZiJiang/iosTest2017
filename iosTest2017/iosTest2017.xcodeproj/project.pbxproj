@@ -33,6 +33,11 @@
 		1515C67621EC7FF500426E87 /* MLAppDetailPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C67221EC7FF500426E87 /* MLAppDetailPreviewCell.m */; };
 		1515C67921ECA2FD00426E87 /* MLAppDetailActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C67821ECA2FD00426E87 /* MLAppDetailActionButton.m */; };
 		1515C67C21ECB14100426E87 /* MLMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1515C67B21ECB14100426E87 /* MLMoreView.m */; };
+		151CBF642218F4FF0096A398 /* MLVersionHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CBF632218F4FF0096A398 /* MLVersionHistoryViewController.m */; };
+		151CBF672218F5210096A398 /* MLVersionHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CBF662218F5210096A398 /* MLVersionHistory.m */; };
+		151CBF6A2218F58C0096A398 /* MLVersionHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CBF692218F58C0096A398 /* MLVersionHistoryCell.m */; };
+		151CBF70221912440096A398 /* MLAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CBF6F221912440096A398 /* MLAboutViewController.m */; };
+		151CBF7322193DF10096A398 /* MLAboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151CBF7222193DF10096A398 /* MLAboutCell.m */; };
 		151FE8ED204FC2EF00BFAD8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE8EC204FC2EF00BFAD8E /* AppDelegate.m */; };
 		151FE8F0204FC2EF00BFAD8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151FE8EF204FC2EF00BFAD8E /* ViewController.m */; };
 		151FE8F3204FC2EF00BFAD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151FE8F1204FC2EF00BFAD8E /* Main.storyboard */; };
@@ -140,6 +145,7 @@
 		1579EDA121E733E70080BE17 /* MLCustomSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579EDA021E733E70080BE17 /* MLCustomSegmentedControl.m */; };
 		1579EDA421E734E50080BE17 /* MLCustomSegmentedControlItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579EDA321E734E50080BE17 /* MLCustomSegmentedControlItemView.m */; };
 		157EB19120F0B1EA00CEF457 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 157EB19020F0B1EA00CEF457 /* NSString+Category.m */; };
+		158611D32219598300D9B44D /* MLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158611D22219598300D9B44D /* MLSettingViewController.m */; };
 		158C4E2F2048F8DB00940689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E2E2048F8DB00940689 /* AppDelegate.m */; };
 		158C4E322048F8DB00940689 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C4E312048F8DB00940689 /* ViewController.m */; };
 		158C4E352048F8DB00940689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158C4E332048F8DB00940689 /* Main.storyboard */; };
@@ -229,6 +235,9 @@
 		15CCEBD82044394400578AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CCEBD62044394400578AE8 /* LaunchScreen.storyboard */; };
 		15CCEBDB2044394400578AE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCEBDA2044394400578AE8 /* main.m */; };
 		15CCEBE12044397A00578AE8 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCEBE02044397A00578AE8 /* CustomView.m */; };
+		15CE80BC221944340007F956 /* MLAbout.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE80BB221944340007F956 /* MLAbout.m */; };
+		15CE80BF22194F430007F956 /* MLSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE80BE22194F430007F956 /* MLSetting.m */; };
+		15CE80C2221951140007F956 /* MLSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE80C1221951140007F956 /* MLSettingCell.m */; };
 		15D716B22096A37C00B492DD /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D716B12096A37C00B492DD /* NSArrayTest.m */; };
 		15E21347219E9FCD00409495 /* UINavigationItem+BackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21346219E9FCD00409495 /* UINavigationItem+BackItem.m */; };
 		15E21352219FBAD400409495 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21351219FBAD400409495 /* AppDelegate.m */; };
@@ -375,6 +384,16 @@
 		1515C67821ECA2FD00426E87 /* MLAppDetailActionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDetailActionButton.m; sourceTree = "<group>"; };
 		1515C67A21ECB14100426E87 /* MLMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLMoreView.h; sourceTree = "<group>"; };
 		1515C67B21ECB14100426E87 /* MLMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLMoreView.m; sourceTree = "<group>"; };
+		151CBF622218F4FF0096A398 /* MLVersionHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLVersionHistoryViewController.h; sourceTree = "<group>"; };
+		151CBF632218F4FF0096A398 /* MLVersionHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLVersionHistoryViewController.m; sourceTree = "<group>"; };
+		151CBF652218F5210096A398 /* MLVersionHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLVersionHistory.h; sourceTree = "<group>"; };
+		151CBF662218F5210096A398 /* MLVersionHistory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLVersionHistory.m; sourceTree = "<group>"; };
+		151CBF682218F58C0096A398 /* MLVersionHistoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLVersionHistoryCell.h; sourceTree = "<group>"; };
+		151CBF692218F58C0096A398 /* MLVersionHistoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLVersionHistoryCell.m; sourceTree = "<group>"; };
+		151CBF6E221912440096A398 /* MLAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAboutViewController.h; sourceTree = "<group>"; };
+		151CBF6F221912440096A398 /* MLAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAboutViewController.m; sourceTree = "<group>"; };
+		151CBF7122193DF10096A398 /* MLAboutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAboutCell.h; sourceTree = "<group>"; };
+		151CBF7222193DF10096A398 /* MLAboutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAboutCell.m; sourceTree = "<group>"; };
 		151FE8E9204FC2EE00BFAD8E /* OCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151FE8EB204FC2EF00BFAD8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		151FE8EC204FC2EF00BFAD8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -558,6 +577,8 @@
 		1579EDA321E734E50080BE17 /* MLCustomSegmentedControlItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCustomSegmentedControlItemView.m; sourceTree = "<group>"; };
 		157EB18F20F0B1EA00CEF457 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
 		157EB19020F0B1EA00CEF457 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		158611D12219598300D9B44D /* MLSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSettingViewController.h; sourceTree = "<group>"; };
+		158611D22219598300D9B44D /* MLSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSettingViewController.m; sourceTree = "<group>"; };
 		158C4E2B2048F8DB00940689 /* TingYunTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TingYunTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C4E2D2048F8DB00940689 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		158C4E2E2048F8DB00940689 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -720,6 +741,12 @@
 		15CCEBDA2044394400578AE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15CCEBDF2044397A00578AE8 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		15CCEBE02044397A00578AE8 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		15CE80BA221944340007F956 /* MLAbout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAbout.h; sourceTree = "<group>"; };
+		15CE80BB221944340007F956 /* MLAbout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAbout.m; sourceTree = "<group>"; };
+		15CE80BD22194F430007F956 /* MLSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSetting.h; sourceTree = "<group>"; };
+		15CE80BE22194F430007F956 /* MLSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSetting.m; sourceTree = "<group>"; };
+		15CE80C0221951140007F956 /* MLSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSettingCell.h; sourceTree = "<group>"; };
+		15CE80C1221951140007F956 /* MLSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSettingCell.m; sourceTree = "<group>"; };
 		15D716B02096A37C00B492DD /* NSArrayTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayTest.h; sourceTree = "<group>"; };
 		15D716B12096A37C00B492DD /* NSArrayTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
 		15E1F3091E6F89DB0014C731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1164,6 +1191,12 @@
 				1565DE0521F2BCA6004BAEB5 /* MLAppDetailPostACommentsView.m */,
 				1565DE0721F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.h */,
 				1565DE0821F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m */,
+				151CBF682218F58C0096A398 /* MLVersionHistoryCell.h */,
+				151CBF692218F58C0096A398 /* MLVersionHistoryCell.m */,
+				151CBF7122193DF10096A398 /* MLAboutCell.h */,
+				151CBF7222193DF10096A398 /* MLAboutCell.m */,
+				15CE80C0221951140007F956 /* MLSettingCell.h */,
+				15CE80C1221951140007F956 /* MLSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1175,6 +1208,12 @@
 				1515C66321EC7EDF00426E87 /* CommentModel.m */,
 				1565DE0A21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.h */,
 				1565DE0B21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.m */,
+				151CBF652218F5210096A398 /* MLVersionHistory.h */,
+				151CBF662218F5210096A398 /* MLVersionHistory.m */,
+				15CE80BA221944340007F956 /* MLAbout.h */,
+				15CE80BB221944340007F956 /* MLAbout.m */,
+				15CE80BD22194F430007F956 /* MLSetting.h */,
+				15CE80BE22194F430007F956 /* MLSetting.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1184,6 +1223,12 @@
 			children = (
 				1515C66021EC7EC700426E87 /* UIScrollViewTestVC.h */,
 				1515C65F21EC7EC700426E87 /* UIScrollViewTestVC.m */,
+				151CBF622218F4FF0096A398 /* MLVersionHistoryViewController.h */,
+				151CBF632218F4FF0096A398 /* MLVersionHistoryViewController.m */,
+				151CBF6E221912440096A398 /* MLAboutViewController.h */,
+				151CBF6F221912440096A398 /* MLAboutViewController.m */,
+				158611D12219598300D9B44D /* MLSettingViewController.h */,
+				158611D22219598300D9B44D /* MLSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3214,11 +3259,14 @@
 				156FA9CD1E557E650065504B /* ViewController.m in Sources */,
 				150773DD221694E40095FA41 /* UIViewControllerTemplate.m in Sources */,
 				1565DE0321F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.m in Sources */,
+				158611D32219598300D9B44D /* MLSettingViewController.m in Sources */,
 				155DB18A2181E87600C95E3D /* UIWebViewTest.m in Sources */,
 				1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */,
 				156FA9CA1E557E650065504B /* AppDelegate.m in Sources */,
+				151CBF70221912440096A398 /* MLAboutViewController.m in Sources */,
 				1515C67421EC7FF500426E87 /* MLAppDetailUpgradeCell.m in Sources */,
 				1553EC4421B3C2E400C51706 /* UICollectionViewTestViewController.m in Sources */,
+				151CBF6A2218F58C0096A398 /* MLVersionHistoryCell.m in Sources */,
 				1515C67521EC7FF500426E87 /* MLAppDetailIntroductionCell.m in Sources */,
 				1515C67621EC7FF500426E87 /* MLAppDetailPreviewCell.m in Sources */,
 				156FA9C71E557E650065504B /* main.m in Sources */,
@@ -3232,6 +3280,7 @@
 				159B9CD8207FB0E700A516A4 /* UITableViewControllerTest.m in Sources */,
 				155DB1862181E7F300C95E3D /* WKWebViewTest.m in Sources */,
 				1546B4CA21D07FFA0072B89F /* MLAnnotation.m in Sources */,
+				15CE80BF22194F430007F956 /* MLSetting.m in Sources */,
 				1535943421CB7502003DCF56 /* CustomCollectionViewCell.m in Sources */,
 				1565DE0921F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m in Sources */,
 				1553D5122089DEB9009AC812 /* UIToobarTestViewController.m in Sources */,
@@ -3240,8 +3289,11 @@
 				150C6E7F21F488380077DA2D /* UIButton+MLCategory.m in Sources */,
 				1515C66921EC7EEB00426E87 /* MLRatingStarView.m in Sources */,
 				15E21347219E9FCD00409495 /* UINavigationItem+BackItem.m in Sources */,
+				151CBF7322193DF10096A398 /* MLAboutCell.m in Sources */,
+				151CBF672218F5210096A398 /* MLVersionHistory.m in Sources */,
 				1515C64821E9DDCC00426E87 /* SearchResultsViewController.m in Sources */,
 				15BE589921D264D00028626B /* UIAppearanceTest.m in Sources */,
+				15CE80BC221944340007F956 /* MLAbout.m in Sources */,
 				1515C67921ECA2FD00426E87 /* MLAppDetailActionButton.m in Sources */,
 				1579EDA421E734E50080BE17 /* MLCustomSegmentedControlItemView.m in Sources */,
 				1515C67C21ECB14100426E87 /* MLMoreView.m in Sources */,
@@ -3252,6 +3304,8 @@
 				15FF404E21F1D1290060DB78 /* UIImageViewTestVC.m in Sources */,
 				1546B4CF21D0B3D10072B89F /* MLAnnotationView.m in Sources */,
 				1579ED9E21E71F250080BE17 /* UISegmentedControlVC.m in Sources */,
+				151CBF642218F4FF0096A398 /* MLVersionHistoryViewController.m in Sources */,
+				15CE80C2221951140007F956 /* MLSettingCell.m in Sources */,
 				150C6E7D21F488380077DA2D /* NSObject+Addition.m in Sources */,
 				159ECE1D2092C60C005A1204 /* UILabelViewController.m in Sources */,
 				159ECE212092E7B6005A1204 /* YZJScrollLabel.m in Sources */,

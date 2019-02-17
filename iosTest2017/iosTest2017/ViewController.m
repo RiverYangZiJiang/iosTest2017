@@ -20,6 +20,9 @@
 #import "UIScrollViewTestVC.h"
 #import "UIImageViewTestVC.h"
 #import "UIViewControllerTestVC.h"
+#import "MLVersionHistoryViewController.h"
+#import "MLAboutViewController.h"
+#import "MLSettingViewController.h"
 
 @interface ViewController ()
 
@@ -61,7 +64,12 @@
     
 //    [self.navigationController pushViewController:[[UIImageViewTestVC alloc] init] animated:YES];
     
-    [self.navigationController pushViewController:[[UIViewControllerTestVC alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[UIViewControllerTestVC alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[MLVersionHistoryViewController alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[MLAboutViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[MLSettingViewController alloc] init] animated:YES];
+    
+    
 }
 
 

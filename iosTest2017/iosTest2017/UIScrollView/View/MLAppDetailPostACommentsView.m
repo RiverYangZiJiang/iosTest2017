@@ -194,7 +194,7 @@ static const NSUInteger maxCharNum = 400;
 - (UITextView *)comentTextView{
     if (!_comentTextView) {
         _comentTextView = UITextView.new;
-        _comentTextView.textColor = color_functional_242a34;
+        _comentTextView.textColor = color_neutral_charcoal_dark;
         _comentTextView.font = font_size_body;
         _comentTextView.placeholder = @"Pleace enter your comment（up to 100 characters）";
         _comentTextView.placeholderColor = color_functional_a6aebc;
