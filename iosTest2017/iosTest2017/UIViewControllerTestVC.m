@@ -40,6 +40,11 @@
     NSLog(@"%s", __func__);
 }
 
+/**
+ push到下一个界面，会调用viewWillDisappear、viewDidDisappear，但不会调用dealloc
+
+ @param animated <#animated description#>
+ */
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     NSLog(@"%s", __func__);

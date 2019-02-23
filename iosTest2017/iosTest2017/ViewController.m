@@ -64,13 +64,31 @@
     
 //    [self.navigationController pushViewController:[[UIImageViewTestVC alloc] init] animated:YES];
     
-//    [self.navigationController pushViewController:[[UIViewControllerTestVC alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[UIViewControllerTestVC alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[MLVersionHistoryViewController alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[MLAboutViewController alloc] init] animated:YES];
-    [self.navigationController pushViewController:[[MLSettingViewController alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[MLSettingViewController alloc] init] animated:YES];
     
     
 }
 
+/**
+ push到下一个界面，会调用viewWillDisappear、viewDidDisappear，但不会调用dealloc
+
+ @param animated <#animated description#>
+ */
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    NSLog(@"%s", __func__);
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    NSLog(@"%s", __func__);
+}
+
+- (void)dealloc{
+    NSLog(@"%s", __func__);
+}
 
 @end

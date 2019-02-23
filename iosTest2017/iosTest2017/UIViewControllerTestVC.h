@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  [UIViewControllerTestVC viewDidAppear:]
  
  注：点击Home键并不会调用viewWillDisappear
- -[UIViewControllerTestVC viewWillDisappear:]  // push到下一个界面，本界面会调用viewWillDisappear
+ -[UIViewControllerTestVC viewWillDisappear:]  // push到下一个界面，会调用viewWillDisappear、viewDidDisappear，但不会调用dealloc
  -[UIViewControllerTestVC viewDidDisappear:]
  -[UIViewControllerTestVC dealloc]
  */

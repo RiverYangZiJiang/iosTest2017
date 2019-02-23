@@ -45,9 +45,9 @@
 //    [timerTest startTimer];
 //    [timerTest startTimerFire];
     
-//    [MainThread MainThreadTest];
+    [MainThread MainThreadTest];
     
-    [CLLocationManagerTest defaultInstance];
+//    [CLLocationManagerTest defaultInstance];
 //    [NSErrorTest test];
 }
 

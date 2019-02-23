@@ -13,7 +13,8 @@
 
 + (void)MainThreadTest{
 //    [[MainThread defaultInstance] subThreadNotification];
-    [MainThread dispatch_group_tTest];
+//    [MainThread dispatch_group_tTest];
+    [MainThread dispatch_semaphoreTest];
 }
 
 + (instancetype)defaultInstance {
@@ -80,6 +81,43 @@
     NSLog(@"end");
 }
 
+#pragma mark - 信号量-用新号控制线程的访问顺序和并发数
+/// OS GCD中级篇 - dispatch_semaphore（信号量）的理解及使用 https://www.cnblogs.com/yajunLi/p/6274282.html
++ (void)dispatch_semaphoreTest{
+    //crate的value表示，最多几个资源可访问，即同时最多开启几个线程
+//    dispatch_semaphore_t semaphore = dispatch_semaphore_create(2);
+    // 为1，则一次执行1个任务。任务1肯定最先执行；任务2、任务3，并没有按顺序执行，任务3可能早于任务2执行
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+    dispatch_queue_t quene = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    //任务1
+    dispatch_async(quene, ^{
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        NSLog(@"run task 1");
+        sleep(1);
+        NSLog(@"complete task 1");
+        dispatch_semaphore_signal(semaphore);
+    });
+    //任务2
+    dispatch_async(quene, ^{
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        NSLog(@"run task 2");
+        sleep(1);
+        NSLog(@"complete task 2");
+        dispatch_semaphore_signal(semaphore);
+    });
+    //任务3
+    dispatch_async(quene, ^{
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        NSLog(@"run task 3");
+        sleep(1);
+        NSLog(@"complete task 3");
+        dispatch_semaphore_signal(semaphore);
+    });
+}
+
+#pragma mark - GCD 高级用法总结
+// GCD 高级用法总结https://www.jianshu.com/p/8874881cf460
 /**
  ios 将一个函数在主线程执行的4种方法 http://blog.sina.com.cn/s/blog_a1d242c90102wjda.html
  1.GCD方法，通过向主线程队列发送一个block块，使block里的方法可以在主线程中执行。
