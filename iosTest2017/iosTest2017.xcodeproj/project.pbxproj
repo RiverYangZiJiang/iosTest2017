@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		150773CE2214032A0095FA41 /* NSErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 150773CD2214032A0095FA41 /* NSErrorTest.m */; };
-		150773D222142D5C0095FA41 /* iPhoneXAdaptivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 150773D122142D5C0095FA41 /* iPhoneXAdaptivityVC.m */; };
 		150773D5221518630095FA41 /* i18n.m in Sources */ = {isa = PBXBuildFile; fileRef = 150773D4221518630095FA41 /* i18n.m */; };
 		150773DD221694E40095FA41 /* UIViewControllerTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 150773DC221694E40095FA41 /* UIViewControllerTemplate.m */; };
 		150C6E7D21F488380077DA2D /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C6E7721F488370077DA2D /* NSObject+Addition.m */; };
@@ -71,6 +70,9 @@
 		152635911FF6317F00B350F2 /* CustomUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 152635901FF6317F00B350F2 /* CustomUIView.m */; };
 		152635941FFB886300B350F2 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 152635931FFB886200B350F2 /* FileUtil.m */; };
 		15268316217FFF7C000276F4 /* UINavigationControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268315217FFF7C000276F4 /* UINavigationControllerTest.m */; };
+		15279F4A222CC11B00DF6D1A /* FCFileManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15279F49222CC11B00DF6D1A /* FCFileManagerVC.m */; };
+		15279F5A222CCA0A00DF6D1A /* HotspotViewController in Resources */ = {isa = PBXBuildFile; fileRef = 15279F56222CCA0A00DF6D1A /* HotspotViewController */; };
+		15279F5C222CCA0A00DF6D1A /* iPhoneXAdaptivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15279F59222CCA0A00DF6D1A /* iPhoneXAdaptivityVC.m */; };
 		152B2D6420B8E9B800145A8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B2D6320B8E9B800145A8D /* AppDelegate.m */; };
 		152B2D6720B8E9B800145A8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B2D6620B8E9B800145A8D /* ViewController.m */; };
 		152B2D6A20B8E9B800145A8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152B2D6820B8E9B800145A8D /* Main.storyboard */; };
@@ -223,6 +225,10 @@
 		15A1EB76206F2FE1002D5DB1 /* MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB75206F2FE1002D5DB1 /* MainThread.m */; };
 		15A1EB79206F8535002D5DB1 /* NSURLSessionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */; };
 		15A1EB7E2072240B002D5DB1 /* NSObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */; };
+		15A908B1222778B40082217B /* SSZipArchiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A908B0222778B40082217B /* SSZipArchiveVC.m */; };
+		15A908B7222779E60082217B /* 2.md in Resources */ = {isa = PBXBuildFile; fileRef = 15A908B4222779E60082217B /* 2.md */; };
+		15A908B8222779E60082217B /* 1.md in Resources */ = {isa = PBXBuildFile; fileRef = 15A908B5222779E60082217B /* 1.md */; };
+		15A908BD222782260082217B /* mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A908BB222781A40082217B /* mountain.png */; };
 		15AC1FDF22119F15005A0DB9 /* UIViewControllerTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AC1FDE22119F15005A0DB9 /* UIViewControllerTestVC.m */; };
 		15BE589921D264D00028626B /* UIAppearanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BE589821D264D00028626B /* UIAppearanceTest.m */; };
 		15BE589B21D265D70028626B /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15BE589A21D265D70028626B /* back@3x.png */; };
@@ -248,6 +254,7 @@
 		15E21360219FBADB00409495 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2135F219FBADA00409495 /* main.m */; };
 		15E21366219FC13200409495 /* TestNSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21365219FC13200409495 /* TestNSTimer.m */; };
 		15E21369219FC61300409495 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21368219FC61300409495 /* ViewController1.m */; };
+		15E272DA222149C300BC7964 /* MLUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E272D9222149C300BC7964 /* MLUserDefaults.m */; };
 		15EE82DA21E61EDE00D6AD35 /* DCURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE82D221E61EDD00D6AD35 /* DCURLRouter.m */; };
 		15EE82DB21E61EDE00D6AD35 /* DCURLNavgation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE82D521E61EDD00D6AD35 /* DCURLNavgation.m */; };
 		15EE82DC21E61EDE00D6AD35 /* UIViewController+DCURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EE82D621E61EDD00D6AD35 /* UIViewController+DCURLRouter.m */; };
@@ -331,8 +338,6 @@
 		0BE25EB4718AC25E6785C40D /* libPods-AFNetworkingTest-2017.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworkingTest-2017.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		150773CC2214032A0095FA41 /* NSErrorTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSErrorTest.h; sourceTree = "<group>"; };
 		150773CD2214032A0095FA41 /* NSErrorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSErrorTest.m; sourceTree = "<group>"; };
-		150773D022142D5C0095FA41 /* iPhoneXAdaptivityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneXAdaptivityVC.h; sourceTree = "<group>"; };
-		150773D122142D5C0095FA41 /* iPhoneXAdaptivityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneXAdaptivityVC.m; sourceTree = "<group>"; };
 		150773D3221518630095FA41 /* i18n.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = i18n.h; sourceTree = "<group>"; };
 		150773D4221518630095FA41 /* i18n.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = i18n.m; sourceTree = "<group>"; };
 		150773DB221694E30095FA41 /* UIViewControllerTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewControllerTemplate.h; sourceTree = "<group>"; };
@@ -456,6 +461,15 @@
 		152635931FFB886200B350F2 /* FileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		15268314217FFF7C000276F4 /* UINavigationControllerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UINavigationControllerTest.h; sourceTree = "<group>"; };
 		15268315217FFF7C000276F4 /* UINavigationControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerTest.m; sourceTree = "<group>"; };
+		15279F48222CC11B00DF6D1A /* FCFileManagerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCFileManagerVC.h; sourceTree = "<group>"; };
+		15279F49222CC11B00DF6D1A /* FCFileManagerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCFileManagerVC.m; sourceTree = "<group>"; };
+		15279F4D222CC3FC00DF6D1A /* FCFileManager.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = FCFileManager.docx; sourceTree = "<group>"; };
+		15279F52222CC75B00DF6D1A /* ELFileManager-文件管理器以及UI层使用浏览器.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ELFileManager-文件管理器以及UI层使用浏览器.docx"; sourceTree = "<group>"; };
+		15279F54222CC76300DF6D1A /* FileMaster文件管理系统.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FileMaster文件管理系统.docx"; sourceTree = "<group>"; };
+		15279F56222CCA0A00DF6D1A /* HotspotViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HotspotViewController; sourceTree = "<group>"; };
+		15279F57222CCA0A00DF6D1A /* iOS字体大小适配的几种方法.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS字体大小适配的几种方法.docx"; sourceTree = "<group>"; };
+		15279F58222CCA0A00DF6D1A /* iPhoneXAdaptivityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneXAdaptivityVC.h; sourceTree = "<group>"; };
+		15279F59222CCA0A00DF6D1A /* iPhoneXAdaptivityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneXAdaptivityVC.m; sourceTree = "<group>"; };
 		152B2D6020B8E9B800145A8D /* ThirdLibs-2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ThirdLibs-2018.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		152B2D6220B8E9B800145A8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		152B2D6320B8E9B800145A8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -722,6 +736,11 @@
 		15A1EB78206F8535002D5DB1 /* NSURLSessionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionTest.m; sourceTree = "<group>"; };
 		15A1EB7C2072240A002D5DB1 /* NSObjectTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectTest.h; sourceTree = "<group>"; };
 		15A1EB7D2072240A002D5DB1 /* NSObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectTest.m; sourceTree = "<group>"; };
+		15A908AF222778B40082217B /* SSZipArchiveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSZipArchiveVC.h; sourceTree = "<group>"; };
+		15A908B0222778B40082217B /* SSZipArchiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSZipArchiveVC.m; sourceTree = "<group>"; };
+		15A908B4222779E60082217B /* 2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = 2.md; sourceTree = "<group>"; };
+		15A908B5222779E60082217B /* 1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = 1.md; sourceTree = "<group>"; };
+		15A908BB222781A40082217B /* mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountain.png; sourceTree = "<group>"; };
 		15AC1FDD22119F15005A0DB9 /* UIViewControllerTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewControllerTestVC.h; sourceTree = "<group>"; };
 		15AC1FDE22119F15005A0DB9 /* UIViewControllerTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerTestVC.m; sourceTree = "<group>"; };
 		15BE589721D264D00028626B /* UIAppearanceTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAppearanceTest.h; sourceTree = "<group>"; };
@@ -778,6 +797,8 @@
 		15E21365219FC13200409495 /* TestNSTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNSTimer.m; sourceTree = "<group>"; };
 		15E21367219FC61300409495 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		15E21368219FC61300409495 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		15E272D8222149C200BC7964 /* MLUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLUserDefaults.h; sourceTree = "<group>"; };
+		15E272D9222149C300BC7964 /* MLUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLUserDefaults.m; sourceTree = "<group>"; };
 		15EE82D221E61EDD00D6AD35 /* DCURLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCURLRouter.m; sourceTree = "<group>"; };
 		15EE82D321E61EDD00D6AD35 /* DCURLNavgation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCURLNavgation.h; sourceTree = "<group>"; };
 		15EE82D421E61EDD00D6AD35 /* DCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSingleton.h; sourceTree = "<group>"; };
@@ -1092,10 +1113,12 @@
 		150773CF22142CDD0095FA41 /* 适配 */ = {
 			isa = PBXGroup;
 			children = (
-				150773D022142D5C0095FA41 /* iPhoneXAdaptivityVC.h */,
-				150773D122142D5C0095FA41 /* iPhoneXAdaptivityVC.m */,
+				15279F56222CCA0A00DF6D1A /* HotspotViewController */,
+				15279F57222CCA0A00DF6D1A /* iOS字体大小适配的几种方法.docx */,
+				15279F58222CCA0A00DF6D1A /* iPhoneXAdaptivityVC.h */,
+				15279F59222CCA0A00DF6D1A /* iPhoneXAdaptivityVC.m */,
 			);
-			name = "适配";
+			path = "适配";
 			sourceTree = "<group>";
 		};
 		150773D62215186F0095FA41 /* i18n */ = {
@@ -1239,6 +1262,7 @@
 		151FE8EA204FC2EF00BFAD8E /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
+				15E272D7222142D600BC7964 /* NSUserDefaults */,
 				150773D62215186F0095FA41 /* i18n */,
 				150773CB221402FC0095FA41 /* NSErrorTest */,
 				151FE8F9204FC2EF00BFAD8E /* Info.plist */,
@@ -1352,9 +1376,47 @@
 			name = UINavigationController;
 			sourceTree = "<group>";
 		};
+		15279F47222CC0FE00DF6D1A /* File */ = {
+			isa = PBXGroup;
+			children = (
+				15279F51222CC6EC00DF6D1A /* ELFileManager-文件管理器以及UI层使用浏览器 */,
+				15279F50222CC51900DF6D1A /* FileMaster-文件管理系统 */,
+				15279F4F222CC50600DF6D1A /* FCFileManager */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		15279F4F222CC50600DF6D1A /* FCFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				15279F4D222CC3FC00DF6D1A /* FCFileManager.docx */,
+				15279F48222CC11B00DF6D1A /* FCFileManagerVC.h */,
+				15279F49222CC11B00DF6D1A /* FCFileManagerVC.m */,
+			);
+			path = FCFileManager;
+			sourceTree = "<group>";
+		};
+		15279F50222CC51900DF6D1A /* FileMaster-文件管理系统 */ = {
+			isa = PBXGroup;
+			children = (
+				15279F54222CC76300DF6D1A /* FileMaster文件管理系统.docx */,
+			);
+			path = "FileMaster-文件管理系统";
+			sourceTree = "<group>";
+		};
+		15279F51222CC6EC00DF6D1A /* ELFileManager-文件管理器以及UI层使用浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				15279F52222CC75B00DF6D1A /* ELFileManager-文件管理器以及UI层使用浏览器.docx */,
+			);
+			path = "ELFileManager-文件管理器以及UI层使用浏览器";
+			sourceTree = "<group>";
+		};
 		152B2D6120B8E9B800145A8D /* ThirdLibs-2018 */ = {
 			isa = PBXGroup;
 			children = (
+				15279F47222CC0FE00DF6D1A /* File */,
+				15A908AE222778730082217B /* SSZipArchive */,
 				150C6E8821FB4CF90077DA2D /* LBXScanTest */,
 				15EE82D121E61EBD00D6AD35 /* DCURLRouter */,
 				158EA7EB21DCAF4C00A27CE7 /* AMap */,
@@ -2001,6 +2063,26 @@
 			path = MultiThread;
 			sourceTree = "<group>";
 		};
+		15A908AE222778730082217B /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				15A908B2222779B50082217B /* SampleData */,
+				15A908AF222778B40082217B /* SSZipArchiveVC.h */,
+				15A908B0222778B40082217B /* SSZipArchiveVC.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		15A908B2222779B50082217B /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				15A908BB222781A40082217B /* mountain.png */,
+				15A908B5222779E60082217B /* 1.md */,
+				15A908B4222779E60082217B /* 2.md */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
 		15AC1FDC22119EF0005A0DB9 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2104,6 +2186,15 @@
 				15E21368219FC61300409495 /* ViewController1.m */,
 			);
 			path = InstrumentsTest;
+			sourceTree = "<group>";
+		};
+		15E272D7222142D600BC7964 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				15E272D8222149C200BC7964 /* MLUserDefaults.h */,
+				15E272D9222149C300BC7964 /* MLUserDefaults.m */,
+			);
+			path = NSUserDefaults;
 			sourceTree = "<group>";
 		};
 		15EE82D121E61EBD00D6AD35 /* DCURLRouter */ = {
@@ -2831,8 +2922,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A908BD222782260082217B /* mountain.png in Resources */,
 				152B2D6F20B8E9BB00145A8D /* LaunchScreen.storyboard in Resources */,
 				150C6E9421FB56A80077DA2D /* ScanResultViewController.xib in Resources */,
+				15A908B7222779E60082217B /* 2.md in Resources */,
+				15A908B8222779E60082217B /* 1.md in Resources */,
 				152B2D6C20B8E9BB00145A8D /* Assets.xcassets in Resources */,
 				15EE82DD21E61EDE00D6AD35 /* DCURLRouter.plist in Resources */,
 				152B2D6A20B8E9B800145A8D /* Main.storyboard in Resources */,
@@ -2862,6 +2956,7 @@
 				150C6E8521F4B40A0077DA2D /* 封装.rtf in Resources */,
 				1546B4EC21D1F58C0072B89F /* floating_button_map.png in Resources */,
 				15BE589E21D3037A0028626B /* arror.png in Resources */,
+				15279F5A222CCA0A00DF6D1A /* HotspotViewController in Resources */,
 				15BE589B21D265D70028626B /* back@3x.png in Resources */,
 				1546B4F021D1F58C0072B89F /* task_priority_tag.png in Resources */,
 				1546B4F221D1F58C0072B89F /* station_last_one.png in Resources */,
@@ -2997,7 +3092,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
 			);
@@ -3008,7 +3103,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94ECB844904C6FF0A05A6F2F /* [CP] Copy Pods Resources */ = {
@@ -3017,7 +3112,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -3026,7 +3121,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7CEE2EFEBE0A9A151E07028 /* [CP] Check Pods Manifest.lock */ = {
@@ -3147,6 +3242,7 @@
 				15A1EB7E2072240B002D5DB1 /* NSObjectTest.m in Sources */,
 				1590138E21A16CC6002EB47E /* YZJDownloadImageOperation.m in Sources */,
 				150773D5221518630095FA41 /* i18n.m in Sources */,
+				15E272DA222149C300BC7964 /* MLUserDefaults.m in Sources */,
 				151FE8F0204FC2EF00BFAD8E /* ViewController.m in Sources */,
 				1590138B21A16C60002EB47E /* ARC-MRCTest.m in Sources */,
 				159ECE3F209437DA005A1204 /* NSPredicateTest.m in Sources */,
@@ -3235,8 +3331,10 @@
 				15EE82DB21E61EDE00D6AD35 /* DCURLNavgation.m in Sources */,
 				15EE82E121E61F1000D6AD35 /* DCURLRouterVCViewController.m in Sources */,
 				152B2D6720B8E9B800145A8D /* ViewController.m in Sources */,
+				15A908B1222778B40082217B /* SSZipArchiveVC.m in Sources */,
 				150C6E9321FB56A80077DA2D /* ScanResultViewController.m in Sources */,
 				152B2D7220B8E9BB00145A8D /* main.m in Sources */,
+				15279F4A222CC11B00DF6D1A /* FCFileManagerVC.m in Sources */,
 				15EE82DC21E61EDE00D6AD35 /* UIViewController+DCURLRouter.m in Sources */,
 				15EE82DA21E61EDE00D6AD35 /* DCURLRouter.m in Sources */,
 				158EA7EE21DCAF7C00A27CE7 /* AMapVC.m in Sources */,
@@ -3287,6 +3385,7 @@
 				1546B4CA21D07FFA0072B89F /* MLAnnotation.m in Sources */,
 				15CE80BF22194F430007F956 /* MLSetting.m in Sources */,
 				1535943421CB7502003DCF56 /* CustomCollectionViewCell.m in Sources */,
+				15279F5C222CCA0A00DF6D1A /* iPhoneXAdaptivityVC.m in Sources */,
 				1565DE0921F3131C004BAEB5 /* MLAppDetailUpgradeInfoCell.m in Sources */,
 				1553D5122089DEB9009AC812 /* UIToobarTestViewController.m in Sources */,
 				158611D622196DCB00D9B44D /* ___FILEBASENAME___.m in Sources */,
@@ -3303,7 +3402,6 @@
 				1515C67921ECA2FD00426E87 /* MLAppDetailActionButton.m in Sources */,
 				1579EDA421E734E50080BE17 /* MLCustomSegmentedControlItemView.m in Sources */,
 				1515C67C21ECB14100426E87 /* MLMoreView.m in Sources */,
-				150773D222142D5C0095FA41 /* iPhoneXAdaptivityVC.m in Sources */,
 				15123EC021E9DB9A0037BB0C /* UISearchControllerTestVC.m in Sources */,
 				1515C66421EC7EDF00426E87 /* CommentModel.m in Sources */,
 				1579EDA121E733E70080BE17 /* MLCustomSegmentedControl.m in Sources */,

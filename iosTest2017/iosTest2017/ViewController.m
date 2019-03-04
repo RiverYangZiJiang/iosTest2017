@@ -73,7 +73,7 @@
 }
 
 /**
- push到下一个界面，会调用viewWillDisappear、viewDidDisappear，但不会调用dealloc
+ push到下一个界面，会调用viewWillDisappear、viewDidDisappear，但不会调用dealloc。说明view只是消失了，但是并没有被销毁
 
  @param animated <#animated description#>
  */
@@ -87,6 +87,9 @@
     NSLog(@"%s", __func__);
 }
 
+/**
+ push到下一个界面，并不会调用dealloc方法，说明该界面并没有被销毁
+ */
 - (void)dealloc{
     NSLog(@"%s", __func__);
 }

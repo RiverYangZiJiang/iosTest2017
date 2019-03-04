@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AMapVC.h"
 #import "LBXScanTestVC.h"
+#import "SSZipArchiveVC.h"
 
 
 @implementation ViewController
@@ -20,7 +21,8 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 //    UIViewController *vc = [[AMapVC alloc] init];
-    UIViewController *vc = [[LBXScanTestVC alloc] init];
+//    UIViewController *vc = [[LBXScanTestVC alloc] init];
+    SSZipArchiveVC *vc = [[SSZipArchiveVC alloc] init];
     
     [DCURLRouter pushViewController:vc animated:YES];
 }

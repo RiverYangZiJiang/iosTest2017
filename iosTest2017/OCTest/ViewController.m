@@ -19,6 +19,7 @@
 #import "LoopSortTest.h"
 #import "NSURLTest.h"
 #import "NSErrorTest.h"
+#import "MLUserDefaults.h"
 
 @interface ViewController ()
 
@@ -45,10 +46,12 @@
 //    [timerTest startTimer];
 //    [timerTest startTimerFire];
     
-    [MainThread MainThreadTest];
+//    [MainThread MainThreadTest];
     
 //    [CLLocationManagerTest defaultInstance];
 //    [NSErrorTest test];
+    
+    [MLUserDefaults userDefaultsTest];
 }
 
 
