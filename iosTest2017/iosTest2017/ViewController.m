@@ -23,6 +23,7 @@
 #import "MLVersionHistoryViewController.h"
 #import "MLAboutViewController.h"
 #import "MLSettingViewController.h"
+#import "MLChecklistViewController.h"
 
 @interface ViewController ()
 
@@ -64,10 +65,11 @@
     
 //    [self.navigationController pushViewController:[[UIImageViewTestVC alloc] init] animated:YES];
     
-    [self.navigationController pushViewController:[[UIViewControllerTestVC alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[UIViewControllerTestVC alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[MLVersionHistoryViewController alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[MLAboutViewController alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[MLSettingViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[MLChecklistViewController alloc] init] animated:YES];
     
     
 }

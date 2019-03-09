@@ -246,6 +246,23 @@
 		15CE80BF22194F430007F956 /* MLSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE80BE22194F430007F956 /* MLSetting.m */; };
 		15CE80C2221951140007F956 /* MLSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE80C1221951140007F956 /* MLSettingCell.m */; };
 		15D716B22096A37C00B492DD /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D716B12096A37C00B492DD /* NSArrayTest.m */; };
+		15D858E622335A7200E76BB8 /* MLMultiSelectTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D858E522335A7200E76BB8 /* MLMultiSelectTitleCell.m */; };
+		15D858E922335B7600E76BB8 /* MLSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D858E822335B7600E76BB8 /* MLSelectCell.m */; };
+		15D858EE22335C9F00E76BB8 /* MLMultiSelectTitleCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D858EA22335C9E00E76BB8 /* MLMultiSelectTitleCell.png */; };
+		15D858EF22335C9F00E76BB8 /* MLSelectCellMultiSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D858EB22335C9E00E76BB8 /* MLSelectCellMultiSelect.png */; };
+		15D858F022335C9F00E76BB8 /* MLSelectCellSingleSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D858EC22335C9F00E76BB8 /* MLSelectCellSingleSelect.png */; };
+		15D858F122335C9F00E76BB8 /* MLSingleSelectTitleCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D858ED22335C9F00E76BB8 /* MLSingleSelectTitleCell.png */; };
+		15D858F42233620700E76BB8 /* MLTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D858F32233620700E76BB8 /* MLTitleView.m */; };
+		15D858F722336E1500E76BB8 /* MLChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D858F622336E1500E76BB8 /* MLChecklistViewController.m */; };
+		15D858FB22336E6E00E76BB8 /* MLBaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D858FA22336E6E00E76BB8 /* MLBaseTableVC.m */; };
+		15D858FE223380A000E76BB8 /* MLSingleSelectTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D858FD223380A000E76BB8 /* MLSingleSelectTitleCell.m */; };
+		15D85907223396C500E76BB8 /* MLTitleViewImageTypeMust.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D85904223396C400E76BB8 /* MLTitleViewImageTypeMust.png */; };
+		15D85908223396C500E76BB8 /* MLTitleViewImageTypeNone.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D85905223396C400E76BB8 /* MLTitleViewImageTypeNone.png */; };
+		15D85909223396C500E76BB8 /* MLTitleViewImageTypeInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D85906223396C500E76BB8 /* MLTitleViewImageTypeInfo.png */; };
+		15D8590D223398D300E76BB8 /* MLChecklistContainerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D8590C223398D300E76BB8 /* MLChecklistContainerCell.m */; };
+		15D8591022339C8B00E76BB8 /* MLChecklistContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D8590F22339C8B00E76BB8 /* MLChecklistContainer.m */; };
+		15D8591322339F2300E76BB8 /* MLChecklistContainerCellMultiSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D8591122339F2200E76BB8 /* MLChecklistContainerCellMultiSelect.png */; };
+		15D8591422339F2300E76BB8 /* MLChecklistContainerCellSingleSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D8591222339F2300E76BB8 /* MLChecklistContainerCellSingleSelect.png */; };
 		15E21347219E9FCD00409495 /* UINavigationItem+BackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21346219E9FCD00409495 /* UINavigationItem+BackItem.m */; };
 		15E21352219FBAD400409495 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21351219FBAD400409495 /* AppDelegate.m */; };
 		15E21355219FBAD400409495 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E21354219FBAD400409495 /* ViewController.m */; };
@@ -771,6 +788,31 @@
 		15CE80C1221951140007F956 /* MLSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSettingCell.m; sourceTree = "<group>"; };
 		15D716B02096A37C00B492DD /* NSArrayTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayTest.h; sourceTree = "<group>"; };
 		15D716B12096A37C00B492DD /* NSArrayTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
+		15D858E422335A7200E76BB8 /* MLMultiSelectTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLMultiSelectTitleCell.h; sourceTree = "<group>"; };
+		15D858E522335A7200E76BB8 /* MLMultiSelectTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLMultiSelectTitleCell.m; sourceTree = "<group>"; };
+		15D858E722335B7600E76BB8 /* MLSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSelectCell.h; sourceTree = "<group>"; };
+		15D858E822335B7600E76BB8 /* MLSelectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSelectCell.m; sourceTree = "<group>"; };
+		15D858EA22335C9E00E76BB8 /* MLMultiSelectTitleCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLMultiSelectTitleCell.png; sourceTree = "<group>"; };
+		15D858EB22335C9E00E76BB8 /* MLSelectCellMultiSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLSelectCellMultiSelect.png; sourceTree = "<group>"; };
+		15D858EC22335C9F00E76BB8 /* MLSelectCellSingleSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLSelectCellSingleSelect.png; sourceTree = "<group>"; };
+		15D858ED22335C9F00E76BB8 /* MLSingleSelectTitleCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLSingleSelectTitleCell.png; sourceTree = "<group>"; };
+		15D858F22233620700E76BB8 /* MLTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLTitleView.h; sourceTree = "<group>"; };
+		15D858F32233620700E76BB8 /* MLTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLTitleView.m; sourceTree = "<group>"; };
+		15D858F522336E1500E76BB8 /* MLChecklistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLChecklistViewController.h; sourceTree = "<group>"; };
+		15D858F622336E1500E76BB8 /* MLChecklistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLChecklistViewController.m; sourceTree = "<group>"; };
+		15D858F922336E6E00E76BB8 /* MLBaseTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBaseTableVC.h; sourceTree = "<group>"; };
+		15D858FA22336E6E00E76BB8 /* MLBaseTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBaseTableVC.m; sourceTree = "<group>"; };
+		15D858FC223380A000E76BB8 /* MLSingleSelectTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSingleSelectTitleCell.h; sourceTree = "<group>"; };
+		15D858FD223380A000E76BB8 /* MLSingleSelectTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSingleSelectTitleCell.m; sourceTree = "<group>"; };
+		15D85904223396C400E76BB8 /* MLTitleViewImageTypeMust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLTitleViewImageTypeMust.png; sourceTree = "<group>"; };
+		15D85905223396C400E76BB8 /* MLTitleViewImageTypeNone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLTitleViewImageTypeNone.png; sourceTree = "<group>"; };
+		15D85906223396C500E76BB8 /* MLTitleViewImageTypeInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLTitleViewImageTypeInfo.png; sourceTree = "<group>"; };
+		15D8590B223398D300E76BB8 /* MLChecklistContainerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLChecklistContainerCell.h; sourceTree = "<group>"; };
+		15D8590C223398D300E76BB8 /* MLChecklistContainerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLChecklistContainerCell.m; sourceTree = "<group>"; };
+		15D8590E22339C8B00E76BB8 /* MLChecklistContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLChecklistContainer.h; sourceTree = "<group>"; };
+		15D8590F22339C8B00E76BB8 /* MLChecklistContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLChecklistContainer.m; sourceTree = "<group>"; };
+		15D8591122339F2200E76BB8 /* MLChecklistContainerCellMultiSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLChecklistContainerCellMultiSelect.png; sourceTree = "<group>"; };
+		15D8591222339F2300E76BB8 /* MLChecklistContainerCellSingleSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLChecklistContainerCellSingleSelect.png; sourceTree = "<group>"; };
 		15E1F3091E6F89DB0014C731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15E1F30B1E6F89DB0014C731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15E1F30C1E6F89DB0014C731 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1195,6 +1237,7 @@
 		1515C65C21EC7E2300426E87 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15D858E32233598500E76BB8 /* Checklist */,
 				1515C67121EC7FF500426E87 /* MLAppDetailDescriptionCell.h */,
 				1515C66B21EC7FF400426E87 /* MLAppDetailDescriptionCell.m */,
 				1515C66E21EC7FF500426E87 /* MLAppDetailIntroductionCell.h */,
@@ -1255,6 +1298,8 @@
 				151CBF6F221912440096A398 /* MLAboutViewController.m */,
 				158611D12219598300D9B44D /* MLSettingViewController.h */,
 				158611D22219598300D9B44D /* MLSettingViewController.m */,
+				15D858F522336E1500E76BB8 /* MLChecklistViewController.h */,
+				15D858F622336E1500E76BB8 /* MLChecklistViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1666,6 +1711,7 @@
 		156FA9C41E557E650065504B /* iosTest2017 */ = {
 			isa = PBXGroup;
 			children = (
+				15D858F822336E4800E76BB8 /* Base */,
 				150773CF22142CDD0095FA41 /* 适配 */,
 				15AC1FDC22119EF0005A0DB9 /* UIViewController */,
 				150C6E8621F4C81F0077DA2D /* 布局 */,
@@ -2141,6 +2187,83 @@
 				15D716B12096A37C00B492DD /* NSArrayTest.m */,
 			);
 			path = NSArrayTest;
+			sourceTree = "<group>";
+		};
+		15D858E32233598500E76BB8 /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				15D8590A2233989700E76BB8 /* MLChecklistContainerCell */,
+				15D85903223396AB00E76BB8 /* MLTitleView */,
+				15D859012233968500E76BB8 /* MLSelectCell */,
+				15D859002233967800E76BB8 /* MLMultiSelectTitleCell */,
+				15D858FF2233965E00E76BB8 /* MLSingleSelectTitleCell */,
+			);
+			path = Checklist;
+			sourceTree = "<group>";
+		};
+		15D858F822336E4800E76BB8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				15D858F922336E6E00E76BB8 /* MLBaseTableVC.h */,
+				15D858FA22336E6E00E76BB8 /* MLBaseTableVC.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		15D858FF2233965E00E76BB8 /* MLSingleSelectTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				15D858ED22335C9F00E76BB8 /* MLSingleSelectTitleCell.png */,
+				15D858FC223380A000E76BB8 /* MLSingleSelectTitleCell.h */,
+				15D858FD223380A000E76BB8 /* MLSingleSelectTitleCell.m */,
+			);
+			path = MLSingleSelectTitleCell;
+			sourceTree = "<group>";
+		};
+		15D859002233967800E76BB8 /* MLMultiSelectTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				15D858EA22335C9E00E76BB8 /* MLMultiSelectTitleCell.png */,
+				15D858E422335A7200E76BB8 /* MLMultiSelectTitleCell.h */,
+				15D858E522335A7200E76BB8 /* MLMultiSelectTitleCell.m */,
+			);
+			path = MLMultiSelectTitleCell;
+			sourceTree = "<group>";
+		};
+		15D859012233968500E76BB8 /* MLSelectCell */ = {
+			isa = PBXGroup;
+			children = (
+				15D858EB22335C9E00E76BB8 /* MLSelectCellMultiSelect.png */,
+				15D858EC22335C9F00E76BB8 /* MLSelectCellSingleSelect.png */,
+				15D858E722335B7600E76BB8 /* MLSelectCell.h */,
+				15D858E822335B7600E76BB8 /* MLSelectCell.m */,
+			);
+			path = MLSelectCell;
+			sourceTree = "<group>";
+		};
+		15D85903223396AB00E76BB8 /* MLTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				15D85906223396C500E76BB8 /* MLTitleViewImageTypeInfo.png */,
+				15D85904223396C400E76BB8 /* MLTitleViewImageTypeMust.png */,
+				15D85905223396C400E76BB8 /* MLTitleViewImageTypeNone.png */,
+				15D858F22233620700E76BB8 /* MLTitleView.h */,
+				15D858F32233620700E76BB8 /* MLTitleView.m */,
+			);
+			path = MLTitleView;
+			sourceTree = "<group>";
+		};
+		15D8590A2233989700E76BB8 /* MLChecklistContainerCell */ = {
+			isa = PBXGroup;
+			children = (
+				15D8591122339F2200E76BB8 /* MLChecklistContainerCellMultiSelect.png */,
+				15D8591222339F2300E76BB8 /* MLChecklistContainerCellSingleSelect.png */,
+				15D8590B223398D300E76BB8 /* MLChecklistContainerCell.h */,
+				15D8590C223398D300E76BB8 /* MLChecklistContainerCell.m */,
+				15D8590E22339C8B00E76BB8 /* MLChecklistContainer.h */,
+				15D8590F22339C8B00E76BB8 /* MLChecklistContainer.m */,
+			);
+			path = MLChecklistContainerCell;
 			sourceTree = "<group>";
 		};
 		15E1F3071E6F89DB0014C731 /* ControllerTest-2017 */ = {
@@ -2947,22 +3070,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D8591422339F2300E76BB8 /* MLChecklistContainerCellSingleSelect.png in Resources */,
+				15D85907223396C500E76BB8 /* MLTitleViewImageTypeMust.png in Resources */,
 				1546B4F121D1F58C0072B89F /* task_plm_24.png in Resources */,
 				156FA9D51E557E650065504B /* LaunchScreen.storyboard in Resources */,
 				159ECE1E2092C60C005A1204 /* UILabelViewController.xib in Resources */,
+				15D858EE22335C9F00E76BB8 /* MLMultiSelectTitleCell.png in Resources */,
 				156FA9D21E557E650065504B /* Assets.xcassets in Resources */,
 				1546B4D621D101CB0072B89F /* my_lcation_disable.png in Resources */,
+				15D85909223396C500E76BB8 /* MLTitleViewImageTypeInfo.png in Resources */,
+				15D858F122335C9F00E76BB8 /* MLSingleSelectTitleCell.png in Resources */,
 				1553D519208ACE32009AC812 /* AVCaptureSessionTest.xib in Resources */,
 				150C6E8521F4B40A0077DA2D /* 封装.rtf in Resources */,
+				15D85908223396C500E76BB8 /* MLTitleViewImageTypeNone.png in Resources */,
 				1546B4EC21D1F58C0072B89F /* floating_button_map.png in Resources */,
+				15D858EF22335C9F00E76BB8 /* MLSelectCellMultiSelect.png in Resources */,
 				15BE589E21D3037A0028626B /* arror.png in Resources */,
 				15279F5A222CCA0A00DF6D1A /* HotspotViewController in Resources */,
 				15BE589B21D265D70028626B /* back@3x.png in Resources */,
+				15D858F022335C9F00E76BB8 /* MLSelectCellSingleSelect.png in Resources */,
 				1546B4F021D1F58C0072B89F /* task_priority_tag.png in Resources */,
 				1546B4F221D1F58C0072B89F /* station_last_one.png in Resources */,
 				1553D5132089DEB9009AC812 /* UIToobarTestViewController.xib in Resources */,
 				1546B4ED21D1F58C0072B89F /* station_next_one.png in Resources */,
 				1546B4EB21D1F58C0072B89F /* open_page.png in Resources */,
+				15D8591322339F2300E76BB8 /* MLChecklistContainerCellMultiSelect.png in Resources */,
 				1546B4EF21D1F58C0072B89F /* clos_page.png in Resources */,
 				1546B4CC21D09FD50072B89F /* icon_002_cover.png in Resources */,
 			);
@@ -3092,7 +3224,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
 			);
@@ -3103,7 +3235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThirdLibs-2018/Pods-ThirdLibs-2018-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94ECB844904C6FF0A05A6F2F /* [CP] Copy Pods Resources */ = {
@@ -3112,7 +3244,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -3121,7 +3253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosTest2017/Pods-iosTest2017-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7CEE2EFEBE0A9A151E07028 /* [CP] Check Pods Manifest.lock */ = {
@@ -3364,14 +3496,18 @@
 				1565DE0321F218E5004BAEB5 /* MLAppDetailPostACommentsTopView.m in Sources */,
 				158611D32219598300D9B44D /* MLSettingViewController.m in Sources */,
 				155DB18A2181E87600C95E3D /* UIWebViewTest.m in Sources */,
+				15D858FE223380A000E76BB8 /* MLSingleSelectTitleCell.m in Sources */,
+				15D8591022339C8B00E76BB8 /* MLChecklistContainer.m in Sources */,
 				1515C66121EC7EC700426E87 /* UIScrollViewTestVC.m in Sources */,
 				156FA9CA1E557E650065504B /* AppDelegate.m in Sources */,
 				151CBF70221912440096A398 /* MLAboutViewController.m in Sources */,
 				1515C67421EC7FF500426E87 /* MLAppDetailUpgradeCell.m in Sources */,
 				1553EC4421B3C2E400C51706 /* UICollectionViewTestViewController.m in Sources */,
+				15D858E922335B7600E76BB8 /* MLSelectCell.m in Sources */,
 				151CBF6A2218F58C0096A398 /* MLVersionHistoryCell.m in Sources */,
 				1515C67521EC7FF500426E87 /* MLAppDetailIntroductionCell.m in Sources */,
 				1515C67621EC7FF500426E87 /* MLAppDetailPreviewCell.m in Sources */,
+				15D8590D223398D300E76BB8 /* MLChecklistContainerCell.m in Sources */,
 				156FA9C71E557E650065504B /* main.m in Sources */,
 				150C6E8221F4B2A50077DA2D /* UIImageTestVC.m in Sources */,
 				1565DE0C21F314D6004BAEB5 /* MLAppDetailUpgradeInfo.m in Sources */,
@@ -3379,9 +3515,11 @@
 				1546B4C321CE33930072B89F /* MKMapViewTestVC.m in Sources */,
 				1515C67321EC7FF500426E87 /* MLAppDetailDescriptionCell.m in Sources */,
 				15C525262085D18E008BA73B /* CustomTableViewCell.m in Sources */,
+				15D858F42233620700E76BB8 /* MLTitleView.m in Sources */,
 				15AC1FDF22119F15005A0DB9 /* UIViewControllerTestVC.m in Sources */,
 				159B9CD8207FB0E700A516A4 /* UITableViewControllerTest.m in Sources */,
 				155DB1862181E7F300C95E3D /* WKWebViewTest.m in Sources */,
+				15D858E622335A7200E76BB8 /* MLMultiSelectTitleCell.m in Sources */,
 				1546B4CA21D07FFA0072B89F /* MLAnnotation.m in Sources */,
 				15CE80BF22194F430007F956 /* MLSetting.m in Sources */,
 				1535943421CB7502003DCF56 /* CustomCollectionViewCell.m in Sources */,
@@ -3394,7 +3532,9 @@
 				150C6E7F21F488380077DA2D /* UIButton+MLCategory.m in Sources */,
 				1515C66921EC7EEB00426E87 /* MLRatingStarView.m in Sources */,
 				15E21347219E9FCD00409495 /* UINavigationItem+BackItem.m in Sources */,
+				15D858FB22336E6E00E76BB8 /* MLBaseTableVC.m in Sources */,
 				151CBF7322193DF10096A398 /* MLAboutCell.m in Sources */,
+				15D858F722336E1500E76BB8 /* MLChecklistViewController.m in Sources */,
 				151CBF672218F5210096A398 /* MLVersionHistory.m in Sources */,
 				1515C64821E9DDCC00426E87 /* SearchResultsViewController.m in Sources */,
 				15BE589921D264D00028626B /* UIAppearanceTest.m in Sources */,

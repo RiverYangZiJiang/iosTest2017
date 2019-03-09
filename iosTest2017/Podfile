@@ -42,7 +42,7 @@ target 'ThirdLibs-2018' do
     pod 'AMapSearch' #搜索功能
     pod 'LBXScan/LBXZXing'
     pod 'LBXScan/UI'
-    pod 'SSZipArchive'
+#    pod 'SSZipArchive'
 end
 
 target 'SQLiteTest-201603' do
