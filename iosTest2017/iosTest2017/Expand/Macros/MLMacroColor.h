@@ -116,7 +116,8 @@ bar.backIndicatorTransitionMaskImage = indicatorImage; \
 #define color_functional_78849c HEX_COLOR(0x78849c)
 #define color_functional_53627c HEX_COLOR(0x53627c)
 #define color_functional_b5c1d1 HEX_COLOR(0xb5c1d1)
-
+#define color_functional_ceffee HEX_COLOR(0xceffee)
+#define color_functional_fee7e0 HEX_COLOR(0xfee7e0)
 
 
 

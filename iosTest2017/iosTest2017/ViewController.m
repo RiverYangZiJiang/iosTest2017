@@ -57,7 +57,7 @@
     
     //    [self.navigationController pushViewController:[[UITableViewControllerTest alloc] init] animated:YES];
     
-//    [self.navigationController pushViewController:[[MKMapViewTestVC alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[MKMapViewTestVC alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[UISegmentedControlVC alloc] init] animated:YES];
     
 //    [self.navigationController pushViewController:[[UISearchControllerTestVC alloc] init] animated:YES];
@@ -69,7 +69,7 @@
 //    [self.navigationController pushViewController:[[MLVersionHistoryViewController alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[MLAboutViewController alloc] init] animated:YES];
 //    [self.navigationController pushViewController:[[MLSettingViewController alloc] init] animated:YES];
-    [self.navigationController pushViewController:[[MLChecklistViewController alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[MLChecklistViewController alloc] init] animated:YES];
     
     
 }
